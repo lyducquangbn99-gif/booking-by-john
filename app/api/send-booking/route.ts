@@ -4,8 +4,8 @@ import { supabase } from "@/lib/supabase";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "bookingbyjohnly@gmail.com",   
-    pass: "grrxayadfkbaixuj",          // mật khẩu app (không phải mật khẩu Gmail)
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
   },
 });
 
