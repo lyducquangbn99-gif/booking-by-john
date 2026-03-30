@@ -80,7 +80,7 @@ await transporter.sendMail({
       Logistics Specialist<br/>
       📧 bookingbyjohnly@gmail.com<br/>
       📱 WhatsApp: +84 352 193 969<br/>
-      🌐 www.bookingbyjohn.com
+      🌐 www.bookingbyjohnly.com
     </p>
 
     <br/>
