@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Trust from "@/components/Trust";
 import OceanRoutes from "@/components/OceanRoutes";
 import RequestStepper from "@/components/RequestStepper";
+import TrickyShipmentCTA from "@/components/TrickyShipmentCTA";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Trust />
       <OceanRoutes />
       <RequestStepper />
+      <TrickyShipmentCTA />
     </main>
   );
 }
