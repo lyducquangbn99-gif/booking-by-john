@@ -1,6 +1,5 @@
 // app/api/send-booking/route.ts
 import nodemailer from "nodemailer";
-import { supabase } from "@/lib/supabase";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -17,26 +16,6 @@ export async function POST(req: Request) {
       mode, origin, destination, weightRange, cargoType,
       urgency, name, email, phone, company, notes,
     } = data;
-
-    const { error: dbError } = await supabase.from("bookings").insert([{
-      name,
-      email,
-      message: notes || "",
-      mode,
-      origin,
-      destination,
-      weight_range: weightRange,
-      cargo_type: cargoType,
-      urgency,
-      phone,
-      company,
-      notes,
-    }]);
-
-    if (dbError) {
-      console.error("Supabase error:", dbError);
-      return Response.json({ error: "Database error" }, { status: 500 });
-    }
 
     // Admin notification
     await transporter.sendMail({
