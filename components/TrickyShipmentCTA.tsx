@@ -16,7 +16,7 @@ export default function TrickyShipmentCTA() {
         </p>
         <a
           href="#request"
-          className="inline-block font-display font-bold text-sm text-white bg-accent-orange px-9 py-4 rounded-md hover:-translate-y-px hover:shadow-[0_0_24px_rgba(255,107,53,0.4)] transition-all duration-200"
+          className="inline-flex items-center font-display font-bold text-sm text-white bg-accent-orange px-9 py-4 rounded-md hover:-translate-y-px hover:shadow-[0_0_24px_rgba(255,107,53,0.4)] transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-orange min-h-11"
         >
           Tell me about it →
         </a>

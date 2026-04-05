@@ -9,7 +9,10 @@ export default function Nav() {
         {/* Logo */}
         <div className="font-display text-lg font-bold text-text-primary flex items-center gap-2">
           Booking by John
-          <span className="animate-logo-pulse inline-block w-2 h-2 rounded-full bg-accent-green" />
+          <span
+            className="inline-block w-2 h-2 rounded-full bg-accent-green motion-safe:animate-logo-pulse"
+            aria-hidden="true"
+          />
         </div>
 
         {/* Nav links */}
@@ -34,7 +37,7 @@ export default function Nav() {
           </a>
           <a
             href="#request"
-            className="font-display text-sm font-bold text-bg-primary bg-accent-green px-5 py-2.5 rounded-md hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.4)] transition-all duration-200"
+            className="font-display text-sm font-bold text-bg-primary bg-accent-green px-5 py-2.5 rounded-md hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.4)] transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green min-h-11 inline-flex items-center"
           >
             Get Moving
           </a>

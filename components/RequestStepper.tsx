@@ -2,6 +2,11 @@
 "use client";
 
 import { useState } from "react";
+import {
+  Truck, Package, Ship, Train, Zap, Plane, Waves, HelpCircle,
+  CheckCircle, Clock, AlertCircle,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 type FormData = {
   mode: string;
@@ -23,15 +28,15 @@ const EMPTY_FORM: FormData = {
   phone: "", company: "", notes: "",
 };
 
-const modes = [
-  { label: "FTL",           icon: "🚛" },
-  { label: "LTL",           icon: "📦" },
-  { label: "Drayage",       icon: "🚢" },
-  { label: "Intermodal",    icon: "🚂" },
-  { label: "Expedited",     icon: "⚡" },
-  { label: "Courier",       icon: "✈️" },
-  { label: "Ocean Freight", icon: "🌊" },
-  { label: "Other",         icon: "❓" },
+const modes: { label: string; icon: LucideIcon }[] = [
+  { label: "FTL",           icon: Truck },
+  { label: "LTL",           icon: Package },
+  { label: "Drayage",       icon: Ship },
+  { label: "Intermodal",    icon: Train },
+  { label: "Expedited",     icon: Zap },
+  { label: "Courier",       icon: Plane },
+  { label: "Ocean Freight", icon: Waves },
+  { label: "Other",         icon: HelpCircle },
 ];
 
 const weightOptions = [
@@ -44,10 +49,10 @@ const cargoOptions = [
   "Oversized/Heavy Haul", "Hazmat", "High Value", "Other",
 ];
 
-const urgencyOptions = [
-  { label: "Flexible", sub: "5+ days",          icon: "🟢" },
-  { label: "Standard", sub: "2–4 days",          icon: "🟡" },
-  { label: "Hot",      sub: "Need it yesterday", icon: "🔴" },
+const urgencyOptions: { label: string; sub: string; icon: LucideIcon; color: string }[] = [
+  { label: "Flexible", sub: "5+ days",          icon: CheckCircle,  color: "text-accent-green" },
+  { label: "Standard", sub: "2–4 days",          icon: Clock,        color: "text-yellow-400" },
+  { label: "Hot",      sub: "Need it yesterday", icon: AlertCircle,  color: "text-accent-orange" },
 ];
 
 export default function RequestStepper() {
@@ -113,10 +118,20 @@ export default function RequestStepper() {
 
       {/* Success overlay */}
       {success && (
-        <div className="animate-overlay-fade fixed inset-0 z-50 flex items-center justify-center p-6 bg-bg-primary/90 backdrop-blur-md">
+        <div
+          className="animate-overlay-fade fixed inset-0 z-50 flex items-center justify-center p-6 bg-bg-primary/90 backdrop-blur-md"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="success-title"
+        >
           <div className="animate-card-scale bg-bg-card border border-border-subtle rounded-2xl p-12 max-w-md w-full text-center">
-            <div className="text-5xl mb-6">✅</div>
-            <h2 className="font-display text-2xl font-bold text-text-primary mb-4">
+            <CheckCircle
+              className="mx-auto mb-6 text-accent-green"
+              size={56}
+              strokeWidth={1.5}
+              aria-hidden="true"
+            />
+            <h2 id="success-title" className="font-display text-2xl font-bold text-text-primary mb-4">
               Request received — John&apos;s on it.
             </h2>
             <p className="text-text-secondary leading-relaxed mb-8">
@@ -126,7 +141,7 @@ export default function RequestStepper() {
             </p>
             <button
               onClick={dismiss}
-              className="font-display font-bold text-sm text-bg-primary bg-accent-green px-8 py-3 rounded-md hover:-translate-y-px transition-all duration-200"
+              className="font-display font-bold text-sm text-bg-primary bg-accent-green px-8 py-3 rounded-md hover:-translate-y-px transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green"
             >
               Got it
             </button>
@@ -144,7 +159,7 @@ export default function RequestStepper() {
         </h2>
 
         {/* Progress bar */}
-        <div className="grid grid-cols-4 gap-1.5 mb-12">
+        <div className="grid grid-cols-4 gap-1.5 mb-12" role="progressbar" aria-valuenow={step} aria-valuemin={1} aria-valuemax={4} aria-label={`Step ${step} of 4`}>
           {[1, 2, 3, 4].map((s) => (
             <div
               key={s}
@@ -176,7 +191,7 @@ export default function RequestStepper() {
           {step > 1 ? (
             <button
               onClick={() => { setError(""); setStep((s) => s - 1); }}
-              className="border border-border-subtle text-text-secondary text-sm px-6 py-3 rounded-md hover:text-text-primary hover:border-white/20 transition-all duration-200"
+              className="border border-border-subtle text-text-secondary text-sm px-6 py-3 rounded-md hover:text-text-primary hover:border-white/20 transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-green min-h-[44px]"
             >
               ← Back
             </button>
@@ -187,7 +202,7 @@ export default function RequestStepper() {
           {step < 4 ? (
             <button
               onClick={handleNext}
-              className="font-display font-bold text-sm text-bg-primary bg-accent-green px-7 py-3 rounded-md hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.3)] transition-all duration-200"
+              className="font-display font-bold text-sm text-bg-primary bg-accent-green px-7 py-3 rounded-md hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.3)] transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green min-h-[44px]"
             >
               Next →
             </button>
@@ -195,10 +210,11 @@ export default function RequestStepper() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className={`font-display font-bold text-sm text-bg-primary px-7 py-3 rounded-md transition-all duration-200 ${
+              aria-disabled={submitting}
+              className={`font-display font-bold text-sm text-bg-primary px-7 py-3 rounded-md transition-all duration-200 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green ${
                 submitting
                   ? "bg-text-muted cursor-not-allowed"
-                  : "bg-accent-green hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.3)]"
+                  : "bg-accent-green hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.3)] cursor-pointer"
               }`}
             >
               {submitting ? "Sending..." : "Let's move your freight →"}
@@ -207,7 +223,7 @@ export default function RequestStepper() {
         </div>
 
         {error && step !== 4 && (
-          <p className="text-accent-orange text-xs mt-3 text-right">{error}</p>
+          <p className="text-accent-orange text-xs mt-3 text-right" role="alert">{error}</p>
         )}
       </div>
     </section>
@@ -225,25 +241,34 @@ function Step1({ mode, onSelect }: { mode: string; onSelect: (v: string) => void
       <p className="text-sm text-text-muted mb-7">
         Select the mode that best fits. Not sure? Pick &quot;Other&quot; and we&apos;ll sort it out.
       </p>
-      <div className="grid grid-cols-4 gap-2.5">
-        {modes.map((m) => (
-          <button
-            key={m.label}
-            onClick={() => onSelect(m.label)}
-            className={`flex flex-col items-center gap-2 rounded-xl p-4 border transition-all duration-150 ${
-              mode === m.label
-                ? "bg-accent-green/10 border-accent-green"
-                : "bg-bg-card border-border-subtle hover:border-white/20"
-            }`}
-          >
-            <span className="text-2xl">{m.icon}</span>
-            <span className={`font-display text-[11px] text-center ${
-              mode === m.label ? "text-accent-green" : "text-text-secondary"
-            }`}>
-              {m.label}
-            </span>
-          </button>
-        ))}
+      <div className="grid grid-cols-4 gap-2.5" role="group" aria-label="Shipping mode">
+        {modes.map((m) => {
+          const Icon = m.icon;
+          return (
+            <button
+              key={m.label}
+              onClick={() => onSelect(m.label)}
+              aria-pressed={mode === m.label}
+              className={`flex flex-col items-center gap-2 rounded-xl p-4 border transition-all duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-green min-h-[72px] ${
+                mode === m.label
+                  ? "bg-accent-green/10 border-accent-green"
+                  : "bg-bg-card border-border-subtle hover:border-white/20"
+              }`}
+            >
+              <Icon
+                size={22}
+                strokeWidth={1.5}
+                aria-hidden="true"
+                className={mode === m.label ? "text-accent-green" : "text-text-secondary"}
+              />
+              <span className={`font-display text-[11px] text-center ${
+                mode === m.label ? "text-accent-green" : "text-text-secondary"
+              }`}>
+                {m.label}
+              </span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
@@ -255,7 +280,7 @@ function Step2({
   origin: string; destination: string; weightRange: string;
   cargoType: string; onChange: (key: keyof FormData, value: string) => void;
 }) {
-  const inputClass = "w-full bg-bg-primary border border-border-subtle rounded-lg px-4 py-3.5 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent-green/50 transition-colors duration-200";
+  const inputClass = "w-full bg-bg-primary border border-border-subtle rounded-lg px-4 py-3.5 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent-green/50 transition-colors duration-200 min-h-[44px]";
   const labelClass = "block text-xs text-text-muted mb-2 tracking-wide";
 
   return (
@@ -270,27 +295,27 @@ function Step2({
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>Origin</label>
-          <input className={inputClass} placeholder="e.g. Ho Chi Minh City"
+          <label htmlFor="origin" className={labelClass}>Origin</label>
+          <input id="origin" className={inputClass} placeholder="e.g. Ho Chi Minh City"
             value={origin} onChange={(e) => onChange("origin", e.target.value)} />
         </div>
         <div>
-          <label className={labelClass}>Destination</label>
-          <input className={inputClass} placeholder="e.g. Rotterdam"
+          <label htmlFor="destination" className={labelClass}>Destination</label>
+          <input id="destination" className={inputClass} placeholder="e.g. Rotterdam"
             value={destination} onChange={(e) => onChange("destination", e.target.value)} />
         </div>
       </div>
       <div>
-        <label className={labelClass}>Weight Range</label>
-        <select className={inputClass} value={weightRange}
+        <label htmlFor="weightRange" className={labelClass}>Weight Range</label>
+        <select id="weightRange" className={inputClass} value={weightRange}
           onChange={(e) => onChange("weightRange", e.target.value)}>
           <option value="">Select weight range</option>
           {weightOptions.map((o) => <option key={o} value={o}>{o}</option>)}
         </select>
       </div>
       <div>
-        <label className={labelClass}>Cargo Type (optional)</label>
-        <select className={inputClass} value={cargoType}
+        <label htmlFor="cargoType" className={labelClass}>Cargo Type (optional)</label>
+        <select id="cargoType" className={inputClass} value={cargoType}
           onChange={(e) => onChange("cargoType", e.target.value)}>
           <option value="">Select cargo type</option>
           {cargoOptions.map((o) => <option key={o} value={o}>{o}</option>)}
@@ -309,28 +334,37 @@ function Step3({ urgency, onSelect }: { urgency: string; onSelect: (v: string) =
       <p className="text-sm text-text-muted mb-7">
         This helps me prioritize and find the best rate match.
       </p>
-      <div className="flex flex-col gap-3">
-        {urgencyOptions.map((opt) => (
-          <button
-            key={opt.label}
-            onClick={() => onSelect(opt.label)}
-            className={`flex items-center gap-4 text-left rounded-xl px-6 py-5 border transition-all duration-150 ${
-              urgency === opt.label
-                ? "bg-accent-green/8 border-accent-green"
-                : "bg-bg-card border-border-subtle hover:border-white/20"
-            }`}
-          >
-            <span className="text-2xl">{opt.icon}</span>
-            <div>
-              <div className={`font-display font-bold text-sm ${
-                urgency === opt.label ? "text-accent-green" : "text-text-primary"
-              }`}>
-                {opt.label}
+      <div className="flex flex-col gap-3" role="group" aria-label="Urgency">
+        {urgencyOptions.map((opt) => {
+          const Icon = opt.icon;
+          return (
+            <button
+              key={opt.label}
+              onClick={() => onSelect(opt.label)}
+              aria-pressed={urgency === opt.label}
+              className={`flex items-center gap-4 text-left rounded-xl px-6 py-5 border transition-all duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-green min-h-[72px] ${
+                urgency === opt.label
+                  ? "bg-accent-green/8 border-accent-green"
+                  : "bg-bg-card border-border-subtle hover:border-white/20"
+              }`}
+            >
+              <Icon
+                size={24}
+                strokeWidth={1.5}
+                aria-hidden="true"
+                className={urgency === opt.label ? "text-accent-green" : opt.color}
+              />
+              <div>
+                <div className={`font-display font-bold text-sm ${
+                  urgency === opt.label ? "text-accent-green" : "text-text-primary"
+                }`}>
+                  {opt.label}
+                </div>
+                <div className="text-xs text-text-muted mt-0.5">{opt.sub}</div>
               </div>
-              <div className="text-xs text-text-muted mt-0.5">{opt.sub}</div>
-            </div>
-          </button>
-        ))}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
@@ -341,7 +375,7 @@ function Step4({
 }: {
   form: FormData; onChange: (key: keyof FormData, value: string) => void; error: string;
 }) {
-  const inputClass = "w-full bg-bg-primary border border-border-subtle rounded-lg px-4 py-3.5 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent-green/50 transition-colors duration-200";
+  const inputClass = "w-full bg-bg-primary border border-border-subtle rounded-lg px-4 py-3.5 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent-green/50 transition-colors duration-200 min-h-[44px]";
   const labelClass = "block text-xs text-text-muted mb-2 tracking-wide";
 
   return (
@@ -356,31 +390,32 @@ function Step4({
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>Name *</label>
-          <input className={inputClass} placeholder="Your name"
+          <label htmlFor="name" className={labelClass}>Name <span aria-hidden="true">*</span></label>
+          <input id="name" className={inputClass} placeholder="Your name" autoComplete="name"
             value={form.name} onChange={(e) => onChange("name", e.target.value)} />
         </div>
         <div>
-          <label className={labelClass}>Company</label>
-          <input className={inputClass} placeholder="Company (optional)"
+          <label htmlFor="company" className={labelClass}>Company</label>
+          <input id="company" className={inputClass} placeholder="Company (optional)" autoComplete="organization"
             value={form.company} onChange={(e) => onChange("company", e.target.value)} />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className={labelClass}>Email *</label>
-          <input type="email" className={inputClass} placeholder="you@company.com"
+          <label htmlFor="email" className={labelClass}>Email <span aria-hidden="true">*</span></label>
+          <input id="email" type="email" className={inputClass} placeholder="you@company.com" autoComplete="email"
             value={form.email} onChange={(e) => onChange("email", e.target.value)} />
         </div>
         <div>
-          <label className={labelClass}>Phone *</label>
-          <input type="tel" className={inputClass} placeholder="+1 (555) 000-0000"
+          <label htmlFor="phone" className={labelClass}>Phone <span aria-hidden="true">*</span></label>
+          <input id="phone" type="tel" className={inputClass} placeholder="+1 (555) 000-0000" autoComplete="tel"
             value={form.phone} onChange={(e) => onChange("phone", e.target.value)} />
         </div>
       </div>
       <div>
-        <label className={labelClass}>Notes / Special Requirements</label>
+        <label htmlFor="notes" className={labelClass}>Notes / Special Requirements</label>
         <textarea
+          id="notes"
           className={`${inputClass} min-h-24 resize-y`}
           placeholder="Anything else we should know?"
           value={form.notes}
@@ -388,7 +423,7 @@ function Step4({
         />
       </div>
       {error && (
-        <p className="text-accent-orange text-xs">{error}</p>
+        <p className="text-accent-orange text-xs" role="alert">{error}</p>
       )}
     </div>
   );

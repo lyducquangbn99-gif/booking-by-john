@@ -24,13 +24,13 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4">
           <a
             href="#request"
-            className="font-display font-bold text-sm text-bg-primary bg-accent-green px-8 py-4 rounded-md hover:-translate-y-px hover:shadow-[0_0_24px_rgba(0,232,123,0.35)] transition-all duration-200"
+            className="font-display font-bold text-sm text-bg-primary bg-accent-green px-8 py-4 rounded-md hover:-translate-y-px hover:shadow-[0_0_24px_rgba(0,232,123,0.35)] transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green min-h-11 inline-flex items-center"
           >
             Let&apos;s move your freight →
           </a>
           <a
             href="#trust"
-            className="font-display text-sm text-text-secondary border border-border-subtle px-8 py-4 rounded-md hover:text-text-primary hover:border-white/20 transition-all duration-200"
+            className="font-display text-sm text-text-secondary border border-border-subtle px-8 py-4 rounded-md hover:text-text-primary hover:border-white/20 transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-green min-h-11 inline-flex items-center"
           >
             See the numbers
           </a>
