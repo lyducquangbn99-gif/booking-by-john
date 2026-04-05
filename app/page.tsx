@@ -4,6 +4,7 @@ import StatsBar from "@/components/StatsBar";
 import Services from "@/components/Services";
 import Trust from "@/components/Trust";
 import OceanRoutes from "@/components/OceanRoutes";
+import RequestStepper from "@/components/RequestStepper";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Trust />
       <OceanRoutes />
+      <RequestStepper />
     </main>
   );
 }
