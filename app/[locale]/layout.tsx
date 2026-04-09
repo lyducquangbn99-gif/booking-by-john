@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Mono, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
 import "../globals.css";
 
 const spaceMono = Space_Mono({
@@ -20,6 +21,10 @@ type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
