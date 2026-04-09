@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Booking by John — Môi Giới Vận Tải & Vận Chuyển Biển từ Việt Nam",
+    "description": "Môi giới vận tải Việt Nam. Vận chuyển biển VNSGN đến châu Âu & Nam Mỹ. Courier Việt Nam đi toàn thế giới. Đơn vị vận tải uy tín, theo dõi thời gian thực, báo giá trong 2 giờ.",
+    "ogTitle": "Booking by John — Môi Giới Vận Tải & Vận Chuyển Biển từ Việt Nam",
+    "ogDescription": "Không vòng vo, không báo giá chung chung. Đơn vị vận tải được kiểm chứng, theo dõi thời gian thực và một môi giới luôn bắt máy."
+  },
+  "nav": {
+    "logo": "Booking by John",
+    "services": "Dịch vụ",
+    "whyUs": "Tại sao chọn chúng tôi",
+    "routes": "Tuyến đường",
+    "cta": "Bắt đầu ngay"
+  },
+  "hero": {
+    "tagline": "Môi giới vận tải — uy tín và chuyên nghiệp",
+    "heading": "Hàng hóa của bạn là doanh thu.",
+    "headingAccent": "Chúng tôi coi trọng điều đó.",
+    "subheading": "Không vòng vo, không báo giá chung chung. Đơn vị vận tải được kiểm chứng, theo dõi thời gian thực và một môi giới luôn bắt máy.",
+    "ctaPrimary": "Vận chuyển hàng của bạn →",
+    "ctaSecondary": "Xem số liệu"
+  },
+  "stats": {
+    "shipmentsHandled": "Lô Hàng Đã Xử Lý",
+    "onTimeRate": "Tỉ Lệ Đúng Hạn",
+    "avgQuoteTime": "Thời Gian Báo Giá TB",
+    "claimRate": "Tỉ Lệ Khiếu Nại"
+  },
+  "services": {
+    "tagline": "Chúng tôi vận chuyển gì",
+    "heading": "Bảy phương thức vận chuyển",
+    "ftl": {
+      "title": "Nguyên Xe (FTL)",
+      "description": "Tải trọng dành riêng cho hàng từ 10.000 lbs trở lên. Giao thẳng, không dừng, vận chuyển nhanh."
+    },
+    "ltl": {
+      "title": "Ghép Hàng (LTL)",
+      "description": "Tiết kiệm chi phí cho hàng pallet dưới 10.000 lbs với lịch lấy hàng linh hoạt."
+    },
+    "drayage": {
+      "title": "Vận Chuyển Nội Địa Cảng",
+      "description": "Vận chuyển container từ cảng đến kho. Bao gồm quản lý chassis."
+    },
+    "intermodal": {
+      "title": "Đa Phương Thức",
+      "description": "Kết hợp tàu hỏa + xe tải để tiết kiệm chi phí đường dài mà không giảm độ tin cậy."
+    },
+    "expedited": {
+      "title": "Hàng Khẩn",
+      "description": "Giao hàng hỏa tốc, lái xe theo ca, vận tải hàng không. Khi hàng không thể chờ đợi."
+    },
+    "courier": {
+      "title": "Courier — VN đi Thế Giới",
+      "description": "Đại lý ủy quyền của UPS, DHL và FedEx tại Việt Nam. Giao hàng nhanh, tận nơi trên toàn thế giới."
+    },
+    "ocean": {
+      "title": "Vận Tải Biển",
+      "description": "Từ/đến Việt Nam đi toàn thế giới. Cước cạnh tranh với lịch trình phù hợp cho lô hàng của bạn."
+    }
+  },
+  "trust": {
+    "tagline": "Tại sao chọn chúng tôi",
+    "heading": "Xây dựng trên bằng chứng, không phải lời hứa",
+    "carrierVetting": {
+      "title": "Kiểm Duyệt Đơn Vị Vận Tải",
+      "detail": "Chứng nhận FMCSA, bảo hiểm hàng hóa $1M+, giám sát điểm an toàn, không môi giới chuỗi."
+    },
+    "liveTracking": {
+      "title": "Theo Dõi Trực Tiếp",
+      "detail": "Tín hiệu GPS mỗi 15 phút, cập nhật chủ động qua điện thoại."
+    },
+    "quoteSla": {
+      "title": "Báo Giá Trong 2 Giờ",
+      "detail": "Tuyến thông thường trong 2 giờ; tuyến phức tạp trong ngày."
+    },
+    "claims": {
+      "title": "Tỉ Lệ Khiếu Nại Dưới 0.5%",
+      "detail": "Hỗ trợ khiếu nại đầy đủ, thường giải quyết trong vòng 30 ngày."
+    },
+    "oneContact": {
+      "title": "Một Đầu Mối Liên Hệ",
+      "detail": "Đại diện chuyên trách với đường dây trực tiếp, nắm rõ tuyến và yêu cầu của bạn."
+    },
+    "specialized": {
+      "title": "Hàng Hóa Đặc Biệt",
+      "detail": "Kinh nghiệm xử lý hàng quá khổ, kiểm soát nhiệt độ, hàng nguy hiểm và hàng giá trị cao."
+    }
+  },
+  "routes": {
+    "tagline": "Vận tải biển",
+    "heading": "Việt Nam đến châu Âu & Nam Mỹ",
+    "originLabel": "Cảng xuất phát"
+  },
+  "stepper": {
+    "tagline": "Yêu cầu báo giá",
+    "heading": "Gửi thông tin cho tôi — tôi sẽ lo phần còn lại.",
+    "progressLabel": "Bước {step} / 4",
+    "backButton": "← Quay lại",
+    "nextButton": "Tiếp theo →",
+    "submitButton": "Vận chuyển hàng của bạn →",
+    "submitting": "Đang gửi...",
+    "step1": {
+      "heading": "Loại hình vận chuyển?",
+      "subheading": "Chọn phương thức phù hợp nhất. Chưa chắc? Chọn \"Khác\" và chúng tôi sẽ tư vấn thêm.",
+      "ariaGroupLabel": "Phương thức vận chuyển",
+      "modes": {
+        "ftl": "FTL",
+        "ltl": "LTL",
+        "drayage": "Nội địa cảng",
+        "intermodal": "Đa phương thức",
+        "expedited": "Hàng khẩn",
+        "courier": "Courier",
+        "ocean": "Vận tải biển",
+        "other": "Khác"
+      }
+    },
+    "step2": {
+      "heading": "Hàng đi đâu?",
+      "subheading": "Tên thành phố hoặc mã bưu chính là đủ — chúng tôi sẽ xác nhận chi tiết qua điện thoại.",
+      "originLabel": "Điểm xuất phát",
+      "originPlaceholder": "Vd. Thành phố Hồ Chí Minh",
+      "destinationLabel": "Điểm đến",
+      "destinationPlaceholder": "Vd. Rotterdam",
+      "weightLabel": "Khoảng Trọng Lượng",
+      "weightPlaceholder": "Chọn khoảng trọng lượng",
+      "cargoLabel": "Loại Hàng Hóa (không bắt buộc)",
+      "cargoPlaceholder": "Chọn loại hàng hóa",
+      "weightOptions": {
+        "under5k": "Dưới 5.000 lbs",
+        "from5kTo20k": "5.000–20.000 lbs",
+        "from20kTo40k": "20.000–40.000 lbs",
+        "over40k": "40.000+ lbs",
+        "notSure": "Chưa biết"
+      },
+      "cargoOptions": {
+        "dryGoods": "Hàng Khô",
+        "refrigerated": "Hàng Lạnh/Kiểm Soát Nhiệt Độ",
+        "oversized": "Hàng Quá Khổ/Siêu Nặng",
+        "hazmat": "Hàng Nguy Hiểm",
+        "highValue": "Hàng Giá Trị Cao",
+        "other": "Khác"
+      },
+      "errorOriginDestination": "Vui lòng nhập ít nhất điểm xuất phát hoặc điểm đến."
+    },
+    "step3": {
+      "heading": "Hàng cần vận chuyển sớm như thế nào?",
+      "subheading": "Điều này giúp tôi ưu tiên và tìm mức giá tốt nhất.",
+      "ariaGroupLabel": "Mức độ khẩn cấp",
+      "urgencyOptions": {
+        "flexible": { "label": "Linh hoạt", "sub": "Từ 5 ngày trở lên" },
+        "standard": { "label": "Tiêu chuẩn", "sub": "2–4 ngày" },
+        "hot": { "label": "Khẩn cấp", "sub": "Cần ngay lập tức" }
+      }
+    },
+    "step4": {
+      "heading": "Tôi liên hệ bạn như thế nào?",
+      "subheading": "Mr. John sẽ liên hệ trực tiếp — không bot, không email tự động.",
+      "nameLabel": "Họ tên",
+      "companyLabel": "Công ty",
+      "companyPlaceholder": "Công ty (không bắt buộc)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "ban@congty.com",
+      "phoneLabel": "Điện thoại",
+      "phonePlaceholder": "+84 (0) 000-000-000",
+      "notesLabel": "Ghi Chú / Yêu Cầu Đặc Biệt",
+      "notesPlaceholder": "Còn điều gì khác chúng tôi cần biết?",
+      "errorContactRequired": "Vui lòng nhập tên và ít nhất một phương thức liên hệ."
+    },
+    "success": {
+      "title": "Yêu cầu đã nhận — John đang xử lý.",
+      "body": "Hãy chờ phản hồi cá nhân trong vòng 2 giờ trong giờ làm việc. Với các yêu cầu khẩn cấp, gọi trực tiếp: {phone}",
+      "dismiss": "Đã hiểu"
+    },
+    "error": {
+      "generic": "Đã xảy ra lỗi. Vui lòng gọi trực tiếp cho Mr. John tại {phone}"
+    }
+  },
+  "trickyShipment": {
+    "heading": "Có lô hàng khó xử?",
+    "body": "Quá khổ, hàng nguy hiểm, nhiều điểm dừng, hàng xuyên biên giới — càng khó, bạn càng cần người đã từng làm được. Hãy cùng nhau giải quyết.",
+    "cta": "Kể cho tôi nghe →"
+  },
+  "footer": {
+    "logo": "Booking by John",
+    "tagline": "Môi giới vận tải & vận tải biển từ Việt Nam.",
+    "registrationNote": "MC# TBD · USDOT# TBD",
+    "contactLabel": "Liên hệ",
+    "copyright": "© {year} Booking by John. Bảo lưu mọi quyền."
+  },
+  "langSwitcher": {
+    "ariaLabel": "Chuyển sang {locale}"
+  }
+}

@@ -1,22 +1,26 @@
 // components/Footer.tsx
-export default function Footer() {
+import { getTranslations } from 'next-intl/server';
+
+export default async function Footer() {
+  const t = await getTranslations('footer');
+
   return (
     <footer className="bg-bg-secondary border-t border-border-subtle px-6 py-12">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-8">
         <div>
           <div className="font-display text-base font-bold text-text-primary mb-3">
-            Booking by John
+            {t('logo')}
           </div>
           <p className="text-xs text-text-muted leading-relaxed">
-            Freight brokerage &amp; ocean freight from Vietnam.
+            {t('tagline')}
             <br />
-            MC# TBD · USDOT# TBD
+            {t('registrationNote')}
           </p>
         </div>
 
         <div className="flex flex-col gap-2">
           <p className="font-display text-xs text-text-muted tracking-widest uppercase mb-1">
-            Contact
+            {t('contactLabel')}
           </p>
           <a
             href="mailto:BookingbyJohnly@gmail.com"
@@ -34,7 +38,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto mt-8 pt-6 border-t border-border-subtle text-center text-xs text-text-muted">
-        © {new Date().getFullYear()} Booking by John. All rights reserved.
+        {t('copyright', { year: new Date().getFullYear() })}
       </div>
     </footer>
   );

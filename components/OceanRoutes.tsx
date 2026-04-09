@@ -1,4 +1,6 @@
 // components/OceanRoutes.tsx
+import { getTranslations } from 'next-intl/server';
+
 const routes = [
   { port: "Antwerp, Belgium",        code: "BEANR", hot: true },
   { port: "Rotterdam, Netherlands",  code: "NLRTM", hot: true },
@@ -15,22 +17,24 @@ const origins = [
   "Hai Phong (VNHPH)",
 ];
 
-export default function OceanRoutes() {
+export default async function OceanRoutes() {
+  const t = await getTranslations('routes');
+
   return (
     <section id="routes" className="bg-bg-primary py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <p className="font-display text-xs text-accent-green tracking-widest uppercase mb-4">
-          Ocean coverage
+          {t('tagline')}
         </p>
         <h2 className="font-display text-3xl md:text-4xl font-bold text-text-primary mb-14">
-          Vietnam to Europe &amp; South America
+          {t('heading')}
         </h2>
 
         <div className="flex flex-col gap-12">
           {origins.map((origin) => (
             <div key={origin}>
               <p className="font-display text-xs text-text-muted tracking-widest uppercase mb-5">
-                Origin: {origin}
+                {t('originLabel')}: {origin}
               </p>
               <div className="flex flex-wrap gap-3">
                 {routes.map((route) => (

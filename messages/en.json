@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Booking by John — Freight Brokerage & Ocean Freight from Vietnam",
+    "description": "Freight broker Vietnam. Ocean freight VNSGN to Europe & South America. Courier Vietnam worldwide. Vetted carriers, real-time visibility, 2-hour quote SLA.",
+    "ogTitle": "Booking by John — Freight Brokerage & Ocean Freight from Vietnam",
+    "ogDescription": "No runaround, no generic quotes. Vetted carriers, real-time visibility, and a broker who picks up the phone."
+  },
+  "nav": {
+    "logo": "Booking by John",
+    "services": "Services",
+    "whyUs": "Why Us",
+    "routes": "Routes",
+    "cta": "Get Moving"
+  },
+  "hero": {
+    "tagline": "Freight brokerage — done right",
+    "heading": "Your cargo is revenue.",
+    "headingAccent": "We treat it that way.",
+    "subheading": "No runaround, no generic quotes. Vetted carriers, real-time visibility, and a broker who picks up the phone.",
+    "ctaPrimary": "Let's move your freight →",
+    "ctaSecondary": "See the numbers"
+  },
+  "stats": {
+    "shipmentsHandled": "Shipments Handled",
+    "onTimeRate": "On-Time Rate",
+    "avgQuoteTime": "Avg. Quote Time",
+    "claimRate": "Claim Rate"
+  },
+  "services": {
+    "tagline": "What we move",
+    "heading": "Seven ways to ship",
+    "ftl": {
+      "title": "Full Truckload (FTL)",
+      "description": "Dedicated capacity for loads 10K+ lbs. Direct, no stops, fast transit."
+    },
+    "ltl": {
+      "title": "LTL",
+      "description": "Cost-efficient for palletized freight under 10K lbs with flexible pickup."
+    },
+    "drayage": {
+      "title": "Drayage",
+      "description": "Port-to-warehouse container moves. Chassis management included."
+    },
+    "intermodal": {
+      "title": "Intermodal",
+      "description": "Rail + truck combo for long-haul savings without sacrificing reliability."
+    },
+    "expedited": {
+      "title": "Expedited",
+      "description": "Hot shots, team drivers, air freight. When it absolutely can't wait."
+    },
+    "courier": {
+      "title": "Courier — VN to World",
+      "description": "Authorized agent for UPS, DHL, and FedEx in Vietnam. Fast, door-to-door delivery worldwide."
+    },
+    "ocean": {
+      "title": "Ocean Freight",
+      "description": "From/to Vietnam to the world. Competitive rates with suitable schedules for your shipment."
+    }
+  },
+  "trust": {
+    "tagline": "Why us",
+    "heading": "Built on proof, not promises",
+    "carrierVetting": {
+      "title": "Carrier Vetting",
+      "detail": "FMCSA clearance, $1M+ cargo insurance, safety score monitoring, no double-brokering."
+    },
+    "liveTracking": {
+      "title": "Live Tracking",
+      "detail": "GPS pings every 15 min, proactive check-call updates."
+    },
+    "quoteSla": {
+      "title": "2-Hour Quote SLA",
+      "detail": "Standard lanes within 2 hours; complex lanes same-day."
+    },
+    "claims": {
+      "title": "Claims Under 0.5%",
+      "detail": "Full claims support, resolution typically under 30 days."
+    },
+    "oneContact": {
+      "title": "One Point of Contact",
+      "detail": "Named rep with direct line, knows your lanes and preferences."
+    },
+    "specialized": {
+      "title": "Specialized Freight",
+      "detail": "Oversized, temp-controlled, hazmat, high-value experience."
+    }
+  },
+  "routes": {
+    "tagline": "Ocean coverage",
+    "heading": "Vietnam to Europe & South America",
+    "originLabel": "Origin"
+  },
+  "stepper": {
+    "tagline": "Get a quote",
+    "heading": "Send me the details — I'll handle the rest.",
+    "progressLabel": "Step {step} of 4",
+    "backButton": "← Back",
+    "nextButton": "Next →",
+    "submitButton": "Let's move your freight →",
+    "submitting": "Sending...",
+    "step1": {
+      "heading": "What type of move?",
+      "subheading": "Select the mode that best fits. Not sure? Pick \"Other\" and we'll sort it out.",
+      "ariaGroupLabel": "Shipping mode",
+      "modes": {
+        "ftl": "FTL",
+        "ltl": "LTL",
+        "drayage": "Drayage",
+        "intermodal": "Intermodal",
+        "expedited": "Expedited",
+        "courier": "Courier",
+        "ocean": "Ocean Freight",
+        "other": "Other"
+      }
+    },
+    "step2": {
+      "heading": "Where's it going?",
+      "subheading": "City or ZIP is fine — we'll confirm the details on our call.",
+      "originLabel": "Origin",
+      "originPlaceholder": "e.g. Ho Chi Minh City",
+      "destinationLabel": "Destination",
+      "destinationPlaceholder": "e.g. Rotterdam",
+      "weightLabel": "Weight Range",
+      "weightPlaceholder": "Select weight range",
+      "cargoLabel": "Cargo Type (optional)",
+      "cargoPlaceholder": "Select cargo type",
+      "weightOptions": {
+        "under5k": "Under 5,000 lbs",
+        "from5kTo20k": "5,000–20,000 lbs",
+        "from20kTo40k": "20,000–40,000 lbs",
+        "over40k": "40,000+ lbs",
+        "notSure": "Not sure yet"
+      },
+      "cargoOptions": {
+        "dryGoods": "Dry Goods",
+        "refrigerated": "Refrigerated/Temp-Controlled",
+        "oversized": "Oversized/Heavy Haul",
+        "hazmat": "Hazmat",
+        "highValue": "High Value",
+        "other": "Other"
+      },
+      "errorOriginDestination": "Please enter at least an origin or destination."
+    },
+    "step3": {
+      "heading": "How soon does it need to move?",
+      "subheading": "This helps me prioritize and find the best rate match.",
+      "ariaGroupLabel": "Urgency",
+      "urgencyOptions": {
+        "flexible": { "label": "Flexible", "sub": "5+ days" },
+        "standard": { "label": "Standard", "sub": "2–4 days" },
+        "hot": { "label": "Hot", "sub": "Need it yesterday" }
+      }
+    },
+    "step4": {
+      "heading": "How do I reach you?",
+      "subheading": "Mr. John will follow up personally — no bots, no auto-emails.",
+      "nameLabel": "Name",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Company (optional)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "notesLabel": "Notes / Special Requirements",
+      "notesPlaceholder": "Anything else we should know?",
+      "errorContactRequired": "Please enter your name and at least one way to reach you."
+    },
+    "success": {
+      "title": "Request received — John's on it.",
+      "body": "Expect a personal follow-up within 2 hours during business hours. For urgent requests, call directly: {phone}",
+      "dismiss": "Got it"
+    },
+    "error": {
+      "generic": "Something went wrong. Please call Mr. John directly at {phone}"
+    }
+  },
+  "trickyShipment": {
+    "heading": "Got a tricky shipment?",
+    "body": "Oversized, hazmat, multi-stop, cross-border — the harder it is, the more you need someone who's done it before. Let's figure it out together.",
+    "cta": "Tell me about it →"
+  },
+  "footer": {
+    "logo": "Booking by John",
+    "tagline": "Freight brokerage & ocean freight from Vietnam.",
+    "registrationNote": "MC# TBD · USDOT# TBD",
+    "contactLabel": "Contact",
+    "copyright": "© {year} Booking by John. All rights reserved."
+  },
+  "langSwitcher": {
+    "ariaLabel": "Switch to {locale}"
+  }
+}

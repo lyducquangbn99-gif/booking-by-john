@@ -1,12 +1,16 @@
 // components/StatsBar.tsx
-const stats = [
-  { value: "500+",   label: "Shipments Handled" },
-  { value: "97.2%",  label: "On-Time Rate" },
-  { value: "<2hr",   label: "Avg. Quote Time" },
-  { value: "0.3%",   label: "Claim Rate" },
-];
+import { getTranslations } from 'next-intl/server';
 
-export default function StatsBar() {
+export default async function StatsBar() {
+  const t = await getTranslations('stats');
+
+  const stats = [
+    { value: "500+",  label: t('shipmentsHandled') },
+    { value: "97.2%", label: t('onTimeRate') },
+    { value: "<2hr",  label: t('avgQuoteTime') },
+    { value: "0.3%",  label: t('claimRate') },
+  ];
+
   return (
     <section className="bg-bg-secondary border-y border-border-subtle">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4">

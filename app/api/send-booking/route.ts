@@ -9,15 +9,42 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Customer confirmation strings per locale.
+// Admin email is always in English for operational clarity.
+const customerStrings: Record<string, { subject: string; greeting: string; body: string; urgentLabel: string }> = {
+  en: {
+    subject: "Request received — John's on it.",
+    greeting: "Hi",
+    body: "Your freight inquiry has been received. Expect a personal follow-up from Mr. John within <strong>2 hours</strong> during business hours.",
+    urgentLabel: "For urgent requests, call directly:",
+  },
+  es: {
+    subject: "Solicitud recibida — John está en ello.",
+    greeting: "Hola",
+    body: "Su consulta de carga ha sido recibida. Espere una respuesta personal de Mr. John dentro de <strong>2 horas</strong> durante el horario laboral.",
+    urgentLabel: "Para solicitudes urgentes, llame directamente:",
+  },
+  vi: {
+    subject: "Yêu cầu đã nhận — John đang xử lý.",
+    greeting: "Xin chào",
+    body: "Yêu cầu vận chuyển của bạn đã được nhận. Mr. John sẽ liên hệ cá nhân với bạn trong vòng <strong>2 giờ</strong> trong giờ làm việc.",
+    urgentLabel: "Đối với các yêu cầu khẩn cấp, gọi trực tiếp:",
+  },
+};
+
+const PHONE = "+84 352 193 969";
+
 export async function POST(req: Request) {
   try {
     const data = await req.json();
     const {
       mode, origin, destination, weightRange, cargoType,
-      urgency, name, email, phone, company, notes,
+      urgency, name, email, phone, company, notes, locale,
     } = data;
 
-    // Admin notification
+    const strings = customerStrings[locale as string] ?? customerStrings.en;
+
+    // Admin notification (always in English)
     await transporter.sendMail({
       from: '"Booking by John" <bookingbyjohnly@gmail.com>',
       to: "bookingbyjohnly@gmail.com",
@@ -38,6 +65,7 @@ export async function POST(req: Request) {
             <tr><td style="padding:8px 0;color:#8A93A6;">Phone</td><td>${phone || "—"}</td></tr>
             <tr><td style="padding:8px 0;color:#8A93A6;">Company</td><td>${company || "—"}</td></tr>
             <tr><td style="padding:8px 0;color:#8A93A6;">Notes</td><td>${notes || "—"}</td></tr>
+            <tr><td style="padding:8px 0;color:#8A93A6;">Locale</td><td>${locale || "en"}</td></tr>
           </table>
         </div>
       `,
@@ -48,13 +76,13 @@ export async function POST(req: Request) {
       await transporter.sendMail({
         from: '"Booking by John" <bookingbyjohnly@gmail.com>',
         to: email,
-        subject: "Request received — John's on it.",
+        subject: strings.subject,
         html: `
           <div style="font-family:Arial,sans-serif;line-height:1.6;color:#333;max-width:560px;margin:0 auto;">
             <h2 style="color:#00E87B;">Request received ✅</h2>
-            <p>Hi <strong>${name}</strong>,</p>
-            <p>Your freight inquiry has been received. Expect a personal follow-up from Mr. John within <strong>2 hours</strong> during business hours.</p>
-            <p>For urgent requests, call directly: <strong>+84 352 193 969</strong></p>
+            <p>${strings.greeting} <strong>${name}</strong>,</p>
+            <p>${strings.body}</p>
+            <p>${strings.urgentLabel} <strong>${PHONE}</strong></p>
             <hr style="border:none;border-top:1px solid #eee;margin:24px 0;" />
             <p style="color:#666;font-size:13px;">Booking by John · BookingbyJohnly@gmail.com</p>
           </div>
