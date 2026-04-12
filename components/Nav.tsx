@@ -11,6 +11,8 @@ const LOCALE_META: Record<string, { flag: string; label: string }> = {
   en: { flag: '🇺🇸', label: 'English' },
   es: { flag: '🇪🇸', label: 'Español' },
   vi: { flag: '🇻🇳', label: 'Tiếng Việt' },
+  it: { flag: '🇮🇹', label: 'Italiano' },
+  id: { flag: '🇮🇩', label: 'Indonesia' },
 };
 
 function LanguageSwitcher() {

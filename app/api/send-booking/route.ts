@@ -30,6 +30,18 @@ const customerStrings: Record<string, { subject: string; greeting: string; body:
     body: "Yêu cầu vận chuyển của bạn đã được nhận. Mr. John sẽ liên hệ cá nhân với bạn trong vòng <strong>2 giờ</strong> trong giờ làm việc.",
     urgentLabel: "Đối với các yêu cầu khẩn cấp, gọi trực tiếp:",
   },
+  it: {
+    subject: "Richiesta ricevuta — John ci pensa.",
+    greeting: "Salve",
+    body: "La tua richiesta di spedizione è stata ricevuta. Aspetta una risposta personale da Mr. John entro <strong>2 ore</strong> durante l'orario lavorativo.",
+    urgentLabel: "Per richieste urgenti, chiama direttamente:",
+  },
+  id: {
+    subject: "Permintaan diterima — John sedang menanganinya.",
+    greeting: "Halo",
+    body: "Permintaan pengiriman Anda telah diterima. Tunggu tindak lanjut pribadi dari Mr. John dalam <strong>2 jam</strong> selama jam kerja.",
+    urgentLabel: "Untuk permintaan mendesak, hubungi langsung:",
+  },
 };
 
 const PHONE = "+84 352 193 969";

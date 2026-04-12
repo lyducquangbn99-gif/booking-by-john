@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Booking by John — Spedizioni & Trasporto Marittimo dal Vietnam",
+    "description": "Broker di spedizioni Vietnam. Trasporto marittimo VNSGN verso Europa e Sud America. Corriere dal Vietnam in tutto il mondo. Vettori verificati, visibilità in tempo reale, preventivo in 2 ore.",
+    "ogTitle": "Booking by John — Spedizioni & Trasporto Marittimo dal Vietnam",
+    "ogDescription": "Niente giri di parole, nessun preventivo generico. Vettori verificati, visibilità in tempo reale e un broker che risponde al telefono."
+  },
+  "nav": {
+    "logo": "Booking by John",
+    "services": "Servizi",
+    "whyUs": "Perché noi",
+    "routes": "Rotte",
+    "cta": "Inizia ora"
+  },
+  "hero": {
+    "tagline": "Spedizioni professionali — fatte bene",
+    "heading": "Il tuo carico è fatturato.",
+    "headingAccent": "Lo trattiamo così.",
+    "subheading": "Niente giri di parole, nessun preventivo generico. Vettori verificati, visibilità in tempo reale e un broker che risponde al telefono.",
+    "ctaPrimary": "Spedisci il tuo carico →",
+    "ctaSecondary": "Vedi i numeri"
+  },
+  "stats": {
+    "shipmentsHandled": "Spedizioni Gestite",
+    "onTimeRate": "Tasso di Puntualità",
+    "avgQuoteTime": "Tempo Medio Preventivo",
+    "claimRate": "Tasso di Reclami"
+  },
+  "services": {
+    "tagline": "Cosa spediamo",
+    "heading": "Sette modi per spedire",
+    "ftl": {
+      "title": "Carico Completo (FTL)",
+      "description": "Capacità dedicata per carichi oltre 10.000 lbs. Diretto, senza soste, transito rapido."
+    },
+    "ltl": {
+      "title": "Carico Parziale (LTL)",
+      "description": "Economico per merci palettizzate sotto 10.000 lbs con ritiro flessibile."
+    },
+    "drayage": {
+      "title": "Trasporto Portuale",
+      "description": "Movimentazione container dal porto al magazzino. Gestione chassis inclusa."
+    },
+    "intermodal": {
+      "title": "Intermodale",
+      "description": "Combinazione treno + camion per risparmiare sulle lunghe distanze senza sacrificare l'affidabilità."
+    },
+    "expedited": {
+      "title": "Urgente",
+      "description": "Consegne express, autisti a turni, trasporto aereo. Quando non si può aspettare."
+    },
+    "courier": {
+      "title": "Corriere — VN nel Mondo",
+      "description": "Agente autorizzato UPS, DHL e FedEx in Vietnam. Consegna rapida porta a porta in tutto il mondo."
+    },
+    "ocean": {
+      "title": "Trasporto Marittimo",
+      "description": "Da/verso il Vietnam in tutto il mondo. Tariffe competitive con partenze adatte alla tua spedizione."
+    }
+  },
+  "trust": {
+    "tagline": "Perché noi",
+    "heading": "Costruito su prove, non su promesse",
+    "carrierVetting": {
+      "title": "Selezione Vettori",
+      "detail": "Certificazione FMCSA, assicurazione cargo $1M+, monitoraggio punteggio sicurezza, nessuna sub-intermediazione."
+    },
+    "liveTracking": {
+      "title": "Tracciamento in Tempo Reale",
+      "detail": "Segnali GPS ogni 15 min, aggiornamenti proattivi via chiamata."
+    },
+    "quoteSla": {
+      "title": "Preventivo in 2 Ore",
+      "detail": "Rotte standard entro 2 ore; rotte complesse in giornata."
+    },
+    "claims": {
+      "title": "Reclami Sotto lo 0,5%",
+      "detail": "Supporto completo per reclami, risoluzione tipicamente entro 30 giorni."
+    },
+    "oneContact": {
+      "title": "Un Solo Referente",
+      "detail": "Rappresentante dedicato con linea diretta, conosce le tue rotte e preferenze."
+    },
+    "specialized": {
+      "title": "Merci Speciali",
+      "detail": "Esperienza con carichi eccezionali, merci a temperatura controllata, materiali pericolosi e alto valore."
+    }
+  },
+  "routes": {
+    "tagline": "Copertura marittima",
+    "heading": "Vietnam verso Europa e Sud America",
+    "originLabel": "Origine"
+  },
+  "stepper": {
+    "tagline": "Richiedi un preventivo",
+    "heading": "Mandami i dettagli — al resto penso io.",
+    "progressLabel": "Passo {step} di 4",
+    "backButton": "← Indietro",
+    "nextButton": "Avanti →",
+    "submitButton": "Spedisci il tuo carico →",
+    "submitting": "Invio in corso...",
+    "step1": {
+      "heading": "Che tipo di spedizione?",
+      "subheading": "Seleziona la modalità più adatta. Non sei sicuro? Scegli \"Altro\" e lo risolviamo insieme.",
+      "ariaGroupLabel": "Modalità di spedizione",
+      "modes": {
+        "ftl": "FTL",
+        "ltl": "LTL",
+        "drayage": "Portuale",
+        "intermodal": "Intermodale",
+        "expedited": "Urgente",
+        "courier": "Corriere",
+        "ocean": "Marittimo",
+        "other": "Altro"
+      }
+    },
+    "step2": {
+      "heading": "Dove va?",
+      "subheading": "Città o CAP vanno bene — confermeremo i dettagli nella nostra chiamata.",
+      "originLabel": "Origine",
+      "originPlaceholder": "Es. Ho Chi Minh City",
+      "destinationLabel": "Destinazione",
+      "destinationPlaceholder": "Es. Rotterdam",
+      "weightLabel": "Fascia di Peso",
+      "weightPlaceholder": "Seleziona fascia di peso",
+      "cargoLabel": "Tipo di Merce (opzionale)",
+      "cargoPlaceholder": "Seleziona tipo di merce",
+      "weightOptions": {
+        "under5k": "Meno di 5.000 lbs",
+        "from5kTo20k": "5.000–20.000 lbs",
+        "from20kTo40k": "20.000–40.000 lbs",
+        "over40k": "40.000+ lbs",
+        "notSure": "Non ancora sicuro"
+      },
+      "cargoOptions": {
+        "dryGoods": "Merce Secca",
+        "refrigerated": "Refrigerato/Temperatura Controllata",
+        "oversized": "Eccezionale/Pesante",
+        "hazmat": "Merci Pericolose",
+        "highValue": "Alto Valore",
+        "other": "Altro"
+      },
+      "errorOriginDestination": "Inserisci almeno un'origine o una destinazione."
+    },
+    "step3": {
+      "heading": "Con quale urgenza deve partire?",
+      "subheading": "Questo mi aiuta a stabilire le priorità e trovare la tariffa migliore.",
+      "ariaGroupLabel": "Urgenza",
+      "urgencyOptions": {
+        "flexible": { "label": "Flessibile", "sub": "5+ giorni" },
+        "standard": { "label": "Standard", "sub": "2–4 giorni" },
+        "hot": { "label": "Urgente", "sub": "Per ieri" }
+      }
+    },
+    "step4": {
+      "heading": "Come posso contattarti?",
+      "subheading": "Mr. John ti risponderà personalmente — niente bot, niente email automatiche.",
+      "nameLabel": "Nome",
+      "companyLabel": "Azienda",
+      "companyPlaceholder": "Azienda (opzionale)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@azienda.com",
+      "phoneLabel": "Telefono",
+      "phonePlaceholder": "+39 000 000 0000",
+      "notesLabel": "Note / Requisiti Speciali",
+      "notesPlaceholder": "Altro che dovremmo sapere?",
+      "errorContactRequired": "Inserisci il tuo nome e almeno un modo per contattarti."
+    },
+    "success": {
+      "title": "Richiesta ricevuta — John ci pensa.",
+      "body": "Aspetta una risposta personale entro 2 ore durante l'orario lavorativo. Per richieste urgenti, chiama direttamente: {phone}",
+      "dismiss": "Capito"
+    },
+    "error": {
+      "generic": "Qualcosa è andato storto. Chiama Mr. John direttamente al {phone}"
+    }
+  },
+  "trickyShipment": {
+    "heading": "Hai una spedizione complicata?",
+    "body": "Eccezionale, merci pericolose, multi-tappa, transfrontaliera — più è difficile, più hai bisogno di chi l'ha già fatto. Risolviamola insieme.",
+    "cta": "Raccontami →"
+  },
+  "footer": {
+    "logo": "Booking by John",
+    "tagline": "Spedizioni e trasporto marittimo dal Vietnam.",
+    "registrationNote": "MC# TBD · USDOT# TBD",
+    "contactLabel": "Contatti",
+    "copyright": "© {year} Booking by John. Tutti i diritti riservati."
+  },
+  "langSwitcher": {
+    "ariaLabel": "Passa a {locale}"
+  }
+}

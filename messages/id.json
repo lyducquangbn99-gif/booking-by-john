@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Booking by John — Broker Kargo & Pengiriman Laut dari Vietnam",
+    "description": "Broker kargo Vietnam. Pengiriman laut VNSGN ke Eropa & Amerika Selatan. Kurir Vietnam ke seluruh dunia. Mitra terpercaya, visibilitas real-time, penawaran harga dalam 2 jam.",
+    "ogTitle": "Booking by John — Broker Kargo & Pengiriman Laut dari Vietnam",
+    "ogDescription": "Tanpa basa-basi, tanpa penawaran generik. Mitra terpercaya, visibilitas real-time, dan broker yang selalu mengangkat telepon."
+  },
+  "nav": {
+    "logo": "Booking by John",
+    "services": "Layanan",
+    "whyUs": "Mengapa Kami",
+    "routes": "Rute",
+    "cta": "Mulai Sekarang"
+  },
+  "hero": {
+    "tagline": "Broker kargo — dilakukan dengan benar",
+    "heading": "Kargo Anda adalah pendapatan.",
+    "headingAccent": "Kami memperlakukannya demikian.",
+    "subheading": "Tanpa basa-basi, tanpa penawaran generik. Mitra terpercaya, visibilitas real-time, dan broker yang selalu mengangkat telepon.",
+    "ctaPrimary": "Kirim kargo Anda →",
+    "ctaSecondary": "Lihat angkanya"
+  },
+  "stats": {
+    "shipmentsHandled": "Pengiriman Ditangani",
+    "onTimeRate": "Tingkat Ketepatan Waktu",
+    "avgQuoteTime": "Rata-rata Waktu Penawaran",
+    "claimRate": "Tingkat Klaim"
+  },
+  "services": {
+    "tagline": "Apa yang kami kirimkan",
+    "heading": "Tujuh cara pengiriman",
+    "ftl": {
+      "title": "Truk Penuh (FTL)",
+      "description": "Kapasitas khusus untuk muatan 10K+ lbs. Langsung, tanpa berhenti, transit cepat."
+    },
+    "ltl": {
+      "title": "Muatan Sebagian (LTL)",
+      "description": "Hemat biaya untuk kargo palet di bawah 10K lbs dengan penjemputan fleksibel."
+    },
+    "drayage": {
+      "title": "Angkutan Pelabuhan",
+      "description": "Pemindahan kontainer dari pelabuhan ke gudang. Manajemen chassis termasuk."
+    },
+    "intermodal": {
+      "title": "Intermodal",
+      "description": "Kombinasi kereta + truk untuk penghematan jarak jauh tanpa mengorbankan keandalan."
+    },
+    "expedited": {
+      "title": "Ekspres",
+      "description": "Pengiriman kilat, pengemudi bergantian, kargo udara. Saat tidak bisa menunggu."
+    },
+    "courier": {
+      "title": "Kurir — VN ke Dunia",
+      "description": "Agen resmi UPS, DHL, dan FedEx di Vietnam. Pengiriman cepat dari pintu ke pintu ke seluruh dunia."
+    },
+    "ocean": {
+      "title": "Pengiriman Laut",
+      "description": "Dari/ke Vietnam ke seluruh dunia. Tarif kompetitif dengan jadwal yang sesuai untuk pengiriman Anda."
+    }
+  },
+  "trust": {
+    "tagline": "Mengapa kami",
+    "heading": "Dibangun atas bukti, bukan janji",
+    "carrierVetting": {
+      "title": "Seleksi Mitra",
+      "detail": "Izin FMCSA, asuransi kargo $1M+, pemantauan skor keselamatan, tanpa perantara ganda."
+    },
+    "liveTracking": {
+      "title": "Pelacakan Langsung",
+      "detail": "Sinyal GPS setiap 15 menit, pembaruan proaktif melalui telepon."
+    },
+    "quoteSla": {
+      "title": "Penawaran dalam 2 Jam",
+      "detail": "Jalur standar dalam 2 jam; jalur kompleks di hari yang sama."
+    },
+    "claims": {
+      "title": "Klaim Di Bawah 0,5%",
+      "detail": "Dukungan klaim penuh, penyelesaian biasanya dalam 30 hari."
+    },
+    "oneContact": {
+      "title": "Satu Titik Kontak",
+      "detail": "Perwakilan bernama dengan jalur langsung, mengenal rute dan preferensi Anda."
+    },
+    "specialized": {
+      "title": "Kargo Khusus",
+      "detail": "Pengalaman dengan muatan besar, suhu terkontrol, bahan berbahaya, dan bernilai tinggi."
+    }
+  },
+  "routes": {
+    "tagline": "Cakupan laut",
+    "heading": "Vietnam ke Eropa & Amerika Selatan",
+    "originLabel": "Asal"
+  },
+  "stepper": {
+    "tagline": "Minta penawaran",
+    "heading": "Kirimkan detailnya — sisanya saya yang urus.",
+    "progressLabel": "Langkah {step} dari 4",
+    "backButton": "← Kembali",
+    "nextButton": "Lanjut →",
+    "submitButton": "Kirim kargo Anda →",
+    "submitting": "Mengirim...",
+    "step1": {
+      "heading": "Jenis pengiriman apa?",
+      "subheading": "Pilih moda yang paling sesuai. Tidak yakin? Pilih \"Lainnya\" dan kami akan menyelesaikannya.",
+      "ariaGroupLabel": "Moda pengiriman",
+      "modes": {
+        "ftl": "FTL",
+        "ltl": "LTL",
+        "drayage": "Pelabuhan",
+        "intermodal": "Intermodal",
+        "expedited": "Ekspres",
+        "courier": "Kurir",
+        "ocean": "Laut",
+        "other": "Lainnya"
+      }
+    },
+    "step2": {
+      "heading": "Ke mana tujuannya?",
+      "subheading": "Nama kota atau kode pos sudah cukup — kami akan konfirmasi detailnya saat menelepon.",
+      "originLabel": "Asal",
+      "originPlaceholder": "Mis. Ho Chi Minh City",
+      "destinationLabel": "Tujuan",
+      "destinationPlaceholder": "Mis. Rotterdam",
+      "weightLabel": "Kisaran Berat",
+      "weightPlaceholder": "Pilih kisaran berat",
+      "cargoLabel": "Jenis Kargo (opsional)",
+      "cargoPlaceholder": "Pilih jenis kargo",
+      "weightOptions": {
+        "under5k": "Di bawah 5.000 lbs",
+        "from5kTo20k": "5.000–20.000 lbs",
+        "from20kTo40k": "20.000–40.000 lbs",
+        "over40k": "40.000+ lbs",
+        "notSure": "Belum yakin"
+      },
+      "cargoOptions": {
+        "dryGoods": "Barang Kering",
+        "refrigerated": "Berpendingin/Suhu Terkontrol",
+        "oversized": "Besar/Berat Berlebih",
+        "hazmat": "Bahan Berbahaya",
+        "highValue": "Bernilai Tinggi",
+        "other": "Lainnya"
+      },
+      "errorOriginDestination": "Masukkan setidaknya asal atau tujuan."
+    },
+    "step3": {
+      "heading": "Seberapa cepat harus dikirim?",
+      "subheading": "Ini membantu saya memprioritaskan dan menemukan tarif terbaik.",
+      "ariaGroupLabel": "Urgensi",
+      "urgencyOptions": {
+        "flexible": { "label": "Fleksibel", "sub": "5+ hari" },
+        "standard": { "label": "Standar", "sub": "2–4 hari" },
+        "hot": { "label": "Mendesak", "sub": "Perlu sekarang juga" }
+      }
+    },
+    "step4": {
+      "heading": "Bagaimana cara menghubungi Anda?",
+      "subheading": "Mr. John akan menindaklanjuti secara pribadi — tanpa bot, tanpa email otomatis.",
+      "nameLabel": "Nama",
+      "companyLabel": "Perusahaan",
+      "companyPlaceholder": "Perusahaan (opsional)",
+      "emailLabel": "Email",
+      "emailPlaceholder": "anda@perusahaan.com",
+      "phoneLabel": "Telepon",
+      "phonePlaceholder": "+62 000 0000 0000",
+      "notesLabel": "Catatan / Persyaratan Khusus",
+      "notesPlaceholder": "Ada hal lain yang perlu kami ketahui?",
+      "errorContactRequired": "Masukkan nama Anda dan setidaknya satu cara untuk menghubungi Anda."
+    },
+    "success": {
+      "title": "Permintaan diterima — John sedang menanganinya.",
+      "body": "Tunggu tindak lanjut pribadi dalam 2 jam selama jam kerja. Untuk permintaan mendesak, hubungi langsung: {phone}",
+      "dismiss": "Mengerti"
+    },
+    "error": {
+      "generic": "Terjadi kesalahan. Hubungi Mr. John langsung di {phone}"
+    }
+  },
+  "trickyShipment": {
+    "heading": "Ada pengiriman yang rumit?",
+    "body": "Besar, berbahaya, multi-titik, lintas batas — semakin sulit, semakin Anda membutuhkan seseorang yang sudah pernah melakukannya. Mari kita selesaikan bersama.",
+    "cta": "Ceritakan kepada saya →"
+  },
+  "footer": {
+    "logo": "Booking by John",
+    "tagline": "Broker kargo & pengiriman laut dari Vietnam.",
+    "registrationNote": "MC# TBD · USDOT# TBD",
+    "contactLabel": "Kontak",
+    "copyright": "© {year} Booking by John. Semua hak dilindungi."
+  },
+  "langSwitcher": {
+    "ariaLabel": "Beralih ke {locale}"
+  }
+}
