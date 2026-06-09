@@ -1,47 +1,35 @@
-// components/Services.tsx
-import { Truck, Package, Ship, Train, Zap, Plane, Waves } from "lucide-react";
-import { getTranslations } from 'next-intl/server';
+import { PackageCheck, Plane, Ship, Truck, Warehouse, ClipboardCheck } from "lucide-react";
 
-export default async function Services() {
-  const t = await getTranslations('services');
+const services = [
+  { icon: Ship, title: "Ocean Freight", description: "FCL and LCL shipping with practical routing and rate guidance." },
+  { icon: Plane, title: "Air Freight", description: "Urgent cargo support when speed matters more than ocean transit." },
+  { icon: Truck, title: "Drayage & Trucking", description: "Port pickup, inland delivery, and coordinated container movement." },
+  { icon: Warehouse, title: "Warehousing", description: "Storage and handling support before export or final delivery." },
+  { icon: ClipboardCheck, title: "Customs Clearance", description: "Documentation and clearance coordination to reduce delays." },
+  { icon: PackageCheck, title: "Door to Door", description: "End-to-end logistics from Vietnam origin to overseas consignee." },
+];
 
-  const services = [
-    { icon: Truck,   title: t('ftl.title'),       description: t('ftl.description') },
-    { icon: Package, title: t('ltl.title'),       description: t('ltl.description') },
-    { icon: Ship,    title: t('drayage.title'),   description: t('drayage.description') },
-    { icon: Train,   title: t('intermodal.title'),description: t('intermodal.description') },
-    { icon: Zap,     title: t('expedited.title'), description: t('expedited.description') },
-    { icon: Plane,   title: t('courier.title'),   description: t('courier.description') },
-    { icon: Waves,   title: t('ocean.title'),     description: t('ocean.description') },
-  ];
-
+export default function Services() {
   return (
-    <section id="services" className="bg-bg-primary py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <p className="font-display text-xs text-accent-green tracking-widest uppercase mb-4">
-          {t('tagline')}
-        </p>
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-text-primary mb-14">
-          {t('heading')}
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.map((s, i) => {
-            const Icon = s.icon;
+    <section id="services" className="border-y border-border-subtle bg-white px-5 py-16 lg:px-8 lg:py-20">
+      <div className="mx-auto max-w-7xl">
+        <div className="max-w-3xl">
+          <p className="text-sm font-black uppercase tracking-wide text-ocean-blue">Services</p>
+          <h2 className="mt-3 text-3xl font-black tracking-tight text-[#0B1F3A] sm:text-4xl">
+            Freight services built around clear communication
+          </h2>
+        </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => {
+            const Icon = service.icon;
             return (
-              <div
-                key={i}
-                className="bg-bg-card border border-border-subtle rounded-xl p-8 hover:-translate-y-1 hover:border-accent-green transition-all duration-200 cursor-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-green"
-              >
-                <div className="mb-4 text-accent-green">
-                  <Icon size={28} strokeWidth={1.5} aria-hidden="true" />
+              <article key={service.title} className="rounded-lg border border-border-subtle bg-white p-6 shadow-sm">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-orange-50 text-accent-orange">
+                  <Icon size={24} aria-hidden="true" />
                 </div>
-                <h3 className="font-display text-sm font-bold text-text-primary mb-3">
-                  {s.title}
-                </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  {s.description}
-                </p>
-              </div>
+                <h3 className="mt-5 text-xl font-black text-[#0B1F3A]">{service.title}</h3>
+                <p className="mt-3 leading-7 text-text-secondary">{service.description}</p>
+              </article>
             );
           })}
         </div>

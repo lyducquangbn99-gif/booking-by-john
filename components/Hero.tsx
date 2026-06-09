@@ -1,41 +1,79 @@
-// components/Hero.tsx
-import { getTranslations } from 'next-intl/server';
+import Image from "next/image";
 
-export default async function Hero() {
-  const t = await getTranslations('hero');
+const trustPoints = ["Competitive Rates", "Fast & Reliable", "Expert Support"];
+
+const routes = [
+  { lane: "Vietnam -> Italy", port: "Genoa" },
+  { lane: "Vietnam -> Indonesia", port: "Jakarta" },
+  { lane: "Vietnam -> Taiwan", port: "Kaohsiung" },
+];
+
+export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-16 bg-bg-primary">
+    <section id="home" className="relative overflow-hidden bg-[#0B1F3A]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,119,182,0.55),transparent_34%),linear-gradient(135deg,#0B1F3A_0%,#0B1F3A_52%,#0077B6_100%)]" />
+      <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-28">
+        <div className="max-w-3xl">
+          <p className="mb-5 inline-flex rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm font-semibold text-white">
+            Vietnam export logistics for focused trade lanes
+          </p>
+          <h1 className="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+            Your cargo from Vietnam to Italy, Indonesia & Taiwan -- handled with care.
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
+            Reliable ocean freight, customs clearance, trucking and door-to-door logistics solutions from Vietnam.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#request"
+              className="rounded-md bg-accent-orange px-6 py-4 text-center text-sm font-black text-white shadow-lg shadow-black/20 transition hover:bg-[#EA580C]"
+            >
+              Get a Freight Quote
+            </a>
+            <a
+              href="#contact"
+              className="rounded-md border border-white/30 bg-white/10 px-6 py-4 text-center text-sm font-black text-white transition hover:bg-white hover:text-[#0B1F3A]"
+            >
+              Contact John
+            </a>
+          </div>
+          <div className="mt-10 grid gap-3 sm:grid-cols-3">
+            {trustPoints.map((point) => (
+              <div key={point} className="rounded-lg border border-white/15 bg-white/10 p-4 text-white">
+                <div className="text-sm font-black">{point}</div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-      {/* Radial glow — top right */}
-      <div className="absolute -top-[10%] -right-[5%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(0,232,123,0.08)_0%,transparent_70%)] pointer-events-none" />
-
-      <div className="max-w-6xl mx-auto px-6 py-20">
-        <p className="font-display text-xs text-accent-green tracking-widest uppercase mb-6">
-          {t('tagline')}
-        </p>
-
-        <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight text-text-primary max-w-3xl mb-7">
-          {t('heading')}{" "}
-          <span className="text-accent-green">{t('headingAccent')}</span>
-        </h1>
-
-        <p className="text-lg text-text-secondary max-w-xl leading-relaxed mb-12">
-          {t('subheading')}
-        </p>
-
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="#request"
-            className="font-display font-bold text-sm text-bg-primary bg-accent-green px-8 py-4 rounded-md hover:-translate-y-px hover:shadow-[0_0_24px_rgba(0,232,123,0.35)] transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green min-h-11 inline-flex items-center"
-          >
-            {t('ctaPrimary')}
-          </a>
-          <a
-            href="#trust"
-            className="font-display text-sm text-text-secondary border border-border-subtle px-8 py-4 rounded-md hover:text-text-primary hover:border-white/20 transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-green min-h-11 inline-flex items-center"
-          >
-            {t('ctaSecondary')}
-          </a>
+        <div className="overflow-hidden rounded-lg border border-white/15 bg-white/10 text-white shadow-2xl shadow-black/20 backdrop-blur">
+          <div className="relative aspect-[4/3] min-h-72">
+            <Image
+              src="/logistics-hero.png"
+              alt="Ocean freight containers and cargo ship at a modern port"
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 1024px) 45vw, 100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-[#0B1F3A]/30 to-transparent" />
+            <div className="absolute bottom-5 left-5 right-5">
+              <p className="text-sm font-semibold uppercase tracking-wide text-slate-200">Priority routes</p>
+            </div>
+          </div>
+          <div className="space-y-4 p-5">
+            {routes.map((route) => (
+              <div key={route.lane} className="rounded-lg bg-white p-5 text-[#111827]">
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className="text-lg font-black text-[#0B1F3A]">{route.lane}</h2>
+                  <span className="rounded-md bg-accent-orange px-3 py-1 text-xs font-black text-white">
+                    Hot Lane
+                  </span>
+                </div>
+                <p className="mt-3 text-sm text-text-secondary">Port of discharge: {route.port}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

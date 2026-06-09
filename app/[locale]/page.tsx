@@ -6,6 +6,7 @@ import Trust from "@/components/Trust";
 import OceanRoutes from "@/components/OceanRoutes";
 import RequestStepper from "@/components/RequestStepper";
 import TrickyShipmentCTA from "@/components/TrickyShipmentCTA";
+import BlogCards from "@/components/BlogCards";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <OceanRoutes />
       <RequestStepper />
       <TrickyShipmentCTA />
+      <BlogCards />
       <Footer />
     </main>
   );
