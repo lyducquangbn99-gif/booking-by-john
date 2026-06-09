@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { ChevronDown, Menu, X } from "lucide-react";
 
@@ -15,12 +16,12 @@ const LOCALE_META: Record<string, { flag: string; label: string }> = {
 };
 
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Routes", href: "#routes" },
-  { label: "About Us", href: "#trust" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "Routes", href: "/#routes" },
+  { label: "About Us", href: "/#trust" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 function LanguageSwitcher() {
@@ -96,30 +97,30 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border-subtle bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <a href="#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
+        <Link href="/#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
           <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0B1F3A] text-sm font-black text-white">
             BJ
           </span>
           <span className="text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
             {t("logo")}
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-semibold text-text-secondary lg:flex">
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="transition hover:text-ocean-blue">
+            <Link key={link.href} href={link.href} className="transition hover:text-ocean-blue">
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="#request"
+          <Link
+            href="/#request"
             className="rounded-md bg-accent-orange px-5 py-3 text-sm font-black text-white shadow-sm transition hover:bg-[#EA580C]"
           >
             Get a Quote
-          </a>
+          </Link>
           <LanguageSwitcher />
         </div>
 
@@ -139,22 +140,22 @@ export default function Nav() {
         <div id="mobile-menu" className="border-t border-border-subtle bg-white px-5 py-4 lg:hidden">
           <nav className="grid gap-2 text-sm font-semibold text-text-secondary">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="rounded-md px-2 py-2 hover:bg-bg-primary hover:text-ocean-blue"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#request"
+            <Link
+              href="/#request"
               className="mt-2 rounded-md bg-accent-orange px-4 py-3 text-center font-black text-white hover:bg-[#EA580C]"
               onClick={() => setOpen(false)}
             >
               Get a Quote
-            </a>
+            </Link>
             <div className="mt-2">
               <LanguageSwitcher />
             </div>
