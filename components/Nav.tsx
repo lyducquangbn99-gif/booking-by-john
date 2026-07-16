@@ -6,6 +6,7 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { ChevronDown, Menu, X } from "lucide-react";
+import { trackBookingEvent } from "@/lib/analytics";
 
 const LOCALE_META: Record<string, { flag: string; label: string }> = {
   en: { flag: "US", label: "English" },
@@ -42,6 +43,7 @@ function LanguageSwitcher() {
   }, []);
 
   function switchLocale(loc: string) {
+    trackBookingEvent("language_change", { from: locale, to: loc });
     router.replace(pathname, { locale: loc });
     setOpen(false);
   }

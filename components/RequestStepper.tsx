@@ -1,8 +1,9 @@
 // components/RequestStepper.tsx
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import { trackBookingEvent } from "@/lib/analytics";
 import {
   Truck,
   Package,
@@ -93,8 +94,13 @@ export default function RequestStepper() {
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+  const startedRef = useRef(false);
 
   function update(key: keyof FormData, value: string) {
+    if (!startedRef.current) {
+      startedRef.current = true;
+      trackBookingEvent("quote_form_start", { locale });
+    }
     setForm((prev) => ({ ...prev, [key]: value }));
   }
 
@@ -109,6 +115,11 @@ export default function RequestStepper() {
       return;
     }
     setError("");
+    trackBookingEvent("quote_step_complete", {
+      locale,
+      step,
+      mode: form.mode || "unspecified",
+    });
     setStep((s) => s + 1);
   }
 
@@ -127,6 +138,11 @@ export default function RequestStepper() {
       });
       const data = await res.json();
       if (data.status === "success") {
+        trackBookingEvent("quote_form_submit", {
+          locale,
+          mode: form.mode || "unspecified",
+          urgency: form.urgency || "unspecified",
+        });
         setSuccess(true);
       } else {
         setError(t('error.generic', { phone: PHONE }));
@@ -142,6 +158,7 @@ export default function RequestStepper() {
     setSuccess(false);
     setStep(1);
     setForm(EMPTY_FORM);
+    startedRef.current = false;
     setError("");
   }
 

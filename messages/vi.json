@@ -187,6 +187,21 @@
     "contactLabel": "Liên hệ",
     "copyright": "© {year} Booking by John. Bảo lưu mọi quyền."
   },
+  "blog": {
+    "label": "Tin tức & phân tích",
+    "homeTitle": "Thông tin thương mại và logistics Việt Nam",
+    "viewAll": "Xem tất cả bài viết",
+    "readArticle": "Đọc bài viết",
+    "indexTitle": "Tin tức, quy định và phân tích thị trường cho xuất nhập khẩu Việt Nam",
+    "indexDescription": "Cập nhật đã kiểm chứng về sự kiện thế giới, quy định Việt Nam, xu hướng logistics và lưu ý thực tế theo thị trường.",
+    "noPostsTitle": "Chưa có bài viết bằng ngôn ngữ này",
+    "noPostsBody": "Bài viết đã kiểm chứng tiếp theo đang được chuẩn bị để phê duyệt.",
+    "backToBlog": "Quay lại blog",
+    "sources": "Nguồn chính thức và báo chí",
+    "ctaTitle": "Cần báo giá vận chuyển mới nhất?",
+    "ctaBody": "Gửi cho John thông tin hàng hóa và tuyến đường mong muốn để kiểm tra phương án phù hợp.",
+    "ctaButton": "Yêu cầu báo giá"
+  },
   "langSwitcher": {
     "ariaLabel": "Chuyển sang {locale}"
   }

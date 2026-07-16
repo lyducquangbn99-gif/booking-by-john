@@ -187,6 +187,21 @@
     "contactLabel": "Contact",
     "copyright": "© {year} Booking by John. All rights reserved."
   },
+  "blog": {
+    "label": "News & insights",
+    "homeTitle": "Vietnam trade and logistics intelligence",
+    "viewAll": "View all posts",
+    "readArticle": "Read article",
+    "indexTitle": "News, rules and market intelligence for Vietnam trade",
+    "indexDescription": "Verified updates on global events, Vietnamese regulations, logistics trends and practical market guidance.",
+    "noPostsTitle": "No localized posts yet",
+    "noPostsBody": "The next verified article is being prepared for approval.",
+    "backToBlog": "Back to blog",
+    "sources": "Official and editorial sources",
+    "ctaTitle": "Need an updated freight quote?",
+    "ctaBody": "Send John your cargo details and preferred route. He will help check the best practical option.",
+    "ctaButton": "Get a Freight Quote"
+  },
   "langSwitcher": {
     "ariaLabel": "Switch to {locale}"
   }

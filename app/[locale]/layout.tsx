@@ -3,6 +3,7 @@ import { Space_Mono, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import Analytics from '@/components/Analytics';
 import "../globals.css";
 
 const spaceMono = Space_Mono({
@@ -48,6 +49,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

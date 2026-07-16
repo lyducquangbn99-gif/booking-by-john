@@ -187,6 +187,21 @@
     "contactLabel": "Kontak",
     "copyright": "© {year} Booking by John. Semua hak dilindungi."
   },
+  "blog": {
+    "label": "Berita & analisis",
+    "homeTitle": "Informasi perdagangan dan logistik Vietnam",
+    "viewAll": "Lihat semua artikel",
+    "readArticle": "Baca artikel",
+    "indexTitle": "Berita, aturan, dan analisis pasar untuk perdagangan Vietnam",
+    "indexDescription": "Pembaruan terverifikasi tentang peristiwa global, regulasi Vietnam, tren logistik, dan panduan praktis per pasar.",
+    "noPostsTitle": "Belum ada artikel dalam bahasa ini",
+    "noPostsBody": "Artikel terverifikasi berikutnya sedang disiapkan untuk persetujuan.",
+    "backToBlog": "Kembali ke blog",
+    "sources": "Sumber resmi dan editorial",
+    "ctaTitle": "Perlu penawaran pengiriman terbaru?",
+    "ctaBody": "Kirim detail kargo dan rute pilihan kepada John untuk memeriksa opsi yang paling praktis.",
+    "ctaButton": "Minta penawaran"
+  },
   "langSwitcher": {
     "ariaLabel": "Beralih ke {locale}"
   }

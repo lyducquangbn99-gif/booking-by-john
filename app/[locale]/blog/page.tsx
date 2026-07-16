@@ -3,26 +3,31 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { Link } from "@/i18n/navigation";
 import { getAllBlogPosts } from "@/lib/blog";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Blog | Booking by John Ly",
   description: "Freight updates, route notes, and logistics guides from Booking by John Ly.",
 };
 
-export default function BlogIndexPage() {
-  const blogPosts = getAllBlogPosts();
+type Props = { params: Promise<{ locale: string }> };
+
+export default async function BlogIndexPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+  const blogPosts = getAllBlogPosts(locale);
 
   return (
     <main className="min-h-screen bg-bg-primary text-text-primary">
       <Nav />
       <section className="bg-[#0B1F3A] px-5 py-16 text-white lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-black uppercase tracking-wide text-slate-200">Blog</p>
+          <p className="text-sm font-black uppercase tracking-wide text-slate-200">{t("label")}</p>
           <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
-            Daily logistics updates and freight guides
+            {t("indexTitle")}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-200">
-            Real route notes, cargo preparation tips, and market updates for customers shipping from Vietnam.
+            {t("indexDescription")}
           </p>
         </div>
       </section>
@@ -50,9 +55,9 @@ export default function BlogIndexPage() {
           </div>
         ) : (
           <div className="rounded-lg border border-border-subtle bg-white p-8 text-center">
-            <h2 className="text-2xl font-black text-[#0B1F3A]">No posts yet</h2>
+            <h2 className="text-2xl font-black text-[#0B1F3A]">{t("noPostsTitle")}</h2>
             <p className="mt-3 text-text-secondary">
-              Add Markdown files inside <span className="font-bold">content/blog</span> to publish updates here.
+              {t("noPostsBody")}
             </p>
           </div>
         )}

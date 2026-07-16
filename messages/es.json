@@ -187,6 +187,21 @@
     "contactLabel": "Contacto",
     "copyright": "© {year} Booking by John. Todos los derechos reservados."
   },
+  "blog": {
+    "label": "Noticias y análisis",
+    "homeTitle": "Información sobre comercio y logística de Vietnam",
+    "viewAll": "Ver todos los artículos",
+    "readArticle": "Leer artículo",
+    "indexTitle": "Noticias, normas y análisis de mercado para el comercio con Vietnam",
+    "indexDescription": "Actualizaciones verificadas sobre acontecimientos mundiales, normativa vietnamita, tendencias logísticas y orientación práctica por mercado.",
+    "noPostsTitle": "Aún no hay artículos en este idioma",
+    "noPostsBody": "El próximo artículo verificado se está preparando para su aprobación.",
+    "backToBlog": "Volver al blog",
+    "sources": "Fuentes oficiales y periodísticas",
+    "ctaTitle": "¿Necesita una cotización de transporte actualizada?",
+    "ctaBody": "Envíe a John los detalles de la carga y la ruta preferida para comprobar la opción más práctica.",
+    "ctaButton": "Solicitar cotización"
+  },
   "langSwitcher": {
     "ariaLabel": "Cambiar a {locale}"
   }

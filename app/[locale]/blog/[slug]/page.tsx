@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { Link } from "@/i18n/navigation";
 import { getAllBlogPosts, getBlogPost } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
+import BlogArticleContent from "@/components/BlogArticleContent";
+import { getTranslations } from "next-intl/server";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
 export function generateStaticParams() {
-  const blogPosts = getAllBlogPosts();
-
   return routing.locales.flatMap((locale) =>
-    blogPosts.map((post) => ({
+    getAllBlogPosts(locale).map((post) => ({
       locale,
       slug: post.slug,
     }))
@@ -22,8 +23,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getBlogPost(slug);
+  const { locale, slug } = await params;
+  const post = getBlogPost(locale, slug);
 
   if (!post) {
     return {
@@ -38,8 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = await params;
-  const post = getBlogPost(slug);
+  const { locale, slug } = await params;
+  const post = getBlogPost(locale, slug);
+  const t = await getTranslations({ locale, namespace: "blog" });
 
   if (!post) {
     notFound();
@@ -52,7 +54,7 @@ export default async function BlogPostPage({ params }: Props) {
         <header className="bg-[#0B1F3A] px-5 py-16 text-white lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl">
             <Link href="/blog" className="text-sm font-black text-slate-200 hover:text-white">
-              Back to blog
+              {t("backToBlog")}
             </Link>
             <div className="mt-8 flex flex-wrap items-center gap-3 text-xs font-black uppercase tracking-wide text-slate-200">
               <span>{post.category}</span>
@@ -67,24 +69,37 @@ export default async function BlogPostPage({ params }: Props) {
         </header>
 
         <div className="mx-auto max-w-3xl px-5 py-12 lg:px-8 lg:py-16">
-          <div className="rounded-lg border border-border-subtle bg-white p-6 shadow-sm sm:p-10">
-            {post.content.map((paragraph) => (
-              <p key={paragraph} className="mb-6 text-base leading-8 text-text-secondary last:mb-0">
-                {paragraph}
-              </p>
-            ))}
+          <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-lg border border-border-subtle bg-[#0B1F3A]">
+            <Image src={post.image} alt={post.imageAlt} fill className="object-cover" priority />
           </div>
 
+          <BlogArticleContent blocks={post.content} />
+
+          {post.sources.length > 0 && (
+            <section className="mt-8 rounded-lg border border-border-subtle bg-white p-6">
+              <h2 className="text-xl font-black text-[#0B1F3A]">{t("sources")}</h2>
+              <ul className="mt-4 list-disc space-y-3 pl-6 text-text-secondary">
+                {post.sources.map((source) => (
+                  <li key={source.url}>
+                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-bold text-ocean-blue underline underline-offset-4">
+                      {source.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           <div className="mt-8 rounded-lg border border-border-subtle bg-white p-6">
-            <h2 className="text-xl font-black text-[#0B1F3A]">Need an updated freight quote?</h2>
+            <h2 className="text-xl font-black text-[#0B1F3A]">{t("ctaTitle")}</h2>
             <p className="mt-3 leading-7 text-text-secondary">
-              Send John your cargo details and preferred route. He will help check the best practical option.
+              {t("ctaBody")}
             </p>
             <Link
               href="/#request"
               className="mt-5 inline-flex rounded-md bg-accent-orange px-5 py-3 text-sm font-black text-white transition hover:bg-[#EA580C]"
             >
-              Get a Freight Quote
+              {t("ctaButton")}
             </Link>
           </div>
         </div>
