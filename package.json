@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "editorial:image": "node scripts/create-editorial-image.mjs",
-    "email:review": "node scripts/send-review-email.mjs"
+    "email:review": "node scripts/send-review-email.mjs",
+    "analytics:configure": "node scripts/configure-vercel-analytics.mjs",
+    "analytics:weekly": "node scripts/fetch-weekly-analytics.mjs"
   },
   "dependencies": {
     "@napi-rs/canvas": "^1.0.2",
