@@ -48,3 +48,4 @@ next-env.d.ts
 /deliverables/
 /reports/
 /content/drafts/*/
+/.secrets/

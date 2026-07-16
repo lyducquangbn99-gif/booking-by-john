@@ -1,7 +1,10 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
-import { INTERNAL_VISITOR_KEY } from "@/lib/analytics";
+import {
+  ANALYTICS_CONSENT_KEY,
+  INTERNAL_VISITOR_KEY,
+} from "@/lib/analytics";
 
 export default function InternalVisitorControl() {
   const excluded = useSyncExternalStore(
@@ -24,6 +27,11 @@ export default function InternalVisitorControl() {
       window.localStorage.removeItem(INTERNAL_VISITOR_KEY);
     }
     window.dispatchEvent(new Event("booking-analytics-preference"));
+  }
+
+  function resetConsent() {
+    window.localStorage.removeItem(ANALYTICS_CONSENT_KEY);
+    window.dispatchEvent(new Event("booking-analytics-consent"));
   }
 
   return (
@@ -55,6 +63,13 @@ export default function InternalVisitorControl() {
             className="rounded-md border border-border-subtle px-5 py-3 font-black text-[#0B1F3A]"
           >
             Include again
+          </button>
+          <button
+            type="button"
+            onClick={resetConsent}
+            className="rounded-md border border-border-subtle px-5 py-3 font-black text-[#0B1F3A]"
+          >
+            Reset analytics consent
           </button>
         </div>
       </div>
