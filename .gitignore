@@ -42,3 +42,9 @@ next-env.d.ts
 
 # claude code
 .claude/
+
+# private operational artifacts (never publish)
+/backups/
+/deliverables/
+/reports/
+/content/drafts/*/
