@@ -19,13 +19,13 @@ Per importatori ed esportatori vietnamiti con carichi da o verso i mercati del G
 
 ## Cosa dice l’ultimo avviso del vettore
 
-Il **Middle East Operational Update 39** di Maersk, datato 16 luglio, prevede condizioni diverse per tipo di carico e porto. Alcune prenotazioni dry restano accettate attraverso porti e landbridge indicati, mentre altri movimenti dry, reefer, merci pericolose e fuori sagoma sono sospesi o limitati. Non esiste quindi un unico sì o no per tutto il Golfo.
+Il Middle East Operational Update 39 di Maersk, datato 16 luglio, prevede condizioni diverse per tipo di carico e porto. Alcune prenotazioni dry restano accettate attraverso porti e landbridge indicati, mentre altri movimenti dry, reefer, merci pericolose e fuori sagoma sono sospesi o limitati. Non esiste quindi un unico sì o no per tutto il Golfo.
 
 Per carichi marittimi esistenti in partenza o destinati ai porti indicati in Iraq, Kuwait, Bahrain, Qatar, Emirati Arabi Uniti, Oman tranne Salalah, e a Dammam e Jubail in Arabia Saudita, Maersk pubblica—soggetta alle necessarie approvazioni regolamentari—una tariffa di emergenza di 1.800 USD per un container dry da 20 piedi, 3.000 USD per un dry da 40 piedi e 3.800 USD per reefer, equipment speciale o merci pericolose.
 
 Nell’opzione del vettore che prevede il completamento del viaggio con deposito temporaneo, la tariffa comprende 14 giorni di stoccaggio in transito. Successivamente l’avviso indica 25 USD per TEU al giorno, oltre agli eventuali costi di monitoraggio e alimentazione dei reefer. Maersk precisa che le tariffe possono cambiare.
 
-Si tratta di **condizioni specifiche dell’avviso Maersk**, non di una tariffa di mercato e non di un preventivo valido per ogni spedizione vietnamita. Vettori, contratti, merci e coppie di porti diversi possono avere regole differenti.
+Si tratta di condizioni specifiche dell’avviso Maersk, non di una tariffa di mercato e non di un preventivo valido per ogni spedizione vietnamita. Vettori, contratti, merci e coppie di porti diversi possono avere regole differenti.
 
 ## Perché conta per il commercio vietnamita
 
@@ -37,12 +37,12 @@ Il 30 giugno UN Trade and Development ha avvertito che oltre 100 giorni di inter
 
 ## Sei verifiche prima della consegna
 
-1. Ottenere l’accettazione scritta per merce, porti e trasbordo esatti.
-2. Verificare se il prezzo include emergenza, rischio guerra, carburante, deposito, reefer e landbridge.
-3. Registrare giorni di deposito inclusi e costo giornaliero successivo.
-4. Stabilire chi può autorizzare cambio destinazione, ritorno all’origine o consegna in porto alternativo, e chi paga.
-5. Riconfermare copertura ed esclusioni con assicuratore o broker; l’avviso del vettore non conferma l’assicurazione.
-6. Ridurre la validità delle offerte al cliente e aggiungere margine per i carichi urgenti.
+- Ottenere l’accettazione scritta per merce, porti e trasbordo esatti.
+- Verificare se il prezzo include emergenza, rischio guerra, carburante, deposito, reefer e landbridge.
+- Registrare giorni di deposito inclusi e costo giornaliero successivo.
+- Stabilire chi può autorizzare cambio destinazione, ritorno all’origine o consegna in porto alternativo, e chi paga.
+- Riconfermare copertura ed esclusioni con assicuratore o broker; l’avviso del vettore non conferma l’assicurazione.
+- Ridurre la validità delle offerte al cliente e aggiungere margine per i carichi urgenti.
 
 ## Affidabilità e incertezza
 

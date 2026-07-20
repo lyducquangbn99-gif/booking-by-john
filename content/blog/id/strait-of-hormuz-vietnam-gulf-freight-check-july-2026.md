@@ -19,13 +19,13 @@ Bagi importir dan eksportir Vietnam yang mengirim barang dari atau ke pasar Telu
 
 ## Isi pemberitahuan pengangkut terbaru
 
-**Middle East Operational Update 39** Maersk tertanggal 16 Juli memuat aturan berbeda menurut jenis kargo dan pelabuhan. Sebagian pemesanan kargo kering masih diterima melalui pelabuhan dan landbridge tertentu, sedangkan pergerakan kargo kering, reefer, barang berbahaya, dan out-of-gauge lainnya ditangguhkan atau dibatasi. Jadi, tidak ada satu jawaban untuk seluruh kawasan Teluk.
+Middle East Operational Update 39 Maersk tertanggal 16 Juli memuat aturan berbeda menurut jenis kargo dan pelabuhan. Sebagian pemesanan kargo kering masih diterima melalui pelabuhan dan landbridge tertentu, sedangkan pergerakan kargo kering, reefer, barang berbahaya, dan out-of-gauge lainnya ditangguhkan atau dibatasi. Jadi, tidak ada satu jawaban untuk seluruh kawasan Teluk.
 
 Untuk kargo laut yang sudah berjalan, yang dimuat dari atau menuju pelabuhan tertentu di Irak, Kuwait, Bahrain, Qatar, Uni Emirat Arab, Oman selain Salalah, serta Dammam dan Jubail di Arab Saudi, Maersk mencantumkan tarif Angkutan Darurat—tunduk pada persetujuan regulasi yang diperlukan—sebesar USD 1.800 untuk peti kemas kering 20 kaki, USD 3.000 untuk peti kemas kering 40 kaki, dan USD 3.800 untuk reefer, peralatan khusus, atau barang berbahaya.
 
 Pada opsi melanjutkan pelayaran dengan penyimpanan sementara, tarif tersebut mencakup 14 hari penyimpanan dalam transit. Setelah itu, pemberitahuan mencantumkan USD 25 per TEU per hari, ditambah biaya pemantauan dan sambungan listrik reefer jika berlaku. Maersk juga menyatakan tarif dapat berubah.
 
-Ini adalah **ketentuan khusus dalam pemberitahuan Maersk**, bukan tarif seluruh pasar dan bukan penawaran untuk setiap kiriman Vietnam. Pengangkut, kontrak, kargo, atau pasangan pelabuhan lain dapat memiliki ketentuan berbeda.
+Ini adalah ketentuan khusus dalam pemberitahuan Maersk, bukan tarif seluruh pasar dan bukan penawaran untuk setiap kiriman Vietnam. Pengangkut, kontrak, kargo, atau pasangan pelabuhan lain dapat memiliki ketentuan berbeda.
 
 ## Mengapa penting bagi perdagangan Vietnam
 
@@ -37,12 +37,12 @@ Pada 30 Juni, UN Trade and Development memperingatkan bahwa lebih dari 100 hari 
 
 ## Enam pemeriksaan sebelum serah terima kargo
 
-1. Dapatkan penerimaan tertulis untuk jenis kargo, pelabuhan, dan rute transshipment yang tepat.
-2. Tanyakan apakah harga mencakup biaya darurat, risiko perang, bahan bakar, penyimpanan, reefer, dan landbridge.
-3. Catat masa penyimpanan yang termasuk dan tarif harian setelahnya.
-4. Pastikan siapa yang boleh mengubah tujuan, mengembalikan ke asal, atau menerima di pelabuhan kontingensi—dan siapa yang membayar.
-5. Konfirmasikan perlindungan dan pengecualian kepada penanggung atau broker; pemberitahuan pengangkut bukan konfirmasi asuransi.
-6. Batasi masa berlaku penawaran pelanggan dan tambahkan kelonggaran jadwal untuk kargo peka waktu.
+- Dapatkan penerimaan tertulis untuk jenis kargo, pelabuhan, dan rute transshipment yang tepat.
+- Tanyakan apakah harga mencakup biaya darurat, risiko perang, bahan bakar, penyimpanan, reefer, dan landbridge.
+- Catat masa penyimpanan yang termasuk dan tarif harian setelahnya.
+- Pastikan siapa yang boleh mengubah tujuan, mengembalikan ke asal, atau menerima di pelabuhan kontingensi—dan siapa yang membayar.
+- Konfirmasikan perlindungan dan pengecualian kepada penanggung atau broker; pemberitahuan pengangkut bukan konfirmasi asuransi.
+- Batasi masa berlaku penawaran pelanggan dan tambahkan kelonggaran jadwal untuk kargo peka waktu.
 
 ## Keyakinan dan ketidakpastian
 

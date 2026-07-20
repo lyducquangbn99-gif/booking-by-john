@@ -19,13 +19,13 @@ For Vietnam importers and exporters moving cargo to or from Gulf markets, the im
 
 ## What the latest carrier notice says
 
-Maersk’s **Middle East Operational Update 39**, dated 16 July, lists different booking rules by cargo type and port. The notice says some dry-cargo bookings remain accepted through specified ports and landbridge arrangements, while other dry, reefer, dangerous-goods and out-of-gauge movements are suspended or restricted. Availability is therefore not a single yes-or-no answer for the whole Gulf.
+Maersk’s Middle East Operational Update 39, dated 16 July, lists different booking rules by cargo type and port. The notice says some dry-cargo bookings remain accepted through specified ports and landbridge arrangements, while other dry, reefer, dangerous-goods and out-of-gauge movements are suspended or restricted. Availability is therefore not a single yes-or-no answer for the whole Gulf.
 
 For existing ocean cargo loading from or destined to specified ports in Iraq, Kuwait, Bahrain, Qatar, the United Arab Emirates, Oman except Salalah, and Saudi Arabia’s Dammam and Jubail, Maersk lists an Emergency Freight rate—subject to required regulatory approvals—of USD 1,800 for a 20-foot dry container, USD 3,000 for a 40-foot dry container and USD 3,800 for reefer, special or dangerous-goods equipment.
 
 Under the carrier’s option to complete the planned voyage with temporary storage, that rate includes 14 days of storage in transit. Beyond that, the notice lists USD 25 per TEU per day, plus applicable reefer monitoring and plug-in charges. Maersk also says the rates may be adjusted as conditions change.
 
-These are **Maersk-specific advisory terms**, not a market-wide tariff and not a quote for every Vietnam shipment. Another carrier, contract, cargo or port pair may have different acceptance and cost conditions.
+These are Maersk-specific advisory terms, not a market-wide tariff and not a quote for every Vietnam shipment. Another carrier, contract, cargo or port pair may have different acceptance and cost conditions.
 
 ## Why this matters to Vietnam trade
 
@@ -37,12 +37,12 @@ UN Trade and Development warned on 30 June that more than 100 days of disruption
 
 ## Six checks before cargo handover
 
-1. Obtain written booking acceptance for the exact cargo type, ports and transshipment route.
-2. Ask whether the quote includes emergency freight, war-risk, fuel, storage, monitoring, plug-in and landbridge charges.
-3. Record the free-storage period and the daily charge after it expires.
-4. Confirm who may authorize a change of destination, return to origin or contingency-port delivery—and who pays.
-5. Recheck marine-cargo insurance and exclusions with the insurer or broker; a carrier notice is not an insurance confirmation.
-6. Put extra validity limits into customer quotations and add schedule margin for time-sensitive cargo.
+- Obtain written booking acceptance for the exact cargo type, ports and transshipment route.
+- Ask whether the quote includes emergency freight, war-risk, fuel, storage, monitoring, plug-in and landbridge charges.
+- Record the free-storage period and the daily charge after it expires.
+- Confirm who may authorize a change of destination, return to origin or contingency-port delivery—and who pays.
+- Recheck marine-cargo insurance and exclusions with the insurer or broker; a carrier notice is not an insurance confirmation.
+- Put extra validity limits into customer quotations and add schedule margin for time-sensitive cargo.
 
 ## Confidence and uncertainty
 

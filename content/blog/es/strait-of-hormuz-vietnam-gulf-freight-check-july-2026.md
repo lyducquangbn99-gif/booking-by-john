@@ -19,13 +19,13 @@ Para importadores y exportadores vietnamitas con carga desde o hacia los mercado
 
 ## Qué dice el último aviso del transportista
 
-El **Middle East Operational Update 39** de Maersk, fechado el 16 de julio, establece reglas distintas según la carga y el puerto. Algunas reservas de carga seca siguen aceptándose por determinados puertos y puentes terrestres, mientras que otros movimientos de carga seca, refrigerada, peligrosa y sobredimensionada están suspendidos o limitados. No hay una única respuesta para todo el Golfo.
+El Middle East Operational Update 39 de Maersk, fechado el 16 de julio, establece reglas distintas según la carga y el puerto. Algunas reservas de carga seca siguen aceptándose por determinados puertos y puentes terrestres, mientras que otros movimientos de carga seca, refrigerada, peligrosa y sobredimensionada están suspendidos o limitados. No hay una única respuesta para todo el Golfo.
 
 Para carga marítima existente con origen o destino en los puertos indicados de Irak, Kuwait, Baréin, Catar, Emiratos Árabes Unidos, Omán salvo Salalah, y Dammam y Jubail en Arabia Saudí, Maersk publica—sujeta a las aprobaciones regulatorias necesarias—una tarifa de emergencia de 1.800 USD por contenedor seco de 20 pies, 3.000 USD por seco de 40 pies y 3.800 USD por equipo refrigerado, especial o mercancía peligrosa.
 
 En la opción de completar el viaje con almacenaje temporal, la tarifa incluye 14 días de almacenamiento en tránsito. Después, el aviso fija 25 USD por TEU y día, más los cargos aplicables de supervisión y conexión de refrigerados. Maersk también advierte que las tarifas pueden ajustarse.
 
-Estas son **condiciones específicas del aviso de Maersk**, no una tarifa de todo el mercado ni una cotización para cada envío vietnamita. Otro transportista, contrato, carga o par de puertos puede tener condiciones distintas.
+Estas son condiciones específicas del aviso de Maersk, no una tarifa de todo el mercado ni una cotización para cada envío vietnamita. Otro transportista, contrato, carga o par de puertos puede tener condiciones distintas.
 
 ## Por qué importa para el comercio vietnamita
 
@@ -37,12 +37,12 @@ El 30 de junio, UN Trade and Development advirtió que más de 100 días de inte
 
 ## Seis comprobaciones antes de entregar la carga
 
-1. Obtenga aceptación escrita para la carga, los puertos y el transbordo exactos.
-2. Pregunte si la cotización incluye emergencia, riesgo de guerra, combustible, almacenaje, refrigeración y puente terrestre.
-3. Registre los días de almacenaje incluidos y la tarifa diaria posterior.
-4. Confirme quién puede autorizar cambio de destino, retorno al origen o entrega en puerto alternativo, y quién paga.
-5. Reconfirme cobertura y exclusiones con aseguradora o corredor; el aviso del transportista no confirma el seguro.
-6. Limite la vigencia de las ofertas al cliente y añada margen para carga urgente.
+- Obtenga aceptación escrita para la carga, los puertos y el transbordo exactos.
+- Pregunte si la cotización incluye emergencia, riesgo de guerra, combustible, almacenaje, refrigeración y puente terrestre.
+- Registre los días de almacenaje incluidos y la tarifa diaria posterior.
+- Confirme quién puede autorizar cambio de destino, retorno al origen o entrega en puerto alternativo, y quién paga.
+- Reconfirme cobertura y exclusiones con aseguradora o corredor; el aviso del transportista no confirma el seguro.
+- Limite la vigencia de las ofertas al cliente y añada margen para carga urgente.
 
 ## Confianza e incertidumbre
 

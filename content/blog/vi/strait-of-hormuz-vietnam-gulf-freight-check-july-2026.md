@@ -19,13 +19,13 @@ Với doanh nghiệp Việt Nam xuất nhập khẩu hàng đi hoặc đến cá
 
 ## Thông báo hãng tàu mới nhất nêu gì
 
-Thông báo **Middle East Operational Update 39** của Maersk ngày 16/7 quy định khác nhau theo loại hàng và cảng. Một số lô hàng khô vẫn được nhận qua các cảng và phương án cầu đường bộ chỉ định, trong khi các luồng hàng khô, hàng lạnh, hàng nguy hiểm và hàng quá khổ khác bị tạm dừng hoặc hạn chế. Vì vậy, không thể trả lời chung “có” hoặc “không” cho toàn bộ Vùng Vịnh.
+Thông báo Middle East Operational Update 39 của Maersk ngày 16/7 quy định khác nhau theo loại hàng và cảng. Một số lô hàng khô vẫn được nhận qua các cảng và phương án cầu đường bộ chỉ định, trong khi các luồng hàng khô, hàng lạnh, hàng nguy hiểm và hàng quá khổ khác bị tạm dừng hoặc hạn chế. Vì vậy, không thể trả lời chung “có” hoặc “không” cho toàn bộ Vùng Vịnh.
 
 Đối với hàng biển hiện hữu xếp từ hoặc đến các cảng được nêu tại Iraq, Kuwait, Bahrain, Qatar, Các Tiểu vương quốc Ả Rập Thống nhất, Oman trừ Salalah, cùng Dammam và Jubail của Saudi Arabia, Maersk công bố mức Cước khẩn cấp—phụ thuộc các phê duyệt quản lý cần thiết—là 1.800 USD cho container khô 20 feet, 3.000 USD cho container khô 40 feet và 3.800 USD cho container lạnh, thiết bị đặc biệt hoặc hàng nguy hiểm.
 
 Theo phương án tiếp tục hành trình dự kiến và lưu kho tạm thời của hãng, mức cước trên bao gồm 14 ngày lưu kho trung chuyển. Sau đó, thông báo nêu phí 25 USD/TEU/ngày, cộng phí theo dõi và cắm điện container lạnh nếu áp dụng. Maersk cũng lưu ý mức phí có thể được điều chỉnh khi tình hình thay đổi.
 
-Đây là **điều kiện trong thông báo riêng của Maersk**, không phải biểu phí toàn thị trường và không phải báo giá cho mọi lô hàng Việt Nam. Hãng tàu, hợp đồng, loại hàng hoặc cặp cảng khác có thể có điều kiện nhận hàng và chi phí khác.
+Đây là điều kiện trong thông báo riêng của Maersk, không phải biểu phí toàn thị trường và không phải báo giá cho mọi lô hàng Việt Nam. Hãng tàu, hợp đồng, loại hàng hoặc cặp cảng khác có thể có điều kiện nhận hàng và chi phí khác.
 
 ## Vì sao có ý nghĩa với thương mại Việt Nam
 
@@ -37,12 +37,12 @@ Ngày 30/6, UNCTAD cảnh báo hơn 100 ngày gián đoạn đã tạo ra hệ q
 
 ## Sáu bước kiểm tra trước khi giao hàng
 
-1. Lấy xác nhận nhận chỗ bằng văn bản cho đúng loại hàng, cặp cảng và tuyến trung chuyển.
-2. Hỏi rõ báo giá đã gồm cước khẩn cấp, rủi ro chiến tranh, nhiên liệu, lưu kho, theo dõi, cắm điện và cầu đường bộ hay chưa.
-3. Ghi nhận số ngày lưu kho miễn phí và đơn giá theo ngày sau khi hết hạn.
-4. Xác định ai có quyền đổi đích, hoàn hàng hoặc giao tại cảng dự phòng—và ai chịu chi phí.
-5. Kiểm tra lại bảo hiểm hàng hải và điều khoản loại trừ với doanh nghiệp bảo hiểm hoặc môi giới; thông báo hãng tàu không phải xác nhận bảo hiểm.
-6. Rút ngắn thời hạn hiệu lực báo giá cho khách hàng và cộng biên thời gian cho hàng nhạy cảm tiến độ.
+- Lấy xác nhận nhận chỗ bằng văn bản cho đúng loại hàng, cặp cảng và tuyến trung chuyển.
+- Hỏi rõ báo giá đã gồm cước khẩn cấp, rủi ro chiến tranh, nhiên liệu, lưu kho, theo dõi, cắm điện và cầu đường bộ hay chưa.
+- Ghi nhận số ngày lưu kho miễn phí và đơn giá theo ngày sau khi hết hạn.
+- Xác định ai có quyền đổi đích, hoàn hàng hoặc giao tại cảng dự phòng—và ai chịu chi phí.
+- Kiểm tra lại bảo hiểm hàng hải và điều khoản loại trừ với doanh nghiệp bảo hiểm hoặc môi giới; thông báo hãng tàu không phải xác nhận bảo hiểm.
+- Rút ngắn thời hạn hiệu lực báo giá cho khách hàng và cộng biên thời gian cho hàng nhạy cảm tiến độ.
 
 ## Mức độ tin cậy và điểm chưa chắc chắn
 
