@@ -31,6 +31,7 @@ type FormData = {
   phone: string;
   company: string;
   notes: string;
+  website: string;
 };
 
 const EMPTY_FORM: FormData = {
@@ -45,6 +46,7 @@ const EMPTY_FORM: FormData = {
   phone: "",
   company: "",
   notes: "",
+  website: "",
 };
 
 // Internal stable values used for form.mode and urgency — decoupled from display labels
@@ -95,6 +97,7 @@ export default function RequestStepper() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
   const startedRef = useRef(false);
+  const startedAtRef = useRef(Date.now());
 
   function update(key: keyof FormData, value: string) {
     if (!startedRef.current) {
@@ -134,7 +137,12 @@ export default function RequestStepper() {
       const res = await fetch("/api/send-booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, mode: form.mode || "Unspecified", locale }),
+        body: JSON.stringify({
+          ...form,
+          mode: form.mode || "Unspecified",
+          locale,
+          formStartedAt: startedAtRef.current,
+        }),
       });
       const data = await res.json();
       if (data.status === "success") {
@@ -159,6 +167,7 @@ export default function RequestStepper() {
     setStep(1);
     setForm(EMPTY_FORM);
     startedRef.current = false;
+    startedAtRef.current = Date.now();
     setError("");
   }
 
@@ -583,6 +592,17 @@ function Step4({
         </div>
       </div>
       <div>
+        <div className="absolute left-[-9999px]" aria-hidden="true">
+          <label htmlFor="website">Website</label>
+          <input
+            id="website"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+            value={form.website}
+            onChange={(e) => onChange("website", e.target.value)}
+          />
+        </div>
         <label htmlFor="notes" className={labelClass}>
           {t('step4.notesLabel')}
         </label>

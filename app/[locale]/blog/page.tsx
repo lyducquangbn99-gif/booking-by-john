@@ -5,12 +5,60 @@ import { Link } from "@/i18n/navigation";
 import { getAllBlogPosts } from "@/lib/blog";
 import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Blog | Booking by John Ly",
-  description: "Freight updates, route notes, and logistics guides from Booking by John Ly.",
+type Props = { params: Promise<{ locale: string }> };
+
+const BLOG_META: Record<string, { title: string; description: string }> = {
+  en: {
+    title: "Logistics Blog | Booking by John Ly",
+    description: "Freight updates, route notes, and practical logistics guides for shipments to and from Vietnam.",
+  },
+  vi: {
+    title: "Blog Logistics | Booking by John Ly",
+    description: "Tin vận tải, thông tin tuyến và hướng dẫn logistics thực tế cho hàng hóa đi và đến Việt Nam.",
+  },
+  it: {
+    title: "Blog di logistica | Booking by John Ly",
+    description: "Aggiornamenti sui trasporti, rotte e guide logistiche pratiche per le spedizioni da e verso il Vietnam.",
+  },
+  es: {
+    title: "Blog de logística | Booking by John Ly",
+    description: "Actualizaciones de transporte, rutas y guías logísticas prácticas para envíos desde y hacia Vietnam.",
+  },
+  id: {
+    title: "Blog logistik | Booking by John Ly",
+    description: "Pembaruan pengiriman, informasi rute, dan panduan logistik praktis untuk kargo dari dan ke Vietnam.",
+  },
 };
 
-type Props = { params: Promise<{ locale: string }> };
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const meta = BLOG_META[locale] ?? BLOG_META.en;
+  const languages = Object.fromEntries(
+    ["en", "vi", "it", "es", "id"].map((language) => [language, `/${language}/blog`]),
+  );
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/${locale}/blog`,
+      languages: { ...languages, "x-default": "/en/blog" },
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      type: "website",
+      url: `/${locale}/blog`,
+      images: ["/logistics-hero.png"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: ["/logistics-hero.png"],
+    },
+  };
+}
 
 export default async function BlogIndexPage({ params }: Props) {
   const { locale } = await params;

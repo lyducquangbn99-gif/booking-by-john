@@ -26,12 +26,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
   return {
+    metadataBase: new URL("https://www.bookingbyjohnly.com"),
     title: t('title'),
     description: t('description'),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        vi: "/vi",
+        it: "/it",
+        es: "/es",
+        id: "/id",
+        "x-default": "/en",
+      },
+    },
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
       type: 'website',
+      url: `/${locale}`,
+      siteName: "Booking by John Ly",
+      locale,
+      images: [{ url: "/logistics-hero.png", alt: t('ogTitle') }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      images: ["/logistics-hero.png"],
     },
   };
 }
