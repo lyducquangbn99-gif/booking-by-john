@@ -15,8 +15,8 @@
 
   --color-border-subtle: #e2e8f0;
 
-  --font-display: var(--font-space-mono), monospace;
-  --font-body: var(--font-dm-sans), sans-serif;
+  --font-display: var(--font-noto-sans), "Segoe UI", Arial, sans-serif;
+  --font-body: var(--font-noto-sans), "Segoe UI", Arial, sans-serif;
 
   --animate-fade-step: fadeStep 350ms ease forwards;
   --animate-logo-pulse: logoPulse 2s ease-in-out infinite;
@@ -51,8 +51,10 @@ html {
 body {
   background-color: #f8fafc;
   color: #111827;
-  font-family: var(--font-dm-sans), sans-serif;
+  font-family: var(--font-noto-sans), "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-reduced-motion: reduce) {

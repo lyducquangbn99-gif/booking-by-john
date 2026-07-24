@@ -53,17 +53,17 @@ export default async function BlogPostPage({ params }: Props) {
       <article>
         <header className="bg-[#0B1F3A] px-5 py-16 text-white lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl">
-            <Link href="/blog" className="text-sm font-black text-slate-200 hover:text-white">
+            <Link href="/blog" className="text-sm font-semibold text-slate-200 hover:text-white">
               {t("backToBlog")}
             </Link>
-            <div className="mt-8 flex flex-wrap items-center gap-3 text-xs font-black uppercase tracking-wide text-slate-200">
+            <div className="mt-8 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-wide text-slate-200">
               <span>{post.category}</span>
               <span className="h-1 w-1 rounded-full bg-slate-400" />
               <time>{post.date}</time>
               <span className="h-1 w-1 rounded-full bg-slate-400" />
               <span>{post.readTime}</span>
             </div>
-            <h1 className="mt-5 text-4xl font-black leading-tight sm:text-5xl">{post.title}</h1>
+            <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">{post.title}</h1>
             <p className="mt-6 text-lg leading-8 text-slate-200">{post.excerpt}</p>
           </div>
         </header>
@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {post.sources.length > 0 && (
             <section className="mt-8 rounded-lg border border-border-subtle bg-white p-6">
-              <h2 className="text-xl font-black text-[#0B1F3A]">{t("sources")}</h2>
+              <h2 className="text-xl font-bold text-[#0B1F3A]">{t("sources")}</h2>
               <ul className="mt-4 list-disc space-y-3 pl-6 text-text-secondary">
                 {post.sources.map((source) => (
                   <li key={source.url}>
@@ -91,13 +91,13 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           <div className="mt-8 rounded-lg border border-border-subtle bg-white p-6">
-            <h2 className="text-xl font-black text-[#0B1F3A]">{t("ctaTitle")}</h2>
+            <h2 className="text-xl font-bold text-[#0B1F3A]">{t("ctaTitle")}</h2>
             <p className="mt-3 leading-7 text-text-secondary">
               {t("ctaBody")}
             </p>
             <Link
               href="/#request"
-              className="mt-5 inline-flex rounded-md bg-accent-orange px-5 py-3 text-sm font-black text-white transition hover:bg-[#EA580C]"
+              className="mt-5 inline-flex rounded-md bg-accent-orange px-5 py-3 text-sm font-bold text-white transition hover:bg-[#EA580C]"
             >
               {t("ctaButton")}
             </Link>

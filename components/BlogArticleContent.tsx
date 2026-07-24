@@ -26,20 +26,20 @@ export default function BlogArticleContent({ blocks }: { blocks: BlogBlock[] }) 
       {blocks.map((block, index) => {
         if (block.type === "heading") {
           return (
-            <h2 key={`${block.text}-${index}`} className="mb-4 mt-9 text-2xl font-black text-[#0B1F3A] first:mt-0">
+            <h2 key={`${block.text}-${index}`} className="mb-4 mt-10 text-2xl font-bold leading-snug tracking-tight text-[#0B1F3A] first:mt-0">
               {renderInline(block.text)}
             </h2>
           );
         }
         if (block.type === "list") {
           return (
-            <ul key={`list-${index}`} className="mb-6 list-disc space-y-3 pl-6 leading-8 text-text-secondary">
+            <ul key={`list-${index}`} className="mb-7 list-disc space-y-3 pl-6 text-[1.0625rem] leading-8 text-text-secondary marker:text-ocean-blue">
               {block.items.map((item) => <li key={item}>{renderInline(item)}</li>)}
             </ul>
           );
         }
         return (
-          <p key={`${block.text}-${index}`} className="mb-6 text-base leading-8 text-text-secondary last:mb-0">
+          <p key={`${block.text}-${index}`} className="mb-7 text-[1.0625rem] leading-8 text-text-secondary last:mb-0">
             {renderInline(block.text)}
           </p>
         );
@@ -47,4 +47,3 @@ export default function BlogArticleContent({ blocks }: { blocks: BlogBlock[] }) 
     </div>
   );
 }
-
