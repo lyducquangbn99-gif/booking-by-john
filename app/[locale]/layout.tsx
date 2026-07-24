@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
   return {
     metadataBase: new URL("https://www.bookingbyjohnly.com"),
+    verification: {
+      google: "TrKa9aRDz_0WkqS8DC6xtjvBj-ZBsnLFToIFZcwtSVs",
+    },
     title: t('title'),
     description: t('description'),
     alternates: {
