@@ -13,7 +13,11 @@ export default function Footer() {
         <div>
           <h3 className="font-black">Services</h3>
           <ul className="mt-4 space-y-2 text-slate-200">
-            <li>Ocean Freight</li>
+            <li>
+              <Link href="/services/freight-forwarder-vietnam" className="hover:text-accent-orange">
+                Ocean Freight
+              </Link>
+            </li>
             <li>Air Freight</li>
             <li>Drayage & Trucking</li>
             <li>Customs Clearance</li>

@@ -14,6 +14,44 @@ type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
+const RELATED_COPY: Record<string, {
+  routeTitle: string;
+  routeBody: string;
+  routeLink: string;
+  relatedTitle: string;
+}> = {
+  en: {
+    routeTitle: "Vietnam to Italy shipping",
+    routeBody: "Compare the route, documents, FCL and LCL planning points before requesting a shipment-specific quote.",
+    routeLink: "View the Vietnam to Italy route guide",
+    relatedTitle: "Related articles",
+  },
+  vi: {
+    routeTitle: "Vận chuyển Việt Nam đi Ý",
+    routeBody: "So sánh tuyến đi, chứng từ, phương án FCL và LCL trước khi yêu cầu báo giá theo lô hàng.",
+    routeLink: "Xem hướng dẫn tuyến Việt Nam đi Ý",
+    relatedTitle: "Bài viết liên quan",
+  },
+  it: {
+    routeTitle: "Spedizioni dal Vietnam all’Italia",
+    routeBody: "Confronta rotta, documenti e opzioni FCL e LCL prima di richiedere un preventivo specifico.",
+    routeLink: "Consulta la guida Vietnam–Italia",
+    relatedTitle: "Articoli correlati",
+  },
+  es: {
+    routeTitle: "Envíos de Vietnam a Italia",
+    routeBody: "Compara la ruta, la documentación y las opciones FCL y LCL antes de solicitar una cotización específica.",
+    routeLink: "Ver la guía de la ruta Vietnam–Italia",
+    relatedTitle: "Artículos relacionados",
+  },
+  id: {
+    routeTitle: "Pengiriman Vietnam ke Italia",
+    routeBody: "Bandingkan rute, dokumen, serta opsi FCL dan LCL sebelum meminta penawaran khusus kiriman.",
+    routeLink: "Lihat panduan rute Vietnam–Italia",
+    relatedTitle: "Artikel terkait",
+  },
+};
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     getAllBlogPosts(locale).map((post) => ({
@@ -80,6 +118,7 @@ export default async function BlogPostPage({ params }: Props) {
   const relatedPosts = getAllBlogPosts(locale)
     .filter((candidate) => candidate.slug !== slug)
     .slice(0, 2);
+  const relatedCopy = RELATED_COPY[locale] || RELATED_COPY.en;
   const structuredData = [
     {
       "@context": "https://schema.org",
@@ -159,16 +198,16 @@ export default async function BlogPostPage({ params }: Props) {
 
           <section className="mt-10 rounded-lg border border-border-subtle bg-slate-50 p-6">
             <h2 className="text-xl font-bold text-[#0B1F3A]">
-              Vietnam to Italy shipping
+              {relatedCopy.routeTitle}
             </h2>
             <p className="mt-3 leading-7 text-text-secondary">
-              Compare the route, documents, FCL and LCL planning points before requesting a shipment-specific quote.
+              {relatedCopy.routeBody}
             </p>
             <Link
               href="/routes/vietnam-to-italy"
               className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4"
             >
-              View the Vietnam to Italy route guide
+              {relatedCopy.routeLink}
             </Link>
           </section>
 
@@ -202,7 +241,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {relatedPosts.length > 0 && (
             <section className="mt-10">
-              <h2 className="text-2xl font-bold text-[#0B1F3A]">Related articles</h2>
+              <h2 className="text-2xl font-bold text-[#0B1F3A]">{relatedCopy.relatedTitle}</h2>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
                 {relatedPosts.map((relatedPost) => (
                   <Link

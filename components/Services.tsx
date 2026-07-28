@@ -1,7 +1,8 @@
 import { PackageCheck, Plane, Ship, Truck, Warehouse, ClipboardCheck } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 const services = [
-  { icon: Ship, title: "Ocean Freight", description: "FCL and LCL shipping with practical routing and rate guidance." },
+  { icon: Ship, title: "Ocean Freight", description: "FCL and LCL shipping with practical routing and rate guidance.", href: "/services/freight-forwarder-vietnam" },
   { icon: Plane, title: "Air Freight", description: "Urgent cargo support when speed matters more than ocean transit." },
   { icon: Truck, title: "Drayage & Trucking", description: "Port pickup, inland delivery, and coordinated container movement." },
   { icon: Warehouse, title: "Warehousing", description: "Storage and handling support before export or final delivery." },
@@ -29,6 +30,11 @@ export default function Services() {
                 </div>
                 <h3 className="mt-5 text-xl font-black text-[#0B1F3A]">{service.title}</h3>
                 <p className="mt-3 leading-7 text-text-secondary">{service.description}</p>
+                {service.href && (
+                  <Link href={service.href} className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4">
+                    View service details
+                  </Link>
+                )}
               </article>
             );
           })}
