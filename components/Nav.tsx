@@ -129,6 +129,7 @@ export default function Nav() {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/#request"
+            data-quote-cta="nav-desktop"
             className="rounded-md bg-accent-orange px-5 py-3 text-sm font-black text-white shadow-sm transition hover:bg-[#EA580C]"
           >
             {copy.quote}
@@ -163,6 +164,7 @@ export default function Nav() {
             ))}
             <Link
               href="/#request"
+              data-quote-cta="nav-mobile"
               className="mt-2 rounded-md bg-accent-orange px-4 py-3 text-center font-black text-white hover:bg-[#EA580C]"
               onClick={() => setOpen(false)}
             >

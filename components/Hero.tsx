@@ -84,6 +84,7 @@ export default async function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#request"
+              data-quote-cta="hero"
               className="rounded-md bg-accent-orange px-6 py-4 text-center text-sm font-black text-white shadow-lg shadow-black/20 transition hover:bg-[#EA580C]"
             >
               {copy.quote}

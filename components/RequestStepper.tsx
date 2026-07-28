@@ -131,7 +131,10 @@ export default function RequestStepper() {
     if (!startedRef.current) {
       startedRef.current = true;
       startedAtRef.current = Date.now();
-      trackBookingEvent("quote_form_start", { locale });
+      trackBookingEvent("quote_form_start", {
+        locale,
+        source_page: sourcePageRef.current || window.location.pathname,
+      });
     }
     setForm((prev) => ({ ...prev, [key]: value }));
   }
@@ -151,6 +154,7 @@ export default function RequestStepper() {
       locale,
       step,
       mode: form.mode || "unspecified",
+      source_page: sourcePageRef.current || window.location.pathname,
     });
     setStep((s) => s + 1);
   }
@@ -185,6 +189,11 @@ export default function RequestStepper() {
           mode: form.mode || "unspecified",
           urgency: form.urgency || "unspecified",
           source_page: sourcePageRef.current || "direct",
+        });
+        trackBookingEvent("generate_lead", {
+          locale,
+          mode: form.mode || "unspecified",
+          lead_source: sourcePageRef.current || "direct",
         });
         setSuccess(true);
       } else {

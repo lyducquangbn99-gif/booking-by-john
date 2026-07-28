@@ -121,7 +121,19 @@ export default function Analytics() {
       const href = anchor.getAttribute("href") || "";
       const locale = localeFromPath(window.location.pathname);
 
-      if (href.startsWith("mailto:")) {
+      if (href.includes("#request")) {
+        const targetUrl = new URL(href, window.location.origin);
+        const leadSource =
+          targetUrl.searchParams.get("source") || window.location.pathname;
+        const sourcePosition = leadSource.match(/-(hero|details|final)$/)?.[1];
+
+        trackBookingEvent("quote_cta_click", {
+          locale,
+          cta_location:
+            anchor.dataset.quoteCta || sourcePosition || "page",
+          lead_source: leadSource,
+        });
+      } else if (href.startsWith("mailto:")) {
         trackBookingEvent("email_click", { locale });
       } else if (href.startsWith("tel:")) {
         trackBookingEvent("phone_click", { locale });
