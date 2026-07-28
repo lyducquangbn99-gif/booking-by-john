@@ -3,6 +3,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { trackBookingEvent } from "@/lib/analytics";
 import {
   Truck,
@@ -90,6 +91,7 @@ const PHONE = "+84 352 193 969";
 export default function RequestStepper() {
   const t = useTranslations('stepper');
   const locale = useLocale();
+  const searchParams = useSearchParams();
 
   const [step, setStep] = useState(1);
   const [form, setForm] = useState<FormData>(EMPTY_FORM);
@@ -101,10 +103,9 @@ export default function RequestStepper() {
   const sourcePageRef = useRef("");
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const origin = params.get("origin")?.slice(0, 120) || "";
-    const destination = params.get("destination")?.slice(0, 120) || "";
-    sourcePageRef.current = params.get("source")?.slice(0, 120) || window.location.pathname;
+    const origin = searchParams.get("origin")?.slice(0, 120) || "";
+    const destination = searchParams.get("destination")?.slice(0, 120) || "";
+    sourcePageRef.current = searchParams.get("source")?.slice(0, 120) || window.location.pathname;
 
     if (origin || destination) {
       const timer = window.setTimeout(() => {
@@ -118,7 +119,7 @@ export default function RequestStepper() {
       }, 0);
       return () => window.clearTimeout(timer);
     }
-  }, []);
+  }, [searchParams]);
 
   function update(key: keyof FormData, value: string) {
     if (!startedRef.current) {
