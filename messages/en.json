@@ -168,7 +168,7 @@
     },
     "success": {
       "title": "Request received — John's on it.",
-      "body": "Expect a personal follow-up within 2 hours during business hours. For urgent requests, call directly: {phone}",
+      "body": "John will review your request and follow up during business hours. For urgent requests, call directly: {phone}",
       "dismiss": "Got it"
     },
     "error": {

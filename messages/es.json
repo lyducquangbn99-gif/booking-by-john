@@ -168,7 +168,7 @@
     },
     "success": {
       "title": "Solicitud recibida — John está en ello.",
-      "body": "Espera una respuesta personal en 2 horas durante el horario laboral. Para solicitudes urgentes, llama directamente: {phone}",
+      "body": "John revisará la solicitud y responderá durante el horario laboral. Para solicitudes urgentes, llama directamente: {phone}",
       "dismiss": "Entendido"
     },
     "error": {

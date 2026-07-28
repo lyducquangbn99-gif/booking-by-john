@@ -168,7 +168,7 @@
     },
     "success": {
       "title": "Permintaan diterima — John sedang menanganinya.",
-      "body": "Tunggu tindak lanjut pribadi dalam 2 jam selama jam kerja. Untuk permintaan mendesak, hubungi langsung: {phone}",
+      "body": "John akan meninjau permintaan dan menindaklanjuti selama jam kerja. Untuk permintaan mendesak, hubungi langsung: {phone}",
       "dismiss": "Mengerti"
     },
     "error": {

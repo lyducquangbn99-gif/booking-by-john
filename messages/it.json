@@ -168,7 +168,7 @@
     },
     "success": {
       "title": "Richiesta ricevuta — John ci pensa.",
-      "body": "Aspetta una risposta personale entro 2 ore durante l'orario lavorativo. Per richieste urgenti, chiama direttamente: {phone}",
+      "body": "John esaminerà la richiesta e risponderà durante l'orario lavorativo. Per richieste urgenti, chiama direttamente: {phone}",
       "dismiss": "Capito"
     },
     "error": {

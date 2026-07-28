@@ -27,31 +27,31 @@ const customerStrings: Record<
   en: {
     subject: "Request received — John's on it.",
     greeting: "Hi",
-    body: "Your freight inquiry has been received. Expect a personal follow-up from Mr. John within <strong>2 hours</strong> during business hours.",
+    body: "Your freight inquiry has been received. John will review it and follow up during business hours.",
     urgentLabel: "For urgent requests, call directly:",
   },
   es: {
     subject: "Solicitud recibida — John está en ello.",
     greeting: "Hola",
-    body: "Su consulta de carga ha sido recibida. Espere una respuesta personal de Mr. John dentro de <strong>2 horas</strong> durante el horario laboral.",
+    body: "Su consulta de carga ha sido recibida. John la revisará y responderá durante el horario laboral.",
     urgentLabel: "Para solicitudes urgentes, llame directamente:",
   },
   vi: {
     subject: "Yêu cầu đã nhận — John đang xử lý.",
     greeting: "Xin chào",
-    body: "Yêu cầu vận chuyển của bạn đã được nhận. Mr. John sẽ liên hệ cá nhân với bạn trong vòng <strong>2 giờ</strong> trong giờ làm việc.",
+    body: "Yêu cầu vận chuyển của bạn đã được nhận. John sẽ xem và liên hệ trong giờ làm việc.",
     urgentLabel: "Đối với các yêu cầu khẩn cấp, gọi trực tiếp:",
   },
   it: {
     subject: "Richiesta ricevuta — John ci pensa.",
     greeting: "Salve",
-    body: "La tua richiesta di spedizione è stata ricevuta. Aspetta una risposta personale da Mr. John entro <strong>2 ore</strong> durante l'orario lavorativo.",
+    body: "La tua richiesta di spedizione è stata ricevuta. John la esaminerà e risponderà durante l'orario lavorativo.",
     urgentLabel: "Per richieste urgenti, chiama direttamente:",
   },
   id: {
     subject: "Permintaan diterima — John sedang menanganinya.",
     greeting: "Halo",
-    body: "Permintaan pengiriman Anda telah diterima. Tunggu tindak lanjut pribadi dari Mr. John dalam <strong>2 jam</strong> selama jam kerja.",
+    body: "Permintaan pengiriman Anda telah diterima. John akan meninjaunya dan menindaklanjuti selama jam kerja.",
     urgentLabel: "Untuk permintaan mendesak, hubungi langsung:",
   },
 };

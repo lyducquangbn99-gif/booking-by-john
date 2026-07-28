@@ -168,7 +168,7 @@
     },
     "success": {
       "title": "Yêu cầu đã nhận — John đang xử lý.",
-      "body": "Hãy chờ phản hồi cá nhân trong vòng 2 giờ trong giờ làm việc. Với các yêu cầu khẩn cấp, gọi trực tiếp: {phone}",
+      "body": "John sẽ xem yêu cầu và liên hệ trong giờ làm việc. Với yêu cầu khẩn cấp, gọi trực tiếp: {phone}",
       "dismiss": "Đã hiểu"
     },
     "error": {
