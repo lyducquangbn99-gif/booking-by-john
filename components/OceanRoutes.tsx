@@ -4,6 +4,7 @@ const routes = [
   { lane: "Vietnam -> Italy", port: "Genoa", href: "/routes/vietnam-to-italy" },
   { lane: "Vietnam -> Spain", port: "Barcelona / Valencia", href: "/routes/vietnam-to-spain" },
   { lane: "Vietnam -> Indonesia", port: "Jakarta / Surabaya", href: "/routes/vietnam-to-indonesia" },
+  { lane: "Vietnam -> Taiwan", port: "Kaohsiung / Keelung", href: "/routes/vietnam-to-taiwan" },
 ];
 
 export default function OceanRoutes() {
@@ -21,7 +22,7 @@ export default function OceanRoutes() {
         </p>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {routes.map((route) => (
           <article
             key={route.lane}

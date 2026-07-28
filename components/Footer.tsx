@@ -42,7 +42,11 @@ export default function Footer() {
                 Vietnam to Indonesia
               </Link>
             </li>
-            <li>Vietnam to Taiwan</li>
+            <li>
+              <Link href="/routes/vietnam-to-taiwan" className="hover:text-accent-orange">
+                Vietnam to Taiwan
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
