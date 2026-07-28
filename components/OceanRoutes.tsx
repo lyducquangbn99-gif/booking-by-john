@@ -2,7 +2,7 @@ import { Link } from "@/i18n/navigation";
 
 const routes = [
   { lane: "Vietnam -> Italy", port: "Genoa", href: "/routes/vietnam-to-italy" },
-  { lane: "Vietnam -> Indonesia", port: "Jakarta" },
+  { lane: "Vietnam -> Spain", port: "Barcelona / Valencia", href: "/routes/vietnam-to-spain" },
   { lane: "Vietnam -> Taiwan", port: "Kaohsiung" },
 ];
 

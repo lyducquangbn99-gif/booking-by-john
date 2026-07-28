@@ -62,22 +62,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const routePages: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
-    url: `${BASE_URL}/${locale}/routes/vietnam-to-italy`,
-    changeFrequency: "monthly",
-    priority: locale === "en" || locale === "it" ? 0.9 : 0.8,
-    alternates: {
-      languages: {
-        ...Object.fromEntries(
-          routing.locales.map((language) => [
-            language,
-            `${BASE_URL}/${language}/routes/vietnam-to-italy`,
-          ]),
-        ),
-        "x-default": `${BASE_URL}/en/routes/vietnam-to-italy`,
+  const routeSlugs = ["vietnam-to-italy", "vietnam-to-spain"];
+  const routePages: MetadataRoute.Sitemap = routeSlugs.flatMap((slug) =>
+    routing.locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/routes/${slug}`,
+      changeFrequency: "monthly",
+      priority: locale === "en" || (slug === "vietnam-to-italy" && locale === "it") || (slug === "vietnam-to-spain" && locale === "es") ? 0.9 : 0.8,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(
+            routing.locales.map((language) => [
+              language,
+              `${BASE_URL}/${language}/routes/${slug}`,
+            ]),
+          ),
+          "x-default": `${BASE_URL}/en/routes/${slug}`,
+        },
       },
-    },
-  }));
+    })),
+  );
 
   const servicePages: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
     url: `${BASE_URL}/${locale}/services/freight-forwarder-vietnam`,

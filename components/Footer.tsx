@@ -32,9 +32,13 @@ export default function Footer() {
                 Vietnam to Italy
               </Link>
             </li>
+            <li>
+              <Link href="/routes/vietnam-to-spain" className="hover:text-accent-orange">
+                Vietnam to Spain
+              </Link>
+            </li>
             <li>Vietnam to Indonesia</li>
             <li>Vietnam to Taiwan</li>
-            <li>Vietnam to Europe</li>
           </ul>
         </div>
         <div>
