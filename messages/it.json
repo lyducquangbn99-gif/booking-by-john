@@ -104,13 +104,13 @@
       "subheading": "Seleziona la modalità più adatta. Non sei sicuro? Scegli \"Altro\" e lo risolviamo insieme.",
       "ariaGroupLabel": "Modalità di spedizione",
       "modes": {
-        "ftl": "FTL",
-        "ltl": "LTL",
-        "drayage": "Portuale",
-        "intermodal": "Intermodale",
-        "expedited": "Urgente",
-        "courier": "Corriere",
         "ocean": "Marittimo",
+        "air": "Aereo",
+        "courier": "Corriere",
+        "customs": "Dogana",
+        "trucking": "Trasporto stradale",
+        "warehousing": "Magazzino",
+        "multimodal": "Multimodale",
         "other": "Altro"
       }
     },
@@ -154,7 +154,7 @@
     },
     "step4": {
       "heading": "Come posso contattarti?",
-      "subheading": "Mr. John ti risponderà personalmente — niente bot, niente email automatiche.",
+      "subheading": "John esaminerà personalmente i dettagli della spedizione.",
       "nameLabel": "Nome",
       "companyLabel": "Azienda",
       "companyPlaceholder": "Azienda (opzionale)",
@@ -162,9 +162,11 @@
       "emailPlaceholder": "tu@azienda.com",
       "phoneLabel": "Telefono",
       "phonePlaceholder": "+39 000 000 0000",
+      "contactHint": "Inserisci un indirizzo email oppure un numero di telefono.",
       "notesLabel": "Note / Requisiti Speciali",
       "notesPlaceholder": "Altro che dovremmo sapere?",
-      "errorContactRequired": "Inserisci il tuo nome e almeno un modo per contattarti."
+      "errorContactRequired": "Inserisci il tuo nome e almeno un modo per contattarti.",
+      "errorEmailInvalid": "Inserisci un indirizzo email valido."
     },
     "success": {
       "title": "Richiesta ricevuta — John ci pensa.",

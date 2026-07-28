@@ -104,13 +104,13 @@
       "subheading": "Chọn phương thức phù hợp nhất. Chưa chắc? Chọn \"Khác\" và chúng tôi sẽ tư vấn thêm.",
       "ariaGroupLabel": "Phương thức vận chuyển",
       "modes": {
-        "ftl": "FTL",
-        "ltl": "LTL",
-        "drayage": "Nội địa cảng",
-        "intermodal": "Đa phương thức",
-        "expedited": "Hàng khẩn",
-        "courier": "Courier",
         "ocean": "Vận tải biển",
+        "air": "Vận tải hàng không",
+        "courier": "Chuyển phát nhanh",
+        "customs": "Hải quan",
+        "trucking": "Vận tải đường bộ",
+        "warehousing": "Kho bãi",
+        "multimodal": "Đa phương thức",
         "other": "Khác"
       }
     },
@@ -154,7 +154,7 @@
     },
     "step4": {
       "heading": "Tôi liên hệ bạn như thế nào?",
-      "subheading": "Mr. John sẽ liên hệ trực tiếp — không bot, không email tự động.",
+      "subheading": "John sẽ trực tiếp xem thông tin lô hàng của bạn.",
       "nameLabel": "Họ tên",
       "companyLabel": "Công ty",
       "companyPlaceholder": "Công ty (không bắt buộc)",
@@ -162,9 +162,11 @@
       "emailPlaceholder": "ban@congty.com",
       "phoneLabel": "Điện thoại",
       "phonePlaceholder": "+84 (0) 000-000-000",
+      "contactHint": "Chỉ cần nhập email hoặc số điện thoại.",
       "notesLabel": "Ghi Chú / Yêu Cầu Đặc Biệt",
       "notesPlaceholder": "Còn điều gì khác chúng tôi cần biết?",
-      "errorContactRequired": "Vui lòng nhập tên và ít nhất một phương thức liên hệ."
+      "errorContactRequired": "Vui lòng nhập tên và ít nhất một phương thức liên hệ.",
+      "errorEmailInvalid": "Vui lòng nhập địa chỉ email hợp lệ."
     },
     "success": {
       "title": "Yêu cầu đã nhận — John đang xử lý.",

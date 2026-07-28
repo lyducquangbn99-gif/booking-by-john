@@ -104,13 +104,13 @@
       "subheading": "Select the mode that best fits. Not sure? Pick \"Other\" and we'll sort it out.",
       "ariaGroupLabel": "Shipping mode",
       "modes": {
-        "ftl": "FTL",
-        "ltl": "LTL",
-        "drayage": "Drayage",
-        "intermodal": "Intermodal",
-        "expedited": "Expedited",
-        "courier": "Courier",
         "ocean": "Ocean Freight",
+        "air": "Air Freight",
+        "courier": "Courier",
+        "customs": "Customs",
+        "trucking": "Trucking",
+        "warehousing": "Warehousing",
+        "multimodal": "Multimodal",
         "other": "Other"
       }
     },
@@ -154,7 +154,7 @@
     },
     "step4": {
       "heading": "How do I reach you?",
-      "subheading": "Mr. John will follow up personally — no bots, no auto-emails.",
+      "subheading": "John will personally review your shipment details.",
       "nameLabel": "Name",
       "companyLabel": "Company",
       "companyPlaceholder": "Company (optional)",
@@ -162,9 +162,11 @@
       "emailPlaceholder": "you@company.com",
       "phoneLabel": "Phone",
       "phonePlaceholder": "+1 (555) 000-0000",
+      "contactHint": "Enter either an email address or phone number.",
       "notesLabel": "Notes / Special Requirements",
       "notesPlaceholder": "Anything else we should know?",
-      "errorContactRequired": "Please enter your name and at least one way to reach you."
+      "errorContactRequired": "Please enter your name and at least one way to reach you.",
+      "errorEmailInvalid": "Please enter a valid email address."
     },
     "success": {
       "title": "Request received — John's on it.",

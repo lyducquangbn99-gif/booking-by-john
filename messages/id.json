@@ -104,13 +104,13 @@
       "subheading": "Pilih moda yang paling sesuai. Tidak yakin? Pilih \"Lainnya\" dan kami akan menyelesaikannya.",
       "ariaGroupLabel": "Moda pengiriman",
       "modes": {
-        "ftl": "FTL",
-        "ltl": "LTL",
-        "drayage": "Pelabuhan",
-        "intermodal": "Intermodal",
-        "expedited": "Ekspres",
-        "courier": "Kurir",
         "ocean": "Laut",
+        "air": "Udara",
+        "courier": "Kurir",
+        "customs": "Bea Cukai",
+        "trucking": "Truk Darat",
+        "warehousing": "Pergudangan",
+        "multimodal": "Multimoda",
         "other": "Lainnya"
       }
     },
@@ -154,7 +154,7 @@
     },
     "step4": {
       "heading": "Bagaimana cara menghubungi Anda?",
-      "subheading": "Mr. John akan menindaklanjuti secara pribadi — tanpa bot, tanpa email otomatis.",
+      "subheading": "John akan meninjau detail pengiriman Anda secara langsung.",
       "nameLabel": "Nama",
       "companyLabel": "Perusahaan",
       "companyPlaceholder": "Perusahaan (opsional)",
@@ -162,9 +162,11 @@
       "emailPlaceholder": "anda@perusahaan.com",
       "phoneLabel": "Telepon",
       "phonePlaceholder": "+62 000 0000 0000",
+      "contactHint": "Masukkan alamat email atau nomor telepon.",
       "notesLabel": "Catatan / Persyaratan Khusus",
       "notesPlaceholder": "Ada hal lain yang perlu kami ketahui?",
-      "errorContactRequired": "Masukkan nama Anda dan setidaknya satu cara untuk menghubungi Anda."
+      "errorContactRequired": "Masukkan nama Anda dan setidaknya satu cara untuk menghubungi Anda.",
+      "errorEmailInvalid": "Masukkan alamat email yang valid."
     },
     "success": {
       "title": "Permintaan diterima — John sedang menanganinya.",

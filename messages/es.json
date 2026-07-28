@@ -104,13 +104,13 @@
       "subheading": "Selecciona el modo que mejor se adapte. ¿No estás seguro? Elige \"Otro\" y lo resolvemos.",
       "ariaGroupLabel": "Modo de envío",
       "modes": {
-        "ftl": "FTL",
-        "ltl": "LTL",
-        "drayage": "Acarreo",
-        "intermodal": "Intermodal",
-        "expedited": "Urgente",
-        "courier": "Courier",
         "ocean": "Flete Marítimo",
+        "air": "Flete Aéreo",
+        "courier": "Courier",
+        "customs": "Aduanas",
+        "trucking": "Transporte terrestre",
+        "warehousing": "Almacenaje",
+        "multimodal": "Multimodal",
         "other": "Otro"
       }
     },
@@ -154,7 +154,7 @@
     },
     "step4": {
       "heading": "¿Cómo me comunico contigo?",
-      "subheading": "Mr. John te contactará personalmente — sin bots, sin correos automáticos.",
+      "subheading": "John revisará personalmente los datos de tu envío.",
       "nameLabel": "Nombre",
       "companyLabel": "Empresa",
       "companyPlaceholder": "Empresa (opcional)",
@@ -162,9 +162,11 @@
       "emailPlaceholder": "tu@empresa.com",
       "phoneLabel": "Teléfono",
       "phonePlaceholder": "+1 (555) 000-0000",
+      "contactHint": "Ingresa un correo electrónico o un número de teléfono.",
       "notesLabel": "Notas / Requisitos Especiales",
       "notesPlaceholder": "¿Algo más que debamos saber?",
-      "errorContactRequired": "Por favor, ingresa tu nombre y al menos una forma de contacto."
+      "errorContactRequired": "Por favor, ingresa tu nombre y al menos una forma de contacto.",
+      "errorEmailInvalid": "Ingresa una dirección de correo válida."
     },
     "success": {
       "title": "Solicitud recibida — John está en ello.",

@@ -10,9 +10,9 @@ import {
   Package,
   Ship,
   Train,
-  Zap,
   Plane,
-  Waves,
+  Warehouse,
+  FileCheck,
   HelpCircle,
   CheckCircle,
   Clock,
@@ -53,14 +53,14 @@ const EMPTY_FORM: FormData = {
 // Internal stable values used for form.mode and urgency — decoupled from display labels
 // so the API email subject stays locale-independent.
 const MODE_ENTRIES: { value: string; labelKey: string; icon: LucideIcon }[] = [
-  { value: "FTL",           labelKey: "step1.modes.ftl",        icon: Truck },
-  { value: "LTL",           labelKey: "step1.modes.ltl",        icon: Package },
-  { value: "Drayage",       labelKey: "step1.modes.drayage",    icon: Ship },
-  { value: "Intermodal",    labelKey: "step1.modes.intermodal", icon: Train },
-  { value: "Expedited",     labelKey: "step1.modes.expedited",  icon: Zap },
-  { value: "Courier",       labelKey: "step1.modes.courier",    icon: Plane },
-  { value: "Ocean Freight", labelKey: "step1.modes.ocean",      icon: Waves },
-  { value: "Other",         labelKey: "step1.modes.other",      icon: HelpCircle },
+  { value: "Ocean Freight",     labelKey: "step1.modes.ocean",      icon: Ship },
+  { value: "Air Freight",       labelKey: "step1.modes.air",        icon: Plane },
+  { value: "Courier",           labelKey: "step1.modes.courier",    icon: Package },
+  { value: "Customs Clearance", labelKey: "step1.modes.customs",    icon: FileCheck },
+  { value: "Inland Trucking",   labelKey: "step1.modes.trucking",   icon: Truck },
+  { value: "Warehousing",       labelKey: "step1.modes.warehousing", icon: Warehouse },
+  { value: "Multimodal",        labelKey: "step1.modes.multimodal", icon: Train },
+  { value: "Other",             labelKey: "step1.modes.other",      icon: HelpCircle },
 ];
 
 const WEIGHT_KEYS = [
@@ -150,8 +150,12 @@ export default function RequestStepper() {
   }
 
   async function handleSubmit() {
-    if (!form.name || !(form.email || form.phone)) {
+    if (!form.name.trim() || !(form.email.trim() || form.phone.trim())) {
       setError(t('step4.errorContactRequired'));
+      return;
+    }
+    if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(form.email)) {
+      setError(t('step4.errorEmailInvalid'));
       return;
     }
     setError("");
@@ -232,7 +236,17 @@ export default function RequestStepper() {
         </div>
       )}
 
-      <div className="max-w-2xl mx-auto">
+      <form
+        className="max-w-2xl mx-auto"
+        onSubmit={(event) => {
+          event.preventDefault();
+          if (step < 4) {
+            handleNext();
+          } else {
+            void handleSubmit();
+          }
+        }}
+      >
         {/* Header */}
         <p className="font-display text-xs text-accent-green tracking-widest uppercase mb-4">
           {t('tagline')}
@@ -289,6 +303,7 @@ export default function RequestStepper() {
         <div className="flex justify-between items-center mt-10">
           {step > 1 ? (
             <button
+              type="button"
               onClick={() => {
                 setError("");
                 setStep((s) => s - 1);
@@ -303,14 +318,14 @@ export default function RequestStepper() {
 
           {step < 4 ? (
             <button
-              onClick={handleNext}
+              type="submit"
               className="font-display font-bold text-sm text-bg-primary bg-accent-green px-7 py-3 rounded-md hover:-translate-y-px hover:shadow-[0_0_16px_rgba(0,232,123,0.3)] transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green min-h-[44px]"
             >
               {t('nextButton')}
             </button>
           ) : (
             <button
-              onClick={handleSubmit}
+              type="submit"
               disabled={submitting}
               aria-disabled={submitting}
               className={`font-display font-bold text-sm text-bg-primary px-7 py-3 rounded-md transition-all duration-200 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green ${
@@ -332,7 +347,7 @@ export default function RequestStepper() {
             {error}
           </p>
         )}
-      </div>
+      </form>
     </section>
   );
 }
@@ -359,6 +374,7 @@ function Step1({ t, mode, onSelect }: { t: TFunc; mode: string; onSelect: (v: st
           const Icon = m.icon;
           return (
             <button
+              type="button"
               key={m.value}
               onClick={() => onSelect(m.value)}
               aria-pressed={mode === m.value}
@@ -498,6 +514,7 @@ function Step3({ t, urgency, onSelect }: { t: TFunc; urgency: string; onSelect: 
           const Icon = opt.icon;
           return (
             <button
+              type="button"
               key={opt.value}
               onClick={() => onSelect(opt.value)}
               aria-pressed={urgency === opt.value}
@@ -565,6 +582,9 @@ function Step4({
           </label>
           <input
             id="name"
+            name="name"
+            required
+            maxLength={120}
             className={inputClass}
             placeholder={t('step4.nameLabel')}
             autoComplete="name"
@@ -589,11 +609,13 @@ function Step4({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="email" className={labelClass}>
-            {t('step4.emailLabel')} <span aria-hidden="true">*</span>
+            {t('step4.emailLabel')}
           </label>
           <input
             id="email"
+            name="email"
             type="email"
+            maxLength={254}
             className={inputClass}
             placeholder={t('step4.emailPlaceholder')}
             autoComplete="email"
@@ -603,11 +625,14 @@ function Step4({
         </div>
         <div>
           <label htmlFor="phone" className={labelClass}>
-            {t('step4.phoneLabel')} <span aria-hidden="true">*</span>
+            {t('step4.phoneLabel')}
           </label>
           <input
             id="phone"
+            name="phone"
             type="tel"
+            inputMode="tel"
+            maxLength={50}
             className={inputClass}
             placeholder={t('step4.phonePlaceholder')}
             autoComplete="tel"
@@ -616,6 +641,9 @@ function Step4({
           />
         </div>
       </div>
+      <p className="-mt-2 text-xs text-text-muted">
+        {t('step4.contactHint')}
+      </p>
       <div>
         <div className="absolute left-[-9999px]" aria-hidden="true">
           <label htmlFor="website">Website</label>
@@ -633,6 +661,8 @@ function Step4({
         </label>
         <textarea
           id="notes"
+          name="notes"
+          maxLength={2000}
           className={`${inputClass} min-h-24 resize-y`}
           placeholder={t('step4.notesPlaceholder')}
           value={form.notes}
