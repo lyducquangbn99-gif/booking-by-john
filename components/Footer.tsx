@@ -29,7 +29,11 @@ export default async function Footer() {
                 {copy.ocean}
               </Link>
             </li>
-            <li>{copy.air}</li>
+            <li>
+              <Link href="/services/air-freight-vietnam" className="hover:text-accent-orange">
+                {copy.air}
+              </Link>
+            </li>
             <li>{copy.trucking}</li>
             <li>{copy.customs}</li>
             <li>{copy.door}</li>

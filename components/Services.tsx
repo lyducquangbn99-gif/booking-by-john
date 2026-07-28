@@ -43,8 +43,8 @@ export default async function Services() {
                 </div>
                 <h3 className="mt-5 text-xl font-black text-[#0B1F3A]">{title}</h3>
                 <p className="mt-3 leading-7 text-text-secondary">{description}</p>
-                {index === 0 && (
-                  <Link href="/services/freight-forwarder-vietnam" className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4">
+                {(index === 0 || index === 1) && (
+                  <Link href={index === 0 ? "/services/freight-forwarder-vietnam" : "/services/air-freight-vietnam"} className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4">
                     {copy.details}
                   </Link>
                 )}

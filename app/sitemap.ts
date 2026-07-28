@@ -82,22 +82,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  const servicePages: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
-    url: `${BASE_URL}/${locale}/services/freight-forwarder-vietnam`,
-    changeFrequency: "monthly",
-    priority: 0.9,
-    alternates: {
-      languages: {
-        ...Object.fromEntries(
-          routing.locales.map((language) => [
-            language,
-            `${BASE_URL}/${language}/services/freight-forwarder-vietnam`,
-          ]),
-        ),
-        "x-default": `${BASE_URL}/en/services/freight-forwarder-vietnam`,
+  const serviceSlugs = ["freight-forwarder-vietnam", "air-freight-vietnam"];
+  const servicePages: MetadataRoute.Sitemap = serviceSlugs.flatMap((slug) =>
+    routing.locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/services/${slug}`,
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(
+            routing.locales.map((language) => [
+              language,
+              `${BASE_URL}/${language}/services/${slug}`,
+            ]),
+          ),
+          "x-default": `${BASE_URL}/en/services/${slug}`,
+        },
       },
-    },
-  }));
+    })),
+  );
 
   return [...staticPages, ...servicePages, ...routePages, ...articlePages];
 }
