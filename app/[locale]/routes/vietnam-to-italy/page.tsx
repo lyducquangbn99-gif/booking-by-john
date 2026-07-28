@@ -335,7 +335,7 @@ export default async function VietnamToItalyPage({ params }: Props) {
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-6xl">{copy.title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.description}</p>
           <div className="mt-9 flex flex-wrap gap-4">
-            <Link href="/#request" className="rounded-md bg-accent-orange px-6 py-3 font-black text-white hover:bg-[#EA580C]">
+            <Link href="/?origin=Vietnam&destination=Italy&source=vietnam-to-italy#request" className="rounded-md bg-accent-orange px-6 py-3 font-black text-white hover:bg-[#EA580C]">
               {copy.primaryCta}
             </Link>
             <a href="#planning" className="rounded-md border border-white/30 px-6 py-3 font-black text-white hover:bg-white/10">
@@ -414,7 +414,7 @@ export default async function VietnamToItalyPage({ params }: Props) {
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-black">{copy.finalTitle}</h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-200">{copy.finalBody}</p>
-          <Link href="/#request" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white hover:bg-[#EA580C]">
+          <Link href="/?origin=Vietnam&destination=Italy&source=vietnam-to-italy#request" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white hover:bg-[#EA580C]">
             {copy.finalCta}
           </Link>
         </div>

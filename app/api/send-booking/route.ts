@@ -157,6 +157,7 @@ export async function POST(req: Request) {
     const company = text(data.company, 160);
     const notes = text(data.notes, 2_000);
     const localeInput = text(data.locale, 5);
+    const sourcePage = text(data.sourcePage, 120);
     const locale = ALLOWED_LOCALES.has(localeInput) ? localeInput : "en";
 
     if (!name || (!email && !phone) || !ALLOWED_MODES.has(mode)) {
@@ -197,6 +198,7 @@ export async function POST(req: Request) {
         company: company || "—",
         notes: notes || "—",
         locale,
+        sourcePage: sourcePage || "direct",
       }).map(([key, value]) => [key, escapeHtml(value)]),
     );
 
@@ -220,6 +222,7 @@ export async function POST(req: Request) {
             <tr><td style="padding:8px 0;"><strong>Company</strong></td><td>${safe.company}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Notes</strong></td><td>${safe.notes}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Locale</strong></td><td>${safe.locale}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>Lead Source</strong></td><td>${safe.sourcePage}</td></tr>
           </table>
         </div>
       `,

@@ -1,7 +1,7 @@
 // components/RequestStepper.tsx
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { trackBookingEvent } from "@/lib/analytics";
 import {
@@ -98,6 +98,27 @@ export default function RequestStepper() {
   const [error, setError] = useState("");
   const startedRef = useRef(false);
   const startedAtRef = useRef<number | null>(null);
+  const sourcePageRef = useRef("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const origin = params.get("origin")?.slice(0, 120) || "";
+    const destination = params.get("destination")?.slice(0, 120) || "";
+    sourcePageRef.current = params.get("source")?.slice(0, 120) || window.location.pathname;
+
+    if (origin || destination) {
+      const timer = window.setTimeout(() => {
+        setForm((current) => ({
+          ...current,
+          origin: current.origin || origin,
+          destination: current.destination || destination,
+          mode: current.mode || "Ocean Freight",
+        }));
+        setStep(2);
+      }, 0);
+      return () => window.clearTimeout(timer);
+    }
+  }, []);
 
   function update(key: keyof FormData, value: string) {
     if (!startedRef.current) {
@@ -143,6 +164,7 @@ export default function RequestStepper() {
           mode: form.mode || "Unspecified",
           locale,
           formStartedAt: startedAtRef.current,
+          sourcePage: sourcePageRef.current,
         }),
       });
       const data = await res.json();
@@ -151,6 +173,7 @@ export default function RequestStepper() {
           locale,
           mode: form.mode || "unspecified",
           urgency: form.urgency || "unspecified",
+          source_page: sourcePageRef.current || "direct",
         });
         setSuccess(true);
       } else {

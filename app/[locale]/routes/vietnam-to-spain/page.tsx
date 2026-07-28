@@ -259,7 +259,7 @@ export default async function VietnamToSpainPage({ params }: Props) {
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-6xl">{copy.title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.description}</p>
           <div className="mt-9 flex flex-wrap gap-4">
-            <Link href="/#request" className="rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link>
+            <Link href="/?origin=Vietnam&destination=Spain&source=vietnam-to-spain#request" className="rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link>
             <a href="#planning" className="rounded-md border border-white/30 px-6 py-3 font-black">{copy.plan}</a>
           </div>
         </div>
@@ -322,7 +322,7 @@ export default async function VietnamToSpainPage({ params }: Props) {
       <section className="bg-[#0B1F3A] px-5 py-14 text-center text-white lg:px-8">
         <h2 className="text-3xl font-black">{copy.finalTitle}</h2>
         <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-200">{copy.finalBody}</p>
-        <Link href="/#request" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link>
+        <Link href="/?origin=Vietnam&destination=Spain&source=vietnam-to-spain#request" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link>
       </section>
       <Footer />
     </main>
