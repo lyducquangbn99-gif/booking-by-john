@@ -105,17 +105,23 @@ export default function RequestStepper() {
   useEffect(() => {
     const origin = searchParams.get("origin")?.slice(0, 120) || "";
     const destination = searchParams.get("destination")?.slice(0, 120) || "";
+    const requestedMode = searchParams.get("mode")?.slice(0, 40) || "";
+    const mode = MODE_ENTRIES.some((entry) => entry.value === requestedMode)
+      ? requestedMode
+      : "";
     sourcePageRef.current = searchParams.get("source")?.slice(0, 120) || window.location.pathname;
 
-    if (origin || destination) {
+    if (origin || destination || mode) {
       const timer = window.setTimeout(() => {
         setForm((current) => ({
           ...current,
           origin: current.origin || origin,
           destination: current.destination || destination,
-          mode: current.mode || "Ocean Freight",
+          mode: current.mode || mode || "Ocean Freight",
         }));
-        setStep(2);
+        if (origin || destination) {
+          setStep(2);
+        }
       }, 0);
       return () => window.clearTimeout(timer);
     }
