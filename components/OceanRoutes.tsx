@@ -1,5 +1,7 @@
+import { Link } from "@/i18n/navigation";
+
 const routes = [
-  { lane: "Vietnam -> Italy", port: "Genoa" },
+  { lane: "Vietnam -> Italy", port: "Genoa", href: "/routes/vietnam-to-italy" },
   { lane: "Vietnam -> Indonesia", port: "Jakarta" },
   { lane: "Vietnam -> Taiwan", port: "Kaohsiung" },
 ];
@@ -35,6 +37,14 @@ export default function OceanRoutes() {
             <p className="mt-4 text-text-secondary">
               Port of discharge: <span className="font-bold text-text-primary">{route.port}</span>
             </p>
+            {route.href ? (
+              <Link
+                href={route.href}
+                className="mt-5 inline-flex text-sm font-black text-ocean-blue underline underline-offset-4"
+              >
+                View route guide
+              </Link>
+            ) : null}
           </article>
         ))}
       </div>

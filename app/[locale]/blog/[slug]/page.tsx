@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllBlogPosts, getBlogPost } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
 import BlogArticleContent from "@/components/BlogArticleContent";
+import JsonLd from "@/components/JsonLd";
 import { getTranslations } from "next-intl/server";
 
 type Props = {
@@ -74,9 +75,63 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const baseUrl = "https://www.bookingbyjohnly.com";
+  const articleUrl = `${baseUrl}/${locale}/blog/${slug}`;
+  const relatedPosts = getAllBlogPosts(locale)
+    .filter((candidate) => candidate.slug !== slug)
+    .slice(0, 2);
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt,
+      image: new URL(post.image, baseUrl).toString(),
+      datePublished: post.date,
+      dateModified: post.date,
+      inLanguage: locale,
+      mainEntityOfPage: articleUrl,
+      author: {
+        "@type": "Organization",
+        name: "Booking by John Ly",
+        url: baseUrl,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Booking by John Ly",
+        url: baseUrl,
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: `${baseUrl}/${locale}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: `${baseUrl}/${locale}/blog`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: post.title,
+          item: articleUrl,
+        },
+      ],
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-bg-primary text-text-primary">
       <Nav />
+      <JsonLd data={structuredData} />
       <article>
         <header className="bg-[#0B1F3A] px-5 py-16 text-white lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl">
@@ -101,6 +156,21 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <BlogArticleContent blocks={post.content} />
+
+          <section className="mt-10 rounded-lg border border-border-subtle bg-slate-50 p-6">
+            <h2 className="text-xl font-bold text-[#0B1F3A]">
+              Vietnam to Italy shipping
+            </h2>
+            <p className="mt-3 leading-7 text-text-secondary">
+              Compare the route, documents, FCL and LCL planning points before requesting a shipment-specific quote.
+            </p>
+            <Link
+              href="/routes/vietnam-to-italy"
+              className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4"
+            >
+              View the Vietnam to Italy route guide
+            </Link>
+          </section>
 
           {post.sources.length > 0 && (
             <section className="mt-8 rounded-lg border border-border-subtle bg-white p-6">
@@ -129,6 +199,28 @@ export default async function BlogPostPage({ params }: Props) {
               {t("ctaButton")}
             </Link>
           </div>
+
+          {relatedPosts.length > 0 && (
+            <section className="mt-10">
+              <h2 className="text-2xl font-bold text-[#0B1F3A]">Related articles</h2>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                {relatedPosts.map((relatedPost) => (
+                  <Link
+                    key={relatedPost.slug}
+                    href={`/blog/${relatedPost.slug}`}
+                    className="rounded-lg border border-border-subtle bg-white p-5 transition hover:border-ocean-blue"
+                  >
+                    <span className="text-xs font-semibold uppercase tracking-wide text-ocean-blue">
+                      {relatedPost.category}
+                    </span>
+                    <h3 className="mt-2 font-bold leading-6 text-[#0B1F3A]">
+                      {relatedPost.title}
+                    </h3>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       </article>
       <Footer />

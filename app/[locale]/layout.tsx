@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import Analytics from '@/components/Analytics';
+import JsonLd from '@/components/JsonLd';
 import "../globals.css";
 
 const notoSans = Noto_Sans({
@@ -64,9 +65,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   const messages = await getMessages();
+  const siteUrl = `https://www.bookingbyjohnly.com/${locale}`;
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.bookingbyjohnly.com/#organization",
+    name: "Booking by John Ly",
+    url: "https://www.bookingbyjohnly.com",
+    email: "BookingbyJohnly@gmail.com",
+    telephone: "+84 352 193 969",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "freight inquiry",
+      telephone: "+84 352 193 969",
+      availableLanguage: ["English", "Vietnamese", "Italian", "Spanish", "Indonesian"],
+    },
+  };
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.bookingbyjohnly.com/#website",
+    url: "https://www.bookingbyjohnly.com",
+    name: "Booking by John Ly",
+    inLanguage: locale,
+    publisher: { "@id": "https://www.bookingbyjohnly.com/#organization" },
+    mainEntityOfPage: siteUrl,
+  };
   return (
     <html lang={locale} className={notoSans.variable}>
       <body>
+        <JsonLd data={[organizationSchema, websiteSchema]} />
         <NextIntlClientProvider messages={messages}>
           {children}
           <Analytics />

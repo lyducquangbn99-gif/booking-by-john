@@ -1,3 +1,5 @@
+import { Link } from "@/i18n/navigation";
+
 export default function Footer() {
   return (
     <footer id="contact" className="bg-[#0B1F3A] px-5 py-14 text-white lg:px-8">
@@ -21,7 +23,11 @@ export default function Footer() {
         <div>
           <h3 className="font-black">Popular Routes</h3>
           <ul className="mt-4 space-y-2 text-slate-200">
-            <li>Vietnam to Italy</li>
+            <li>
+              <Link href="/routes/vietnam-to-italy" className="hover:text-accent-orange">
+                Vietnam to Italy
+              </Link>
+            </li>
             <li>Vietnam to Indonesia</li>
             <li>Vietnam to Taiwan</li>
             <li>Vietnam to Europe</li>

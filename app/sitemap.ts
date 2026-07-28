@@ -62,5 +62,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  return [...staticPages, ...articlePages];
+  const routePages: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
+    url: `${BASE_URL}/${locale}/routes/vietnam-to-italy`,
+    changeFrequency: "monthly",
+    priority: locale === "en" || locale === "it" ? 0.9 : 0.8,
+    alternates: {
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((language) => [
+            language,
+            `${BASE_URL}/${language}/routes/vietnam-to-italy`,
+          ]),
+        ),
+        "x-default": `${BASE_URL}/en/routes/vietnam-to-italy`,
+      },
+    },
+  }));
+
+  return [...staticPages, ...routePages, ...articlePages];
 }

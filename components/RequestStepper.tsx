@@ -97,11 +97,12 @@ export default function RequestStepper() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
   const startedRef = useRef(false);
-  const startedAtRef = useRef(Date.now());
+  const startedAtRef = useRef<number | null>(null);
 
   function update(key: keyof FormData, value: string) {
     if (!startedRef.current) {
       startedRef.current = true;
+      startedAtRef.current = Date.now();
       trackBookingEvent("quote_form_start", { locale });
     }
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -167,7 +168,7 @@ export default function RequestStepper() {
     setStep(1);
     setForm(EMPTY_FORM);
     startedRef.current = false;
-    startedAtRef.current = Date.now();
+    startedAtRef.current = null;
     setError("");
   }
 
