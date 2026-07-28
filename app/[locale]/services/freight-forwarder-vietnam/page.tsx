@@ -196,6 +196,80 @@ const COPY: Record<string, Copy> = {
 
 const BASE_URL = "https://www.bookingbyjohnly.com";
 
+const SEO_TITLES: Record<string, string> = {
+  en: "Freight Forwarder Vietnam | Ocean & Air Freight",
+  vi: "Freight Forwarder Việt Nam | Vận tải quốc tế",
+  it: "Spedizioniere in Vietnam | Mare e aereo",
+  es: "Transitario en Vietnam | Transporte internacional",
+  id: "Freight Forwarder Vietnam | Laut & Udara",
+};
+
+const PAGE_LABELS: Record<
+  string,
+  {
+    home: string;
+    service: string;
+    routesTitle: string;
+    routesIntro: string;
+    routeGuide: string;
+  }
+> = {
+  en: {
+    home: "Home",
+    service: "Freight Forwarder Vietnam",
+    routesTitle: "Explore priority routes from Vietnam",
+    routesIntro: "Review route-specific planning points, cargo details and destination considerations before requesting a current option.",
+    routeGuide: "View route guide",
+  },
+  vi: {
+    home: "Trang chủ",
+    service: "Freight Forwarder Việt Nam",
+    routesTitle: "Xem các tuyến ưu tiên từ Việt Nam",
+    routesIntro: "Tham khảo kế hoạch theo tuyến, thông tin hàng cần chuẩn bị và các lưu ý tại điểm đến trước khi yêu cầu phương án hiện hành.",
+    routeGuide: "Xem hướng dẫn tuyến",
+  },
+  it: {
+    home: "Home",
+    service: "Spedizioniere in Vietnam",
+    routesTitle: "Rotte prioritarie dal Vietnam",
+    routesIntro: "Consulta pianificazione, dati della merce e aspetti operativi a destino prima di richiedere un'opzione aggiornata.",
+    routeGuide: "Vedi guida rotta",
+  },
+  es: {
+    home: "Inicio",
+    service: "Transitario en Vietnam",
+    routesTitle: "Rutas prioritarias desde Vietnam",
+    routesIntro: "Revisa la planificación, los datos de carga y las consideraciones en destino antes de solicitar una opción actual.",
+    routeGuide: "Ver guía de ruta",
+  },
+  id: {
+    home: "Beranda",
+    service: "Freight Forwarder Vietnam",
+    routesTitle: "Rute prioritas dari Vietnam",
+    routesIntro: "Tinjau perencanaan rute, detail kargo, dan pertimbangan tujuan sebelum meminta opsi terkini.",
+    routeGuide: "Lihat panduan rute",
+  },
+};
+
+const PRIORITY_ROUTES = [
+  {
+    slug: "vietnam-to-italy",
+    labels: { en: "Vietnam to Italy", vi: "Việt Nam đi Ý", it: "Vietnam–Italia", es: "Vietnam a Italia", id: "Vietnam ke Italia" },
+  },
+  {
+    slug: "vietnam-to-spain",
+    labels: { en: "Vietnam to Spain", vi: "Việt Nam đi Tây Ban Nha", it: "Vietnam–Spagna", es: "Vietnam a España", id: "Vietnam ke Spanyol" },
+  },
+  {
+    slug: "vietnam-to-indonesia",
+    labels: { en: "Vietnam to Indonesia", vi: "Việt Nam đi Indonesia", it: "Vietnam–Indonesia", es: "Vietnam a Indonesia", id: "Vietnam ke Indonesia" },
+  },
+  {
+    slug: "vietnam-to-taiwan",
+    labels: { en: "Vietnam to Taiwan", vi: "Việt Nam đi Đài Loan", it: "Vietnam–Taiwan", es: "Vietnam a Taiwán", id: "Vietnam ke Taiwan" },
+  },
+] as const;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -205,7 +279,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const copy = COPY[locale] || COPY.en;
   const path = `/${locale}/services/freight-forwarder-vietnam`;
   return {
-    title: `${copy.title} | Booking by John Ly`,
+    title: SEO_TITLES[locale] || SEO_TITLES.en,
     description: copy.description,
     alternates: {
       canonical: path,
@@ -214,14 +288,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "x-default": "/en/services/freight-forwarder-vietnam",
       },
     },
-    openGraph: { title: copy.title, description: copy.description, type: "website", url: path },
-    twitter: { card: "summary_large_image", title: copy.title, description: copy.description },
+    openGraph: { title: SEO_TITLES[locale] || SEO_TITLES.en, description: copy.description, type: "website", url: path },
+    twitter: { card: "summary_large_image", title: SEO_TITLES[locale] || SEO_TITLES.en, description: copy.description },
   };
 }
 
 export default async function FreightForwarderVietnamPage({ params }: Props) {
   const { locale } = await params;
   const copy = COPY[locale] || COPY.en;
+  const labels = PAGE_LABELS[locale] || PAGE_LABELS.en;
   const pageUrl = `${BASE_URL}/${locale}/services/freight-forwarder-vietnam`;
   const faqSchema = {
     "@context": "https://schema.org",
@@ -246,8 +321,8 @@ export default async function FreightForwarderVietnamPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/${locale}` },
-      { "@type": "ListItem", position: 2, name: "Freight Forwarder Vietnam", item: pageUrl },
+      { "@type": "ListItem", position: 1, name: labels.home, item: `${BASE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: labels.service, item: pageUrl },
     ],
   };
 
@@ -258,7 +333,7 @@ export default async function FreightForwarderVietnamPage({ params }: Props) {
       <section className="bg-[#0B1F3A] px-5 py-16 text-white lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <nav aria-label="Breadcrumb" className="text-sm text-slate-300">
-            <Link href="/" className="hover:text-white">Home</Link><span className="mx-2">/</span><span>Freight Forwarder Vietnam</span>
+            <Link href="/" className="hover:text-white">{labels.home}</Link><span className="mx-2">/</span><span>{labels.service}</span>
           </nav>
           <p className="mt-10 text-sm font-black uppercase tracking-widest text-orange-300">{copy.eyebrow}</p>
           <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-6xl">{copy.title}</h1>
@@ -298,10 +373,28 @@ export default async function FreightForwarderVietnamPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-20">
+        <h2 className="text-3xl font-black text-[#0B1F3A]">{labels.routesTitle}</h2>
+        <p className="mt-4 max-w-4xl leading-7 text-text-secondary">{labels.routesIntro}</p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {PRIORITY_ROUTES.map((route) => (
+            <Link
+              key={route.slug}
+              href={`/routes/${route.slug}`}
+              className="rounded-lg border border-border-subtle bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-accent-orange"
+            >
+              <h3 className="font-black text-[#0B1F3A]">{route.labels[locale as keyof typeof route.labels] || route.labels.en}</h3>
+              <p className="mt-3 text-sm font-bold text-accent-orange">{labels.routeGuide} →</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-14 lg:grid-cols-2 lg:px-8 lg:py-20">
         <div>
           <h2 className="text-3xl font-black text-[#0B1F3A]">{copy.detailsTitle}</h2>
           <p className="mt-4 leading-7 text-text-secondary">{copy.detailsBody}</p>
+          <Link href="/?mode=Ocean%20Freight&source=freight-forwarder-vietnam-details#request" className="mt-6 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link>
         </div>
         <ul className="space-y-3">
           {copy.details.map((detail) => <li key={detail} className="rounded-md bg-white p-4 shadow-sm">{detail}</li>)}
