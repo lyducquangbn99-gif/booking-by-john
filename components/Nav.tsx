@@ -17,16 +17,24 @@ const LOCALE_META: Record<string, { flag: string; label: string }> = {
 };
 
 const links = [
-  { label: "Home", href: "/#home" },
-  { label: "Services", href: "/#services" },
-  { label: "Routes", href: "/#routes" },
-  { label: "About Us", href: "/#trust" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/#contact" },
+  { key: "home", href: "/#home" },
+  { key: "services", href: "/#services" },
+  { key: "routes", href: "/#routes" },
+  { key: "about", href: "/#trust" },
+  { key: "blog", href: "/blog" },
+  { key: "contact", href: "/#contact" },
 ];
+const NAV_COPY: Record<string, { home: string; services: string; routes: string; about: string; blog: string; contact: string; quote: string; language: string; menu: string }> = {
+  en: { home: "Home", services: "Services", routes: "Routes", about: "About Us", blog: "Blog", contact: "Contact", quote: "Get a Quote", language: "Select language", menu: "Menu" },
+  vi: { home: "Trang chủ", services: "Dịch vụ", routes: "Tuyến", about: "Về chúng tôi", blog: "Blog", contact: "Liên hệ", quote: "Nhận báo giá", language: "Chọn ngôn ngữ", menu: "Trình đơn" },
+  it: { home: "Home", services: "Servizi", routes: "Rotte", about: "Chi siamo", blog: "Blog", contact: "Contatti", quote: "Richiedi preventivo", language: "Seleziona lingua", menu: "Menu" },
+  es: { home: "Inicio", services: "Servicios", routes: "Rutas", about: "Nosotros", blog: "Blog", contact: "Contacto", quote: "Solicitar cotización", language: "Seleccionar idioma", menu: "Menú" },
+  id: { home: "Beranda", services: "Layanan", routes: "Rute", about: "Tentang kami", blog: "Blog", contact: "Kontak", quote: "Minta penawaran", language: "Pilih bahasa", menu: "Menu" },
+};
 
 function LanguageSwitcher() {
   const locale = useLocale();
+  const copy = NAV_COPY[locale] || NAV_COPY.en;
   const router = useRouter();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -64,7 +72,7 @@ function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          aria-label="Select language"
+          aria-label={copy.language}
           className="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-lg border border-border-subtle bg-white shadow-lg"
         >
           {routing.locales.map((loc) => {
@@ -94,6 +102,8 @@ function LanguageSwitcher() {
 
 export default function Nav() {
   const t = useTranslations("nav");
+  const locale = useLocale();
+  const copy = NAV_COPY[locale] || NAV_COPY.en;
   const [open, setOpen] = useState(false);
 
   return (
@@ -111,7 +121,7 @@ export default function Nav() {
         <nav className="hidden items-center gap-7 text-sm font-semibold text-text-secondary lg:flex">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className="transition hover:text-ocean-blue">
-              {link.label}
+              {copy[link.key as keyof typeof copy]}
             </Link>
           ))}
         </nav>
@@ -121,7 +131,7 @@ export default function Nav() {
             href="/#request"
             className="rounded-md bg-accent-orange px-5 py-3 text-sm font-black text-white shadow-sm transition hover:bg-[#EA580C]"
           >
-            Get a Quote
+            {copy.quote}
           </Link>
           <LanguageSwitcher />
         </div>
@@ -134,7 +144,7 @@ export default function Nav() {
           onClick={() => setOpen((value) => !value)}
         >
           {open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
-          <span className="sr-only">Menu</span>
+          <span className="sr-only">{copy.menu}</span>
         </button>
       </div>
 
@@ -148,7 +158,7 @@ export default function Nav() {
                 className="rounded-md px-2 py-2 hover:bg-bg-primary hover:text-ocean-blue"
                 onClick={() => setOpen(false)}
               >
-                {link.label}
+                {copy[link.key as keyof typeof copy]}
               </Link>
             ))}
             <Link
@@ -156,7 +166,7 @@ export default function Nav() {
               className="mt-2 rounded-md bg-accent-orange px-4 py-3 text-center font-black text-white hover:bg-[#EA580C]"
               onClick={() => setOpen(false)}
             >
-              Get a Quote
+              {copy.quote}
             </Link>
             <div className="mt-2">
               <LanguageSwitcher />
