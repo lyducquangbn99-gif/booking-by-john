@@ -14,6 +14,30 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:locale(en|vi|it|es|id)/blog/README",
+        destination: "/:locale/blog",
+        permanent: true,
+      },
+      {
+        source: "/:locale(en|vi|it|es|id)/blog/readme",
+        destination: "/:locale/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog",
+        destination: "/en/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug",
+        destination: "/en/blog/:slug",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
