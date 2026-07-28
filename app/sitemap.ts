@@ -62,12 +62,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const routeSlugs = ["vietnam-to-italy", "vietnam-to-spain"];
+  const routeSlugs = ["vietnam-to-italy", "vietnam-to-spain", "vietnam-to-indonesia"];
   const routePages: MetadataRoute.Sitemap = routeSlugs.flatMap((slug) =>
     routing.locales.map((locale) => ({
       url: `${BASE_URL}/${locale}/routes/${slug}`,
       changeFrequency: "monthly",
-      priority: locale === "en" || (slug === "vietnam-to-italy" && locale === "it") || (slug === "vietnam-to-spain" && locale === "es") ? 0.9 : 0.8,
+      priority: locale === "en" || (slug === "vietnam-to-italy" && locale === "it") || (slug === "vietnam-to-spain" && locale === "es") || (slug === "vietnam-to-indonesia" && locale === "id") ? 0.9 : 0.8,
       alternates: {
         languages: {
           ...Object.fromEntries(
