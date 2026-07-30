@@ -20,7 +20,7 @@ const links = [
   { key: "home", href: "/#home" },
   { key: "services", href: "/#services" },
   { key: "routes", href: "/#routes" },
-  { key: "about", href: "/#trust" },
+  { key: "about", href: "/about" },
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/#contact" },
 ];

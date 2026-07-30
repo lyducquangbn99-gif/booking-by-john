@@ -32,6 +32,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${BASE_URL}/${locale}/about`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(
+            routing.locales.map((language) => [language, `${BASE_URL}/${language}/about`]),
+          ),
+          "x-default": `${BASE_URL}/en/about`,
+        },
+      },
+    },
   ]);
 
   const articlePages: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
