@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Booking by John — Agente de Carga y Flete Marítimo desde Vietnam",
-    "description": "Agente de carga en Vietnam. Flete marítimo VNSGN a Europa y Sudamérica. Courier de Vietnam al mundo. Transportistas verificados, visibilidad en tiempo real, cotización en 2 horas.",
+    "description": "Apoyo desde Vietnam para consultas de transporte marítimo, aéreo, mensajería, aduanas, transporte interior y puerta a puerta.",
     "ogTitle": "Booking by John — Agente de Carga y Flete Marítimo desde Vietnam",
     "ogDescription": "Sin rodeos, sin cotizaciones genéricas. Transportistas verificados, visibilidad en tiempo real y un agente que contesta el teléfono."
   },
@@ -30,11 +30,11 @@
     "tagline": "Qué movemos",
     "heading": "Siete formas de enviar",
     "ftl": {
-      "title": "Carga Completa (FTL)",
+      "title": "Transporte Marítimo",
       "description": "Capacidad dedicada para cargas de más de 10,000 lbs. Directo, sin paradas, tránsito rápido."
     },
     "ltl": {
-      "title": "Carga Parcial (LTL)",
+      "title": "Transporte Aéreo",
       "description": "Rentable para carga paletizada de menos de 10,000 lbs con recogida flexible."
     },
     "drayage": {
@@ -42,7 +42,7 @@
       "description": "Traslado de contenedores de puerto a almacén. Gestión de chasis incluida."
     },
     "intermodal": {
-      "title": "Intermodal",
+      "title": "Almacenamiento",
       "description": "Combinación tren + camión para ahorro en largas distancias sin sacrificar fiabilidad."
     },
     "expedited": {
@@ -63,19 +63,19 @@
     "heading": "Construido en evidencias, no en promesas",
     "carrierVetting": {
       "title": "Verificación de Transportistas",
-      "detail": "Autorización FMCSA, seguro de carga $1M+, monitoreo de puntaje de seguridad, sin doble intermediación."
+      "detail": "El transportista y el servicio se revisan para cada envío antes de confirmarlos."
     },
     "liveTracking": {
       "title": "Seguimiento en Vivo",
-      "detail": "Señales GPS cada 15 min, actualizaciones proactivas por llamada."
+      "detail": "Las opciones disponibles de seguimiento y actualización se confirman para cada envío."
     },
     "quoteSla": {
-      "title": "Cotización en 2 Horas",
-      "detail": "Rutas estándar en 2 horas; rutas complejas el mismo día."
+      "title": "Revisión de Cotización",
+      "detail": "El plazo depende de los datos completos, la ruta y las respuestas actuales de los proveedores."
     },
     "claims": {
-      "title": "Reclamaciones Bajo el 0.5%",
-      "detail": "Soporte completo de reclamaciones, resolución típicamente en menos de 30 días."
+      "title": "Seguimiento de Incidencias",
+      "detail": "El alcance y el proceso de apoyo se confirman para el servicio seleccionado."
     },
     "oneContact": {
       "title": "Un Solo Punto de Contacto",
@@ -83,7 +83,7 @@
     },
     "specialized": {
       "title": "Carga Especializada",
-      "detail": "Experiencia en sobredimensionada, temperatura controlada, materiales peligrosos y alto valor."
+      "detail": "Los requisitos de manipulación especial se revisan antes de confirmar el servicio."
     }
   },
   "routes": {
@@ -179,7 +179,7 @@
   },
   "trickyShipment": {
     "heading": "¿Tienes un envío complicado?",
-    "body": "Sobredimensionado, materiales peligrosos, múltiples paradas, transfronterizo — cuanto más difícil, más necesitas a alguien que ya lo haya hecho. Resolvámoslo juntos.",
+    "body": "Comparte la ruta, los datos de la carga, la fecha disponible y cualquier requisito de manipulación. John revisará la información y los próximos pasos.",
     "cta": "Cuéntame →"
   },
   "footer": {

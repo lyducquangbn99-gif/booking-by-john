@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Booking by John — Broker Kargo & Pengiriman Laut dari Vietnam",
-    "description": "Broker kargo Vietnam. Pengiriman laut VNSGN ke Eropa & Amerika Selatan. Kurir Vietnam ke seluruh dunia. Mitra terpercaya, visibilitas real-time, penawaran harga dalam 2 jam.",
+    "description": "Dukungan dari Vietnam untuk permintaan angkutan laut, udara, kurir, bea cukai, trucking, dan door-to-door.",
     "ogTitle": "Booking by John — Broker Kargo & Pengiriman Laut dari Vietnam",
     "ogDescription": "Tanpa basa-basi, tanpa penawaran generik. Mitra terpercaya, visibilitas real-time, dan broker yang selalu mengangkat telepon."
   },
@@ -30,11 +30,11 @@
     "tagline": "Apa yang kami kirimkan",
     "heading": "Tujuh cara pengiriman",
     "ftl": {
-      "title": "Truk Penuh (FTL)",
+      "title": "Angkutan Laut",
       "description": "Kapasitas khusus untuk muatan 10K+ lbs. Langsung, tanpa berhenti, transit cepat."
     },
     "ltl": {
-      "title": "Muatan Sebagian (LTL)",
+      "title": "Angkutan Udara",
       "description": "Hemat biaya untuk kargo palet di bawah 10K lbs dengan penjemputan fleksibel."
     },
     "drayage": {
@@ -42,7 +42,7 @@
       "description": "Pemindahan kontainer dari pelabuhan ke gudang. Manajemen chassis termasuk."
     },
     "intermodal": {
-      "title": "Intermodal",
+      "title": "Pergudangan",
       "description": "Kombinasi kereta + truk untuk penghematan jarak jauh tanpa mengorbankan keandalan."
     },
     "expedited": {
@@ -63,19 +63,19 @@
     "heading": "Dibangun atas bukti, bukan janji",
     "carrierVetting": {
       "title": "Seleksi Mitra",
-      "detail": "Izin FMCSA, asuransi kargo $1M+, pemantauan skor keselamatan, tanpa perantara ganda."
+      "detail": "Mitra dan layanan diperiksa untuk setiap kiriman sebelum dikonfirmasi."
     },
     "liveTracking": {
       "title": "Pelacakan Langsung",
-      "detail": "Sinyal GPS setiap 15 menit, pembaruan proaktif melalui telepon."
+      "detail": "Pengaturan pelacakan dan pembaruan yang tersedia dikonfirmasi untuk setiap kiriman."
     },
     "quoteSla": {
-      "title": "Penawaran dalam 2 Jam",
-      "detail": "Jalur standar dalam 2 jam; jalur kompleks di hari yang sama."
+      "title": "Tinjauan Penawaran",
+      "detail": "Waktu bergantung pada detail lengkap, rute, dan respons penyedia saat ini."
     },
     "claims": {
-      "title": "Klaim Di Bawah 0,5%",
-      "detail": "Dukungan klaim penuh, penyelesaian biasanya dalam 30 hari."
+      "title": "Tindak Lanjut Masalah",
+      "detail": "Cakupan dan proses dukungan dikonfirmasi untuk layanan yang dipilih."
     },
     "oneContact": {
       "title": "Satu Titik Kontak",
@@ -83,7 +83,7 @@
     },
     "specialized": {
       "title": "Kargo Khusus",
-      "detail": "Pengalaman dengan muatan besar, suhu terkontrol, bahan berbahaya, dan bernilai tinggi."
+      "detail": "Kebutuhan penanganan khusus ditinjau sebelum layanan dikonfirmasi."
     }
   },
   "routes": {
@@ -179,7 +179,7 @@
   },
   "trickyShipment": {
     "heading": "Ada pengiriman yang rumit?",
-    "body": "Besar, berbahaya, multi-titik, lintas batas — semakin sulit, semakin Anda membutuhkan seseorang yang sudah pernah melakukannya. Mari kita selesaikan bersama.",
+    "body": "Bagikan rute, detail kargo, tanggal kesiapan, dan kebutuhan penanganan. John akan meninjau informasinya dan membahas langkah berikutnya.",
     "cta": "Ceritakan kepada saya →"
   },
   "footer": {

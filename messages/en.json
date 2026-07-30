@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Booking by John — Freight Brokerage & Ocean Freight from Vietnam",
-    "description": "Freight broker Vietnam. Ocean freight VNSGN to Europe & South America. Courier Vietnam worldwide. Vetted carriers, real-time visibility, 2-hour quote SLA.",
+    "description": "Freight support from Vietnam for ocean, air, courier, customs, inland trucking and door-to-door inquiries.",
     "ogTitle": "Booking by John — Freight Brokerage & Ocean Freight from Vietnam",
     "ogDescription": "No runaround, no generic quotes. Vetted carriers, real-time visibility, and a broker who picks up the phone."
   },
@@ -30,20 +30,20 @@
     "tagline": "What we move",
     "heading": "Seven ways to ship",
     "ftl": {
-      "title": "Full Truckload (FTL)",
-      "description": "Dedicated capacity for loads 10K+ lbs. Direct, no stops, fast transit."
+      "title": "Ocean Freight",
+      "description": "FCL and LCL options reviewed for the shipment route and ready date."
     },
     "ltl": {
-      "title": "LTL",
-      "description": "Cost-efficient for palletized freight under 10K lbs with flexible pickup."
+      "title": "Air Freight",
+      "description": "Air options reviewed when transit time is the main priority."
     },
     "drayage": {
-      "title": "Drayage",
-      "description": "Port-to-warehouse container moves. Chassis management included."
+      "title": "Inland Trucking",
+      "description": "Port pickup and inland delivery coordinated for the agreed route."
     },
     "intermodal": {
-      "title": "Intermodal",
-      "description": "Rail + truck combo for long-haul savings without sacrificing reliability."
+      "title": "Warehousing",
+      "description": "Storage and handling options reviewed when required."
     },
     "expedited": {
       "title": "Expedited",
@@ -63,19 +63,19 @@
     "heading": "Built on proof, not promises",
     "carrierVetting": {
       "title": "Carrier Vetting",
-      "detail": "FMCSA clearance, $1M+ cargo insurance, safety score monitoring, no double-brokering."
+      "detail": "Carrier and service details are checked for the specific shipment before confirmation."
     },
     "liveTracking": {
       "title": "Live Tracking",
-      "detail": "GPS pings every 15 min, proactive check-call updates."
+      "detail": "Available tracking and update arrangements are confirmed for each shipment."
     },
     "quoteSla": {
-      "title": "2-Hour Quote SLA",
-      "detail": "Standard lanes within 2 hours; complex lanes same-day."
+      "title": "Quote Review",
+      "detail": "Timing depends on complete cargo details, the route and current provider responses."
     },
     "claims": {
-      "title": "Claims Under 0.5%",
-      "detail": "Full claims support, resolution typically under 30 days."
+      "title": "Issue Follow-up",
+      "detail": "Any support scope and process are confirmed for the selected service."
     },
     "oneContact": {
       "title": "One Point of Contact",
@@ -83,7 +83,7 @@
     },
     "specialized": {
       "title": "Specialized Freight",
-      "detail": "Oversized, temp-controlled, hazmat, high-value experience."
+      "detail": "Special handling requirements are reviewed before any service is confirmed."
     }
   },
   "routes": {
@@ -179,7 +179,7 @@
   },
   "trickyShipment": {
     "heading": "Got a tricky shipment?",
-    "body": "Oversized, hazmat, multi-stop, cross-border — the harder it is, the more you need someone who's done it before. Let's figure it out together.",
+    "body": "Share the route, cargo details, ready date and any handling requirements. John will review the information and discuss practical next steps.",
     "cta": "Tell me about it →"
   },
   "footer": {

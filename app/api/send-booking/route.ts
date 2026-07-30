@@ -6,10 +6,6 @@ const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 5;
 const ALLOWED_LOCALES = new Set(["en", "es", "vi", "it", "id"]);
 const ALLOWED_MODES = new Set([
-  "FTL",
-  "LTL",
-  "Drayage",
-  "Intermodal",
   "Expedited",
   "Courier",
   "Air Freight",

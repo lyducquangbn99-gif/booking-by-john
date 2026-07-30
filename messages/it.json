@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Booking by John — Spedizioni & Trasporto Marittimo dal Vietnam",
-    "description": "Broker di spedizioni Vietnam. Trasporto marittimo VNSGN verso Europa e Sud America. Corriere dal Vietnam in tutto il mondo. Vettori verificati, visibilità in tempo reale, preventivo in 2 ore.",
+    "description": "Supporto dal Vietnam per richieste di trasporto marittimo, aereo, corriere, dogana, trasporto interno e door-to-door.",
     "ogTitle": "Booking by John — Spedizioni & Trasporto Marittimo dal Vietnam",
     "ogDescription": "Niente giri di parole, nessun preventivo generico. Vettori verificati, visibilità in tempo reale e un broker che risponde al telefono."
   },
@@ -30,11 +30,11 @@
     "tagline": "Cosa spediamo",
     "heading": "Sette modi per spedire",
     "ftl": {
-      "title": "Carico Completo (FTL)",
+      "title": "Trasporto Marittimo",
       "description": "Capacità dedicata per carichi oltre 10.000 lbs. Diretto, senza soste, transito rapido."
     },
     "ltl": {
-      "title": "Carico Parziale (LTL)",
+      "title": "Trasporto Aereo",
       "description": "Economico per merci palettizzate sotto 10.000 lbs con ritiro flessibile."
     },
     "drayage": {
@@ -42,7 +42,7 @@
       "description": "Movimentazione container dal porto al magazzino. Gestione chassis inclusa."
     },
     "intermodal": {
-      "title": "Intermodale",
+      "title": "Magazzino",
       "description": "Combinazione treno + camion per risparmiare sulle lunghe distanze senza sacrificare l'affidabilità."
     },
     "expedited": {
@@ -63,19 +63,19 @@
     "heading": "Costruito su prove, non su promesse",
     "carrierVetting": {
       "title": "Selezione Vettori",
-      "detail": "Certificazione FMCSA, assicurazione cargo $1M+, monitoraggio punteggio sicurezza, nessuna sub-intermediazione."
+      "detail": "Vettore e servizio vengono verificati per la singola spedizione prima della conferma."
     },
     "liveTracking": {
       "title": "Tracciamento in Tempo Reale",
-      "detail": "Segnali GPS ogni 15 min, aggiornamenti proattivi via chiamata."
+      "detail": "Le modalità di tracciamento e aggiornamento disponibili vengono confermate per ogni spedizione."
     },
     "quoteSla": {
-      "title": "Preventivo in 2 Ore",
-      "detail": "Rotte standard entro 2 ore; rotte complesse in giornata."
+      "title": "Verifica del Preventivo",
+      "detail": "I tempi dipendono dai dati completi, dalla rotta e dalle risposte attuali dei fornitori."
     },
     "claims": {
-      "title": "Reclami Sotto lo 0,5%",
-      "detail": "Supporto completo per reclami, risoluzione tipicamente entro 30 giorni."
+      "title": "Gestione delle Segnalazioni",
+      "detail": "Ambito e processo di supporto vengono confermati per il servizio scelto."
     },
     "oneContact": {
       "title": "Un Solo Referente",
@@ -83,7 +83,7 @@
     },
     "specialized": {
       "title": "Merci Speciali",
-      "detail": "Esperienza con carichi eccezionali, merci a temperatura controllata, materiali pericolosi e alto valore."
+      "detail": "Le esigenze di gestione speciale vengono valutate prima di confermare il servizio."
     }
   },
   "routes": {
@@ -179,7 +179,7 @@
   },
   "trickyShipment": {
     "heading": "Hai una spedizione complicata?",
-    "body": "Eccezionale, merci pericolose, multi-tappa, transfrontaliera — più è difficile, più hai bisogno di chi l'ha già fatto. Risolviamola insieme.",
+    "body": "Invia rotta, dettagli della merce, data pronta ed eventuali esigenze di gestione. John esaminerà le informazioni e valuterà i prossimi passi.",
     "cta": "Raccontami →"
   },
   "footer": {

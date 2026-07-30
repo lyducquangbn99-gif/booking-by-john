@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Booking by John — Môi Giới Vận Tải & Vận Chuyển Biển từ Việt Nam",
-    "description": "Môi giới vận tải Việt Nam. Vận chuyển biển VNSGN đến châu Âu & Nam Mỹ. Courier Việt Nam đi toàn thế giới. Đơn vị vận tải uy tín, theo dõi thời gian thực, báo giá trong 2 giờ.",
+    "description": "Hỗ trợ yêu cầu vận tải từ Việt Nam bằng đường biển, đường hàng không, chuyển phát, thông quan, vận chuyển nội địa và door-to-door.",
     "ogTitle": "Booking by John — Môi Giới Vận Tải & Vận Chuyển Biển từ Việt Nam",
     "ogDescription": "Không vòng vo, không báo giá chung chung. Đơn vị vận tải được kiểm chứng, theo dõi thời gian thực và một môi giới luôn bắt máy."
   },
@@ -30,11 +30,11 @@
     "tagline": "Chúng tôi vận chuyển gì",
     "heading": "Bảy phương thức vận chuyển",
     "ftl": {
-      "title": "Nguyên Xe (FTL)",
+      "title": "Vận Tải Biển",
       "description": "Tải trọng dành riêng cho hàng từ 10.000 lbs trở lên. Giao thẳng, không dừng, vận chuyển nhanh."
     },
     "ltl": {
-      "title": "Ghép Hàng (LTL)",
+      "title": "Vận Tải Hàng Không",
       "description": "Tiết kiệm chi phí cho hàng pallet dưới 10.000 lbs với lịch lấy hàng linh hoạt."
     },
     "drayage": {
@@ -63,19 +63,19 @@
     "heading": "Xây dựng trên bằng chứng, không phải lời hứa",
     "carrierVetting": {
       "title": "Kiểm Duyệt Đơn Vị Vận Tải",
-      "detail": "Chứng nhận FMCSA, bảo hiểm hàng hóa $1M+, giám sát điểm an toàn, không môi giới chuỗi."
+      "detail": "Thông tin đơn vị vận tải và dịch vụ được kiểm tra theo từng lô hàng trước khi xác nhận."
     },
     "liveTracking": {
       "title": "Theo Dõi Trực Tiếp",
-      "detail": "Tín hiệu GPS mỗi 15 phút, cập nhật chủ động qua điện thoại."
+      "detail": "Phương thức theo dõi và cập nhật khả dụng được xác nhận theo từng lô hàng."
     },
     "quoteSla": {
-      "title": "Báo Giá Trong 2 Giờ",
-      "detail": "Tuyến thông thường trong 2 giờ; tuyến phức tạp trong ngày."
+      "title": "Rà Soát Báo Giá",
+      "detail": "Thời gian phụ thuộc vào thông tin hàng đầy đủ, tuyến và phản hồi hiện tại của nhà cung cấp."
     },
     "claims": {
-      "title": "Tỉ Lệ Khiếu Nại Dưới 0.5%",
-      "detail": "Hỗ trợ khiếu nại đầy đủ, thường giải quyết trong vòng 30 ngày."
+      "title": "Theo Dõi Vấn Đề",
+      "detail": "Phạm vi và quy trình hỗ trợ được xác nhận cho dịch vụ đã chọn."
     },
     "oneContact": {
       "title": "Một Đầu Mối Liên Hệ",
@@ -83,7 +83,7 @@
     },
     "specialized": {
       "title": "Hàng Hóa Đặc Biệt",
-      "detail": "Kinh nghiệm xử lý hàng quá khổ, kiểm soát nhiệt độ, hàng nguy hiểm và hàng giá trị cao."
+      "detail": "Yêu cầu xử lý đặc biệt được xem xét trước khi xác nhận dịch vụ."
     }
   },
   "routes": {
@@ -179,7 +179,7 @@
   },
   "trickyShipment": {
     "heading": "Có lô hàng khó xử?",
-    "body": "Quá khổ, hàng nguy hiểm, nhiều điểm dừng, hàng xuyên biên giới — càng khó, bạn càng cần người đã từng làm được. Hãy cùng nhau giải quyết.",
+    "body": "Hãy gửi tuyến đường, thông tin hàng, ngày sẵn sàng và yêu cầu xử lý. John sẽ xem thông tin và trao đổi bước tiếp theo phù hợp.",
     "cta": "Kể cho tôi nghe →"
   },
   "footer": {
