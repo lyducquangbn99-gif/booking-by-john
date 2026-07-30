@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import RequestStepper from "@/components/RequestStepper";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -417,11 +418,17 @@ export default async function VietnamToItalyPage({ params }: Props) {
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-black">{copy.finalTitle}</h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-200">{copy.finalBody}</p>
-          <Link href="/?origin=Vietnam&destination=Italy&source=vietnam-to-italy-final#request" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white hover:bg-[#EA580C]">
+          <Link href="#request" data-quote-cta="route-final" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white hover:bg-[#EA580C]">
             {copy.finalCta}
           </Link>
         </div>
       </section>
+      <RequestStepper
+        initialOrigin="Vietnam"
+        initialDestination="Italy"
+        initialMode="Ocean Freight"
+        sourcePage="vietnam-to-italy-embedded-form"
+      />
       <Footer />
     </main>
   );

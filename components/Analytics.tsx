@@ -108,6 +108,16 @@ export default function Analytics() {
         slug: blogMatch[1],
       });
     }
+
+    const routeMatch = pathname.match(
+      /^\/(?:en|vi|it|id|es)\/routes\/([^/]+)/,
+    );
+    if (routeMatch) {
+      trackBookingEvent("route_view", {
+        locale,
+        route: routeMatch[1],
+      });
+    }
   }, [consent, enabled, gaReady, locale, pathname]);
 
   useEffect(() => {

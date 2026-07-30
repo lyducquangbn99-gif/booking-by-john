@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import RequestStepper from "@/components/RequestStepper";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -242,7 +243,13 @@ export default async function VietnamToTaiwanPage({ params }: Props) {
           <article key={faq.question} className="rounded-lg border border-border-subtle p-6"><h3 className="text-lg font-black text-[#0B1F3A]">{faq.question}</h3><p className="mt-3 leading-7 text-text-secondary">{faq.answer}</p></article>
         ))}</div>
       </div></section>
-      <section className="bg-[#0B1F3A] px-5 py-14 text-center text-white lg:px-8"><h2 className="text-3xl font-black">{copy.finalTitle}</h2><p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-200">{copy.finalBody}</p><Link href="/?origin=Vietnam&destination=Taiwan&source=vietnam-to-taiwan-final#request" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link></section>
+      <section className="bg-[#0B1F3A] px-5 py-14 text-center text-white lg:px-8"><h2 className="text-3xl font-black">{copy.finalTitle}</h2><p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-200">{copy.finalBody}</p><Link href="#request" data-quote-cta="route-final" className="mt-8 inline-flex rounded-md bg-accent-orange px-6 py-3 font-black text-white">{copy.quote}</Link></section>
+      <RequestStepper
+        initialOrigin="Vietnam"
+        initialDestination="Taiwan"
+        initialMode="Ocean Freight"
+        sourcePage="vietnam-to-taiwan-embedded-form"
+      />
       <Footer />
     </main>
   );

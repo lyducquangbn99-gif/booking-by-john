@@ -88,7 +88,19 @@ const URGENCY_ENTRIES: { value: string; labelKey: string; subKey: string; icon: 
 
 const PHONE = "+84 352 193 969";
 
-export default function RequestStepper() {
+type RequestStepperProps = {
+  initialOrigin?: string;
+  initialDestination?: string;
+  initialMode?: string;
+  sourcePage?: string;
+};
+
+export default function RequestStepper({
+  initialOrigin = "",
+  initialDestination = "",
+  initialMode = "",
+  sourcePage = "",
+}: RequestStepperProps = {}) {
   const t = useTranslations('stepper');
   const locale = useLocale();
   const searchParams = useSearchParams();
@@ -103,13 +115,18 @@ export default function RequestStepper() {
   const sourcePageRef = useRef("");
 
   useEffect(() => {
-    const origin = searchParams.get("origin")?.slice(0, 120) || "";
-    const destination = searchParams.get("destination")?.slice(0, 120) || "";
-    const requestedMode = searchParams.get("mode")?.slice(0, 40) || "";
+    const origin = searchParams.get("origin")?.slice(0, 120) || initialOrigin.slice(0, 120);
+    const destination =
+      searchParams.get("destination")?.slice(0, 120) || initialDestination.slice(0, 120);
+    const requestedMode =
+      searchParams.get("mode")?.slice(0, 40) || initialMode.slice(0, 40);
     const mode = MODE_ENTRIES.some((entry) => entry.value === requestedMode)
       ? requestedMode
       : "";
-    sourcePageRef.current = searchParams.get("source")?.slice(0, 120) || window.location.pathname;
+    sourcePageRef.current =
+      searchParams.get("source")?.slice(0, 120) ||
+      sourcePage.slice(0, 120) ||
+      window.location.pathname;
 
     if (origin || destination || mode) {
       const timer = window.setTimeout(() => {
@@ -125,7 +142,7 @@ export default function RequestStepper() {
       }, 0);
       return () => window.clearTimeout(timer);
     }
-  }, [searchParams]);
+  }, [initialDestination, initialMode, initialOrigin, searchParams, sourcePage]);
 
   function update(key: keyof FormData, value: string) {
     if (!startedRef.current) {
