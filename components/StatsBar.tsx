@@ -1,54 +1,64 @@
 import { getLocale } from "next-intl/server";
 
-const COPY: Record<string, Array<{ value: string; label: string }>> = {
+type Action = { value: string; label: string; href: string; external?: boolean };
+
+const COPY: Record<string, Action[]> = {
   en: [
-    { value: "Route", label: "Shipment-specific planning" },
-    { value: "Scope", label: "Itemized charge review" },
-    { value: "Direct", label: "One point of contact" },
-    { value: "5", label: "Website languages" },
+    { value: "2 min", label: "Send shipment details", href: "#request" },
+    { value: "Current route", label: "Checked for your ready date", href: "#request" },
+    { value: "Clear charges", label: "Know what the quote includes", href: "#request" },
+    { value: "Talk to John", label: "Direct Zalo / WhatsApp", href: "https://wa.me/84352193969", external: true },
   ],
   vi: [
-    { value: "Tuyến", label: "Phương án theo từng lô hàng" },
-    { value: "Chi phí", label: "Rà soát phạm vi phí" },
-    { value: "Trực tiếp", label: "Một đầu mối liên hệ" },
-    { value: "5", label: "Ngôn ngữ website" },
+    { value: "2 phút", label: "Gửi nhanh thông tin lô hàng", href: "#request" },
+    { value: "Tuyến hiện hành", label: "Kiểm tra theo ngày hàng sẵn sàng", href: "#request" },
+    { value: "Phí rõ ràng", label: "Biết báo giá gồm những khoản nào", href: "#request" },
+    { value: "Trao đổi với John", label: "Zalo / WhatsApp trực tiếp", href: "https://wa.me/84352193969", external: true },
   ],
   it: [
-    { value: "Rotta", label: "Piano specifico per spedizione" },
-    { value: "Costi", label: "Verifica dei costi inclusi" },
-    { value: "Diretto", label: "Un solo referente" },
-    { value: "5", label: "Lingue del sito" },
+    { value: "2 min", label: "Invia i dati della spedizione", href: "#request" },
+    { value: "Rotta attuale", label: "Verificata per la data della merce", href: "#request" },
+    { value: "Costi chiari", label: "Sai cosa include il preventivo", href: "#request" },
+    { value: "Parla con John", label: "Zalo / WhatsApp diretto", href: "https://wa.me/84352193969", external: true },
   ],
   es: [
-    { value: "Ruta", label: "Plan específico por envío" },
-    { value: "Cargos", label: "Revisión del alcance" },
-    { value: "Directo", label: "Un único contacto" },
-    { value: "5", label: "Idiomas del sitio" },
+    { value: "2 min", label: "Envía los datos del envío", href: "#request" },
+    { value: "Ruta actual", label: "Revisada para la fecha de carga", href: "#request" },
+    { value: "Cargos claros", label: "Conoce qué incluye la cotización", href: "#request" },
+    { value: "Habla con John", label: "Zalo / WhatsApp directo", href: "https://wa.me/84352193969", external: true },
   ],
   id: [
-    { value: "Rute", label: "Rencana khusus per kiriman" },
-    { value: "Biaya", label: "Tinjauan cakupan biaya" },
-    { value: "Langsung", label: "Satu kontak utama" },
-    { value: "5", label: "Bahasa website" },
+    { value: "2 menit", label: "Kirim detail pengiriman", href: "#request" },
+    { value: "Rute terkini", label: "Diperiksa untuk tanggal kesiapan", href: "#request" },
+    { value: "Biaya jelas", label: "Ketahui isi penawaran", href: "#request" },
+    { value: "Hubungi John", label: "Zalo / WhatsApp langsung", href: "https://wa.me/84352193969", external: true },
   ],
 };
 
 export default async function StatsBar() {
   const locale = await getLocale();
-  const stats = COPY[locale] || COPY.en;
+  const actions = COPY[locale] || COPY.en;
+
   return (
-    <section className="border-y border-border-subtle bg-bg-secondary">
+    <section className="border-y border-border-subtle bg-bg-secondary" aria-label="Quick booking benefits">
       <div className="mx-auto grid max-w-6xl grid-cols-2 px-6 md:grid-cols-4">
-        {stats.map((stat, index) => (
-          <div
-            key={stat.label}
-            className={`px-6 py-10 text-center ${index < stats.length - 1 ? "border-r border-border-subtle" : ""}`}
+        {actions.map((action, index) => (
+          <a
+            key={action.label}
+            href={action.href}
+            target={action.external ? "_blank" : undefined}
+            rel={action.external ? "noreferrer" : undefined}
+            className={`group px-5 py-9 text-center transition-colors hover:bg-bg-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent-green ${
+              index < actions.length - 1 ? "border-r border-border-subtle" : ""
+            }`}
           >
-            <div className="mb-2 font-display text-2xl font-bold text-accent-green md:text-3xl">
-              {stat.value}
+            <div className="mb-2 font-display text-xl font-bold text-accent-green transition-transform group-hover:-translate-y-0.5 md:text-2xl">
+              {action.value}
             </div>
-            <div className="text-xs uppercase tracking-widest text-text-muted">{stat.label}</div>
-          </div>
+            <div className="text-xs uppercase leading-relaxed tracking-widest text-text-muted">
+              {action.label}
+            </div>
+          </a>
         ))}
       </div>
     </section>
