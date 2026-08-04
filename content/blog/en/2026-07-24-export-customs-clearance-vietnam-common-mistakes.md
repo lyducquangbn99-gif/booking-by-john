@@ -92,10 +92,12 @@ Booking by John supports freight forwarders, overseas agents, importers, and exp
 
 Services can include ocean freight booking, FCL and LCL solutions, export customs clearance, trucking, document coordination, and door-to-door logistics.
 
+Review the complete [Vietnam freight forwarding service](/en/services/freight-forwarder-vietnam) or the focused [customs clearance support in Vietnam](/en/services/customs-clearance-vietnam) before sending the shipment details.
+
 Clear shipment information and early communication help reduce delays and keep cargo moving according to plan.
 
 ## Need export logistics support from Vietnam?
 
-Send your cargo details, route, ready date, and required service to Booking by John.
+Send your cargo details, route, ready date, and required service through the [freight quote form](/en?mode=Ocean%20Freight&source=customs-mistakes-guide#request).
 
 Website: bookingbyjohnly.com | Email: BookingbyJohnly@gmail.com | WhatsApp/Zalo: +84 352 193 969

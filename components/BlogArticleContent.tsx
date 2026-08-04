@@ -1,11 +1,25 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import type { BlogBlock } from "@/lib/blog";
 
 function renderInline(text: string): ReactNode[] {
-  const parts = text.split(/(\[[^\]]+\]\(https?:\/\/[^)]+\))/g);
+  const parts = text.split(/(\[[^\]]+\]\((?:https?:\/\/|\/)[^)]+\))/g);
   return parts.map((part, index) => {
-    const match = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
+    const match = part.match(/^\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)]+)\)$/);
     if (!match) return part;
+
+    if (match[2].startsWith("/")) {
+      return (
+        <Link
+          key={`${match[2]}-${index}`}
+          href={match[2]}
+          className="font-bold text-ocean-blue underline underline-offset-4"
+        >
+          {match[1]}
+        </Link>
+      );
+    }
+
     return (
       <a
         key={`${match[2]}-${index}`}

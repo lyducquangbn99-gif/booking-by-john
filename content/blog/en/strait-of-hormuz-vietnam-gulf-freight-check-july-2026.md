@@ -17,6 +17,8 @@ The Strait of Hormuz is not yet a “business as usual” corridor. On 8 July, t
 
 For Vietnam importers and exporters moving cargo to or from Gulf markets, the immediate lesson is operational: do not rely on an old quotation, an earlier routing or a generic statement that the route has reopened. Reconfirm the exact carrier, load and discharge ports, transshipment point, cargo type, acceptance status, storage terms and insurance position before cargo handover.
 
+Use the [Vietnam freight forwarding service](/en/services/freight-forwarder-vietnam) to submit the actual route and cargo details for a shipment-specific review. When delivery timing is critical, [air freight to or from Vietnam](/en/services/air-freight-vietnam) can be compared separately, subject to current cargo acceptance and capacity.
+
 ## What the latest carrier notice says
 
 Maersk’s Middle East Operational Update 39, dated 16 July, lists different booking rules by cargo type and port. The notice says some dry-cargo bookings remain accepted through specified ports and landbridge arrangements, while other dry, reefer, dangerous-goods and out-of-gauge movements are suspended or restricted. Availability is therefore not a single yes-or-no answer for the whole Gulf.
@@ -48,4 +50,4 @@ UN Trade and Development warned on 30 June that more than 100 days of disruption
 
 Confidence is high on the dated IMO, Maersk, UNCTAD and Vietnam ministry statements. Operational uncertainty remains high because carrier acceptance, port calls, charges, storage locations and security conditions can change at short notice. No general transit-time increase, market-wide surcharge or future reopening date is claimed here.
 
-Booking by John can help turn the latest carrier notice into a shipment-specific route, charge and document check before cargo is committed.
+Booking by John can help turn the latest carrier notice into a shipment-specific route, charge and document check before cargo is committed. [Request a freight quote](/en?mode=Ocean%20Freight&source=hormuz-risk-update#request) with the origin, destination, cargo details, ready date and Incoterm.

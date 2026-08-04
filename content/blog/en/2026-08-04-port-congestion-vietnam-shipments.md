@@ -31,6 +31,8 @@ Confirm the exact port and terminal at origin and destination, whether the servi
 
 For time-sensitive cargo, compare more than the advertised transit time. Review the number of connections, schedule frequency, alternative sailings, inland delivery needs, and the consequences of a rollover. No route is immune from disruption, but a realistic backup plan can reduce the impact.
 
+The [Vietnam freight forwarding service](/en/services/freight-forwarder-vietnam) explains the information needed to compare current ocean options. If the cost of delay is higher than the transport saving, review [air freight to or from Vietnam](/en/services/air-freight-vietnam) as a separate alternative.
+
 ## What to send your Vietnam logistics partner
 
 Provide the cargo-ready date, commodity, HS code if available, package count, dimensions, gross weight, Incoterm, pickup location, preferred ports, destination address, and required delivery window. State whether the cargo is dangerous, refrigerated, oversized, or subject to special handling.
@@ -49,6 +51,6 @@ Accurate information helps the local team check equipment, terminal acceptance, 
 
 Booking by John can coordinate Vietnam origin activities, including ocean freight booking, FCL and LCL planning, trucking, export customs support, and shipment updates. Options remain subject to carrier, terminal, customs, equipment, and actual operating conditions.
 
-Send the route, cargo details, ready date, and delivery priority for a shipment-specific check.
+Send the route, cargo details, ready date, and delivery priority through the [freight quote form](/en?mode=Ocean%20Freight&source=port-congestion-guide#request) for a shipment-specific check.
 
 Website: bookingbyjohnly.com | Email: BookingbyJohnly@gmail.com | WhatsApp/Zalo: +84 352 193 969
