@@ -2,6 +2,7 @@
 
 export const INTERNAL_VISITOR_KEY = "booking_by_john_internal_visitor";
 export const ANALYTICS_CONSENT_KEY = "booking_by_john_analytics_consent";
+export const ACQUISITION_SOURCE_KEY = "booking_by_john_acquisition_source";
 
 declare global {
   interface Window {

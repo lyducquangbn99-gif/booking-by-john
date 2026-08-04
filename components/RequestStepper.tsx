@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
-import { trackBookingEvent } from "@/lib/analytics";
+import { ACQUISITION_SOURCE_KEY, trackBookingEvent } from "@/lib/analytics";
 import {
   Truck,
   Package,
@@ -125,6 +125,7 @@ export default function RequestStepper({
       ? requestedMode
       : "";
     sourcePageRef.current =
+      window.sessionStorage.getItem(ACQUISITION_SOURCE_KEY)?.slice(0, 120) ||
       searchParams.get("source")?.slice(0, 120) ||
       sourcePage.slice(0, 120) ||
       window.location.pathname;

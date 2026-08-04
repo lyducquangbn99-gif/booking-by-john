@@ -4,6 +4,7 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import Script from "next/script";
 import { usePathname } from "@/i18n/navigation";
 import {
+  ACQUISITION_SOURCE_KEY,
   ANALYTICS_CONSENT_KEY,
   INTERNAL_VISITOR_KEY,
   trackBookingEvent,
@@ -73,6 +74,15 @@ export default function Analytics() {
 
   const locale = localeFromPath(pathname) as keyof typeof CONSENT_TEXT;
   const copy = CONSENT_TEXT[locale] || CONSENT_TEXT.en;
+
+  useEffect(() => {
+    const source = new URLSearchParams(window.location.search)
+      .get("source")
+      ?.slice(0, 120);
+    if (source && /^(linkedin|email|agent|whatsapp|directory|referral)-/i.test(source)) {
+      window.sessionStorage.setItem(ACQUISITION_SOURCE_KEY, source);
+    }
+  }, [pathname]);
 
   function setConsent(value: "granted" | "denied") {
     window.localStorage.setItem(ANALYTICS_CONSENT_KEY, value);
