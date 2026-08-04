@@ -34,7 +34,7 @@ export default async function Footer() {
                 {copy.air}
               </Link>
             </li>
-            <li>{copy.trucking}</li>
+            <li><Link href="/services/inland-trucking-vietnam" className="hover:text-accent-orange">{copy.trucking}</Link></li>
             <li><Link href="/services/customs-clearance-vietnam" className="hover:text-accent-orange">{copy.customs}</Link></li>
             <li><Link href="/services/door-to-door-shipping-vietnam" className="hover:text-accent-orange">{copy.door}</Link></li>
           </ul>

@@ -95,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  const serviceSlugs = ["freight-forwarder-vietnam", "air-freight-vietnam", "customs-clearance-vietnam", "door-to-door-shipping-vietnam"];
+  const serviceSlugs = ["freight-forwarder-vietnam", "air-freight-vietnam", "customs-clearance-vietnam", "door-to-door-shipping-vietnam", "inland-trucking-vietnam"];
   const servicePages: MetadataRoute.Sitemap = serviceSlugs.flatMap((slug) =>
     routing.locales.map((locale) => ({
       url: `${BASE_URL}/${locale}/services/${slug}`,
