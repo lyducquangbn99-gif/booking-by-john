@@ -28,13 +28,13 @@ type Copy = {
 
 const COPY: Record<string, Copy> = {
   en: {
-    eyebrow: "Vietnam freight forwarding support",
-    title: "A freight forwarder in Vietnam for international shipments",
-    description: "Plan ocean freight, air freight, export handling and delivery with one clear point of contact in Vietnam.",
+    eyebrow: "Freight forwarding services in Vietnam",
+    title: "Vietnam freight forwarder for international shipping",
+    description: "Plan freight forwarding to or from Vietnam, including ocean freight, air freight, customs coordination and delivery, with one clear point of contact.",
     quote: "Request a freight quote",
     guide: "See how the process works",
     supportTitle: "Shipment support built around the real cargo",
-    supportIntro: "The right solution depends on the commodity, volume, origin, destination, Incoterm and cargo-ready date. Each request is checked on those facts rather than a generic price promise.",
+    supportIntro: "Whether cargo is shipping from Vietnam or arriving in Vietnam, the right solution depends on the commodity, volume, origin, destination, Incoterm and cargo-ready date. Each request is checked on those facts rather than a generic price promise.",
     services: [
       { title: "Ocean freight", body: "FCL and LCL planning from major Vietnamese ports, with routing and local-charge comparisons." },
       { title: "Air freight", body: "Options for urgent or higher-value cargo when transit time is the main priority." },
@@ -53,11 +53,12 @@ const COPY: Record<string, Copy> = {
     details: ["Pickup location and final destination", "Commodity and HS code if available", "Package count, dimensions, weight and CBM", "FCL container type or LCL requirement", "Cargo-ready date and Incoterm", "Special handling, controlled or oversized cargo details"],
     faqTitle: "Freight forwarding questions",
     faqs: [
+      { question: "Do you support freight forwarding to and from Vietnam?", answer: "Yes. Export and import planning can be reviewed when the route, cargo details, Incoterm and required service scope are provided." },
       { question: "Can you handle both FCL and LCL?", answer: "Yes. The suitable option depends on cargo volume, handling risk, schedule and total charges." },
       { question: "Can a quote include pickup and delivery?", answer: "Yes, when the full pickup address, delivery postcode, cargo details and Incoterm are provided." },
       { question: "Are rates fixed?", answer: "No. Freight rates and capacity change, so every quote should state its validity and charge scope." },
     ],
-    finalTitle: "Planning a shipment from Vietnam?",
+    finalTitle: "Planning a shipment to or from Vietnam?",
     finalBody: "Send the actual cargo details to receive a route-specific comparison instead of a generic estimate.",
   },
   vi: {
@@ -197,7 +198,7 @@ const COPY: Record<string, Copy> = {
 const BASE_URL = "https://www.bookingbyjohnly.com";
 
 const SEO_TITLES: Record<string, string> = {
-  en: "Freight Forwarder Vietnam | Ocean & Air Freight",
+  en: "Vietnam Freight Forwarder | Shipping Services",
   vi: "Freight Forwarder Việt Nam | Vận tải quốc tế",
   it: "Spedizioniere in Vietnam | Mare e aereo",
   es: "Transitario en Vietnam | Transporte internacional",

@@ -8,6 +8,8 @@ readTime: "4 min read"
 
 A good freight quote starts with clear cargo information. When the origin, destination, cargo type, volume, and timeline are ready, the logistics team can check carrier options faster and avoid back-and-forth questions.
 
+If you need one point of contact to review the full movement, see the [Vietnam freight forwarding service](/en/services/freight-forwarder-vietnam). For urgent cargo, compare the information required for [air freight to or from Vietnam](/en/services/air-freight-vietnam).
+
 For ocean freight from Vietnam, always prepare the pickup city or port, destination country and port, commodity name, total weight, total CBM, number of packages, and whether the shipment needs FCL or LCL service.
 
 If the cargo is fragile, oversized, high value, temperature-sensitive, or needs special handling, mention it from the beginning. These details affect routing, carrier selection, and the final cost.

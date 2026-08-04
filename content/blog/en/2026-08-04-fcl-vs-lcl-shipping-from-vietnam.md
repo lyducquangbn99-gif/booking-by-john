@@ -15,6 +15,8 @@ FCL means Full Container Load: one shipper normally uses a container for its car
 
 Neither method is always cheaper or faster. The right choice depends on cargo size and shape, handling sensitivity, ready date, route, consolidation schedule, destination charges, and delivery priority.
 
+For a route-specific comparison, review the [Vietnam freight forwarding service](/en/services/freight-forwarder-vietnam). If delivery time matters more than container economics, compare [air freight to or from Vietnam](/en/services/air-freight-vietnam) as a separate option.
+
 ## When FCL may fit better
 
 FCL is often worth checking when cargo occupies a substantial part of a container, is fragile or high-value, has unusual dimensions, or should avoid extra warehouse handling. The container is typically packed for one shipper and remains sealed through the main ocean leg, subject to inspections and operational requirements.

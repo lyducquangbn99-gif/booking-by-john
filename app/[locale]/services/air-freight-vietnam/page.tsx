@@ -36,10 +36,10 @@ type Copy = {
 
 const COPY: Record<string, Copy> = {
   en: {
-    seoTitle: "Air Freight Vietnam | International Air Cargo",
-    eyebrow: "International air cargo from Vietnam",
-    title: "Air freight from Vietnam planned around the real shipment",
-    description: "Compare routing, airport options, charge scope and delivery requirements for time-sensitive international cargo from Vietnam.",
+    seoTitle: "Air Freight to & from Vietnam | Air Cargo",
+    eyebrow: "International air cargo to and from Vietnam",
+    title: "Air freight to and from Vietnam, planned around your cargo",
+    description: "Compare routing, Vietnam airport options, charge scope and delivery requirements for time-sensitive air cargo to or from Vietnam.",
     quote: "Request an air freight quote",
     guide: "See the planning process",
     home: "Home",
@@ -53,7 +53,7 @@ const COPY: Record<string, Copy> = {
       { title: "Airport or door delivery", body: "Airport-to-airport or pickup-and-delivery scope when addresses and import responsibilities are clear." },
     ],
     gatewaysTitle: "Vietnam airport planning",
-    gatewaysBody: "Tan Son Nhat (SGN), Noi Bai (HAN) and Da Nang (DAD) can support different origins and routings. The suitable gateway depends on pickup location, airline acceptance, connections, cargo characteristics and the requested delivery date.",
+    gatewaysBody: "Tan Son Nhat (SGN), Noi Bai (HAN) and Da Nang (DAD) can support different origins, destinations and routings. For air freight to Vietnam or exports from Vietnam, the suitable gateway depends on pickup location, airline acceptance, connections, cargo characteristics and the requested delivery date.",
     processTitle: "A practical air freight process",
     process: [
       { title: "Check cargo acceptance", body: "Review commodity, dimensions, weight, packaging, documents and any airline restrictions." },
@@ -69,13 +69,14 @@ const COPY: Record<string, Copy> = {
     generalService: "View complete freight forwarding support",
     faqTitle: "Air freight questions",
     faqs: [
+      { question: "Can you arrange air freight to Vietnam as well as exports?", answer: "Yes. Import and export options can be reviewed when the origin, destination, cargo details, Incoterm and required delivery scope are provided." },
       { question: "How is air freight chargeable weight calculated?", answer: "Airlines compare gross weight with volumetric weight and normally charge the higher figure. Exact rules should be confirmed with the current option." },
       { question: "Can air freight include pickup and delivery?", answer: "Yes, when both addresses, cargo details, Incoterm and import responsibilities are available." },
       { question: "Can batteries or dangerous goods move by air?", answer: "Some cargo may be accepted only with specific classification, packaging, documents and airline approval. Details must be checked before booking." },
       { question: "Are air freight rates fixed?", answer: "No. Capacity, routing, fuel and demand change, so quotes should show validity and included charges." },
     ],
-    finalTitle: "Have time-sensitive cargo ready in Vietnam?",
-    finalBody: "Send the actual package dimensions, weight, route and ready date to compare a current air freight option.",
+    finalTitle: "Shipping time-sensitive cargo to or from Vietnam?",
+    finalBody: "Send the actual package dimensions, weight, origin, destination and ready date to compare a current air freight option.",
   },
   vi: {
     seoTitle: "Vận tải hàng không Việt Nam | Air Freight quốc tế",
