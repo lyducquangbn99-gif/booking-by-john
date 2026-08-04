@@ -60,6 +60,7 @@ const MODE_ENTRIES: { value: string; labelKey: string; icon: LucideIcon }[] = [
   { value: "Inland Trucking",   labelKey: "step1.modes.trucking",   icon: Truck },
   { value: "Warehousing",       labelKey: "step1.modes.warehousing", icon: Warehouse },
   { value: "Multimodal",        labelKey: "step1.modes.multimodal", icon: Train },
+  { value: "Door-to-Door",      labelKey: "step1.modes.door",       icon: Truck },
   { value: "Other",             labelKey: "step1.modes.other",      icon: HelpCircle },
 ];
 

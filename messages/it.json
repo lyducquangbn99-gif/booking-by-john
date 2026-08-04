@@ -111,6 +111,7 @@
         "trucking": "Trasporto stradale",
         "warehousing": "Magazzino",
         "multimodal": "Multimodale",
+        "door": "Door-to-Door",
         "other": "Altro"
       }
     },

@@ -13,6 +13,7 @@ const ALLOWED_MODES = new Set([
   "Inland Trucking",
   "Warehousing",
   "Multimodal",
+  "Door-to-Door",
   "Ocean Freight",
   "Other",
   "Unspecified",

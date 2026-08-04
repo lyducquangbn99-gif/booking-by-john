@@ -43,8 +43,8 @@ export default async function Services() {
                 </div>
                 <h3 className="mt-5 text-xl font-black text-[#0B1F3A]">{title}</h3>
                 <p className="mt-3 leading-7 text-text-secondary">{description}</p>
-                {([0, 1, 4].includes(index)) && (
-                  <Link href={index === 0 ? "/services/freight-forwarder-vietnam" : index === 1 ? "/services/air-freight-vietnam" : "/services/customs-clearance-vietnam"} className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4">
+                {([0, 1, 4, 5].includes(index)) && (
+                  <Link href={index === 0 ? "/services/freight-forwarder-vietnam" : index === 1 ? "/services/air-freight-vietnam" : index === 4 ? "/services/customs-clearance-vietnam" : "/services/door-to-door-shipping-vietnam"} className="mt-4 inline-flex font-bold text-ocean-blue underline underline-offset-4">
                     {copy.details}
                   </Link>
                 )}

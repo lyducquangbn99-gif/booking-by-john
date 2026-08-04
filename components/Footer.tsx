@@ -36,7 +36,7 @@ export default async function Footer() {
             </li>
             <li>{copy.trucking}</li>
             <li><Link href="/services/customs-clearance-vietnam" className="hover:text-accent-orange">{copy.customs}</Link></li>
-            <li>{copy.door}</li>
+            <li><Link href="/services/door-to-door-shipping-vietnam" className="hover:text-accent-orange">{copy.door}</Link></li>
           </ul>
         </div>
         <div>

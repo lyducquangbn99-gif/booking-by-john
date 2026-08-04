@@ -111,6 +111,7 @@
         "trucking": "Transporte terrestre",
         "warehousing": "Almacenaje",
         "multimodal": "Multimodal",
+        "door": "Puerta a Puerta",
         "other": "Otro"
       }
     },

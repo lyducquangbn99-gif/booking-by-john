@@ -111,6 +111,7 @@
         "trucking": "Trucking",
         "warehousing": "Warehousing",
         "multimodal": "Multimodal",
+        "door": "Door-to-Door",
         "other": "Other"
       }
     },
