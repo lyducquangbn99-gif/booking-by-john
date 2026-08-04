@@ -44,6 +44,8 @@ The indexing report is delayed and does not yet reflect all current production p
 - Verified both production URLs return HTTP 200.
 - Verified both URLs are indexed, HTTPS-valid and have valid breadcrumb data.
 - Requested priority recrawl for both URLs on 2026-08-04.
+- Published the first tracked LinkedIn distribution post on 2026-08-04 with a custom image, campaign source `linkedin-freight-forwarder-2026-08`, and a direct link to the priority freight-forwarder page.
+  - Post: https://www.linkedin.com/posts/l%C3%BD-%C4%91%E1%BB%A9c-quang-3a7140204_vietnamlogistics-freightforwarding-oceanfreight-share-7490258774784442368-5s3k/
 
 ## Weekly measurement rhythm
 
