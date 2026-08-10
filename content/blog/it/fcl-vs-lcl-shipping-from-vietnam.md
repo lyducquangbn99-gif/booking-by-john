@@ -5,7 +5,7 @@ date: "2026-08-10"
 category: "Guida al trasporto marittimo"
 excerpt: "Confronta volume, costi totali, rischio di movimentazione e tempi per scegliere tra FCL e LCL dal Vietnam."
 readTime: "7 min di lettura"
-image: "/blog/fcl-vs-lcl-shipping-from-vietnam.png"
+image: "/fcl-vs-lcl-shipping-from-vietnam.png"
 imageAlt: "Un container FCL sigillato accanto a pallet LCL consolidati in un terminal vietnamita"
 ---
 

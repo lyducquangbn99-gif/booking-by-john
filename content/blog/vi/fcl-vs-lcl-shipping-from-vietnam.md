@@ -5,7 +5,7 @@ date: "2026-08-10"
 category: "Hướng dẫn vận tải biển"
 excerpt: "So sánh sản lượng, tổng chi phí, rủi ro xếp dỡ và tiến độ để chọn FCL hoặc LCL phù hợp cho lô hàng từ Việt Nam."
 readTime: "7 phút đọc"
-image: "/blog/fcl-vs-lcl-shipping-from-vietnam.png"
+image: "/fcl-vs-lcl-shipping-from-vietnam.png"
 imageAlt: "Một container FCL nguyên niêm phong bên cạnh các pallet LCL gom chung tại cảng container Việt Nam"
 ---
 

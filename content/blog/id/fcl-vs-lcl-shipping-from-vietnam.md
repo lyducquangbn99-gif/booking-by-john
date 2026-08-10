@@ -5,7 +5,7 @@ date: "2026-08-10"
 category: "Panduan angkutan laut"
 excerpt: "Bandingkan volume, total biaya, risiko handling, dan waktu untuk memilih FCL atau LCL dari Vietnam."
 readTime: "7 menit baca"
-image: "/blog/fcl-vs-lcl-shipping-from-vietnam.png"
+image: "/fcl-vs-lcl-shipping-from-vietnam.png"
 imageAlt: "Kontainer FCL tersegel di samping pallet LCL konsolidasi di terminal peti kemas Vietnam"
 ---
 
