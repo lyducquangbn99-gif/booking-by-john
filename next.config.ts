@@ -27,6 +27,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/:locale(en|vi|it|es|id)/blog/README.md",
+        destination: "/:locale/blog",
+        permanent: true,
+      },
+      {
+        source: "/:locale(en|vi|it|es|id)/blog/readme.md",
+        destination: "/:locale/blog",
+        permanent: true,
+      },
+      {
+        source: "/README",
+        destination: "/en",
+        permanent: true,
+      },
+      {
+        source: "/readme",
+        destination: "/en",
+        permanent: true,
+      },
+      {
+        source: "/README.md",
+        destination: "/en",
+        permanent: true,
+      },
+      {
+        source: "/readme.md",
+        destination: "/en",
+        permanent: true,
+      },
+      {
         source: "/blog",
         destination: "/en/blog",
         permanent: true,
