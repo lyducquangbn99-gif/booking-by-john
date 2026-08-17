@@ -128,6 +128,16 @@ export default function Analytics() {
         route: routeMatch[1],
       });
     }
+
+    const serviceMatch = pathname.match(
+      /^\/(?:en|vi|it|id|es)\/services\/([^/]+)/,
+    );
+    if (serviceMatch) {
+      trackBookingEvent("service_view", {
+        locale,
+        service: serviceMatch[1],
+      });
+    }
   }, [consent, enabled, gaReady, locale, pathname]);
 
   useEffect(() => {

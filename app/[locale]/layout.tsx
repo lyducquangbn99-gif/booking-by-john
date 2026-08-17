@@ -24,11 +24,11 @@ export function generateStaticParams() {
 }
 
 const META: Record<string, { title: string; description: string }> = {
-  en: { title: "Freight Forwarder Vietnam | Booking by John Ly", description: "Plan ocean freight, air freight, customs coordination and delivery from Vietnam with route-specific information and a clear quote scope." },
-  vi: { title: "Dịch vụ vận chuyển quốc tế từ Việt Nam | Booking by John Ly", description: "Lập phương án vận tải biển, hàng không, điều phối hải quan và giao hàng từ Việt Nam theo thông tin thực tế của lô hàng." },
-  it: { title: "Spedizioni internazionali dal Vietnam | Booking by John Ly", description: "Pianifica trasporto marittimo, aereo, coordinamento doganale e consegna dal Vietnam con informazioni specifiche per la rotta." },
-  es: { title: "Transporte internacional desde Vietnam | Booking by John Ly", description: "Planifica transporte marítimo, aéreo, coordinación aduanera y entrega desde Vietnam con información específica para cada ruta." },
-  id: { title: "Freight Forwarder dari Vietnam | Booking by John Ly", description: "Rencanakan angkutan laut, udara, koordinasi bea cukai, dan pengiriman dari Vietnam berdasarkan detail kargo sebenarnya." },
+  en: { title: "Shipping from Vietnam | Ocean, Air & Door-to-Door", description: "Plan international shipping from Vietnam by ocean or air, with customs, trucking and door-to-door support. Send your cargo details for a route-specific quote." },
+  vi: { title: "Vận chuyển quốc tế từ Việt Nam | Biển, bay & door-to-door", description: "Lập phương án vận chuyển quốc tế từ Việt Nam bằng đường biển hoặc hàng không, kèm hải quan, trucking và door-to-door theo thông tin lô hàng." },
+  it: { title: "Spedizioni dal Vietnam | Mare, aereo e door-to-door", description: "Pianifica spedizioni internazionali dal Vietnam via mare o aereo, con dogana, trasporto terrestre e consegna door-to-door su preventivo specifico." },
+  es: { title: "Envíos desde Vietnam | Marítimo, aéreo y puerta a puerta", description: "Planifica envíos internacionales desde Vietnam por mar o aire, con aduanas, transporte terrestre y entrega puerta a puerta según tu carga." },
+  id: { title: "Pengiriman dari Vietnam | Laut, Udara & Door-to-Door", description: "Rencanakan pengiriman internasional dari Vietnam melalui laut atau udara, termasuk bea cukai, trucking, dan door-to-door sesuai detail kargo." },
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
