@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { getAllBlogPosts } from "@/lib/blog";
+import { PORT_ROUTES } from "@/lib/port-routes";
 
 const BASE_URL = "https://www.bookingbyjohnly.com";
 
@@ -95,6 +96,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
+  const portRoutePages: MetadataRoute.Sitemap = PORT_ROUTES.flatMap((route) =>
+    routing.locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/routes/${route.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(routing.locales.map((language) => [language, `${BASE_URL}/${language}/routes/${route.slug}`])),
+          "x-default": `${BASE_URL}/en/routes/${route.slug}`,
+        },
+      },
+    })),
+  );
+
   const serviceSlugs = ["freight-forwarder-vietnam", "air-freight-vietnam", "customs-clearance-vietnam", "door-to-door-shipping-vietnam", "inland-trucking-vietnam"];
   const servicePages: MetadataRoute.Sitemap = serviceSlugs.flatMap((slug) =>
     routing.locales.map((locale) => ({
@@ -115,5 +130,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  return [...staticPages, ...servicePages, ...routePages, ...articlePages];
+  return [...staticPages, ...servicePages, ...routePages, ...portRoutePages, ...articlePages];
 }

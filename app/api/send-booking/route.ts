@@ -152,6 +152,9 @@ export async function POST(req: Request) {
     const destination = text(data.destination, 120);
     const weightRange = text(data.weightRange, 80);
     const cargoType = text(data.cargoType, 80);
+    const cargoVolume = text(data.cargoVolume, 120);
+    const readyDate = text(data.readyDate, 20);
+    const incoterm = text(data.incoterm, 20);
     const urgency = text(data.urgency, 40);
     const name = text(data.name, 120);
     const email = text(data.email, 254).toLowerCase();
@@ -193,6 +196,9 @@ export async function POST(req: Request) {
         destination: destination || "—",
         weightRange: weightRange || "—",
         cargoType: cargoType || "—",
+        cargoVolume: cargoVolume || "—",
+        readyDate: readyDate || "—",
+        incoterm: incoterm || "—",
         urgency: urgency || "—",
         name,
         email: email || "—",
@@ -217,6 +223,9 @@ export async function POST(req: Request) {
             <tr><td style="padding:8px 0;"><strong>Destination</strong></td><td>${safe.destination}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Weight</strong></td><td>${safe.weightRange}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Cargo Type</strong></td><td>${safe.cargoType}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>Volume / Container</strong></td><td>${safe.cargoVolume}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>Cargo-ready Date</strong></td><td>${safe.readyDate}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>Incoterm</strong></td><td>${safe.incoterm}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Urgency</strong></td><td>${safe.urgency}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Name</strong></td><td>${safe.name}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Email</strong></td><td>${safe.email}</td></tr>

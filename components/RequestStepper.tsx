@@ -26,6 +26,9 @@ type FormData = {
   destination: string;
   weightRange: string;
   cargoType: string;
+  cargoVolume: string;
+  readyDate: string;
+  incoterm: string;
   urgency: string;
   name: string;
   email: string;
@@ -41,6 +44,9 @@ const EMPTY_FORM: FormData = {
   destination: "",
   weightRange: "",
   cargoType: "",
+  cargoVolume: "",
+  readyDate: "",
+  incoterm: "",
   urgency: "",
   name: "",
   email: "",
@@ -116,17 +122,17 @@ export default function RequestStepper({
   const sourcePageRef = useRef("");
 
   useEffect(() => {
-    const origin = searchParams.get("origin")?.slice(0, 120) || initialOrigin.slice(0, 120);
+    const origin = searchParams?.get("origin")?.slice(0, 120) || initialOrigin.slice(0, 120);
     const destination =
-      searchParams.get("destination")?.slice(0, 120) || initialDestination.slice(0, 120);
+      searchParams?.get("destination")?.slice(0, 120) || initialDestination.slice(0, 120);
     const requestedMode =
-      searchParams.get("mode")?.slice(0, 40) || initialMode.slice(0, 40);
+      searchParams?.get("mode")?.slice(0, 40) || initialMode.slice(0, 40);
     const mode = MODE_ENTRIES.some((entry) => entry.value === requestedMode)
       ? requestedMode
       : "";
     sourcePageRef.current =
       window.sessionStorage.getItem(ACQUISITION_SOURCE_KEY)?.slice(0, 120) ||
-      searchParams.get("source")?.slice(0, 120) ||
+      searchParams?.get("source")?.slice(0, 120) ||
       sourcePage.slice(0, 120) ||
       window.location.pathname;
 
@@ -320,6 +326,9 @@ export default function RequestStepper({
               destination={form.destination}
               weightRange={form.weightRange}
               cargoType={form.cargoType}
+              cargoVolume={form.cargoVolume}
+              readyDate={form.readyDate}
+              incoterm={form.incoterm}
               onChange={update}
             />
           )}
@@ -445,6 +454,9 @@ function Step2({
   destination,
   weightRange,
   cargoType,
+  cargoVolume,
+  readyDate,
+  incoterm,
   onChange,
 }: {
   t: TFunc;
@@ -452,6 +464,9 @@ function Step2({
   destination: string;
   weightRange: string;
   cargoType: string;
+  cargoVolume: string;
+  readyDate: string;
+  incoterm: string;
   onChange: (key: keyof FormData, value: string) => void;
 }) {
   const inputClass =
@@ -529,6 +544,23 @@ function Step2({
             </option>
           ))}
         </select>
+      </div>
+      <div>
+        <label htmlFor="cargoVolume" className={labelClass}>Volume / container</label>
+        <input id="cargoVolume" className={inputClass} placeholder="e.g. 12 CBM or 1 × 40HC" value={cargoVolume} onChange={(e) => onChange("cargoVolume", e.target.value)} />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="readyDate" className={labelClass}>Cargo-ready date</label>
+          <input id="readyDate" type="date" className={inputClass} value={readyDate} onChange={(e) => onChange("readyDate", e.target.value)} />
+        </div>
+        <div>
+          <label htmlFor="incoterm" className={labelClass}>Incoterm</label>
+          <select id="incoterm" className={inputClass} value={incoterm} onChange={(e) => onChange("incoterm", e.target.value)}>
+            <option value="">Select / not confirmed</option>
+            {['EXW','FCA','FOB','CFR','CIF','DAP','DPU','DDP','Other'].map((term) => <option key={term} value={term}>{term}</option>)}
+          </select>
+        </div>
       </div>
     </div>
   );

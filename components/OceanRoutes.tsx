@@ -2,8 +2,8 @@ import { Link } from "@/i18n/navigation";
 import { getLocale } from "next-intl/server";
 
 const routes = [
-  { destination: "Italy", port: "Genoa", href: "/routes/vietnam-to-italy" },
-  { destination: "Spain", port: "Barcelona / Valencia", href: "/routes/vietnam-to-spain" },
+  { destination: "Italy", port: "Genoa", href: "/routes/ho-chi-minh-to-genoa" },
+  { destination: "Spain", port: "Barcelona / Valencia", href: "/routes/ho-chi-minh-to-barcelona" },
   { destination: "Indonesia", port: "Jakarta / Surabaya", href: "/routes/vietnam-to-indonesia" },
   { destination: "Taiwan", port: "Kaohsiung / Keelung", href: "/routes/vietnam-to-taiwan" },
 ];
