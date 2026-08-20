@@ -4,15 +4,16 @@ import { getLocale } from "next-intl/server";
 const routes = [
   { destination: "Italy", port: "Genoa", href: "/routes/ho-chi-minh-to-genoa" },
   { destination: "Spain", port: "Barcelona / Valencia", href: "/routes/ho-chi-minh-to-barcelona" },
+  { destination: "France", port: "Fos-sur-Mer", href: "/routes/ho-chi-minh-to-fos-sur-mer" },
   { destination: "Indonesia", port: "Jakarta / Surabaya", href: "/routes/vietnam-to-indonesia" },
   { destination: "Taiwan", port: "Kaohsiung / Keelung", href: "/routes/vietnam-to-taiwan" },
 ];
 const COPY: Record<string, { label: string; heading: string; intro: string; hot: string; available: string; discharge: string; guide: string; destinations: Record<string, string> }> = {
-  en: { label: "Popular routes", heading: "Hot lanes from Vietnam", intro: "Focused support for importers and exporters moving cargo through practical, high-demand lanes.", hot: "Hot Lane", available: "Available", discharge: "Port of discharge", guide: "View route guide", destinations: { Italy: "Italy", Spain: "Spain", Indonesia: "Indonesia", Taiwan: "Taiwan" } },
-  vi: { label: "Tuyến phổ biến", heading: "Các tuyến trọng điểm từ Việt Nam", intro: "Hỗ trợ tập trung cho doanh nghiệp xuất nhập khẩu trên các tuyến có nhu cầu thực tế.", hot: "Tuyến trọng điểm", available: "Đang hỗ trợ", discharge: "Cảng dỡ hàng", guide: "Xem hướng dẫn tuyến", destinations: { Italy: "Ý", Spain: "Tây Ban Nha", Indonesia: "Indonesia", Taiwan: "Đài Loan" } },
-  it: { label: "Rotte popolari", heading: "Rotte prioritarie dal Vietnam", intro: "Supporto dedicato a importatori ed esportatori sulle rotte più pratiche.", hot: "Rotta prioritaria", available: "Disponibile", discharge: "Porto di sbarco", guide: "Consulta la guida", destinations: { Italy: "Italia", Spain: "Spagna", Indonesia: "Indonesia", Taiwan: "Taiwan" } },
-  es: { label: "Rutas populares", heading: "Rutas prioritarias desde Vietnam", intro: "Apoyo específico para importadores y exportadores en rutas prácticas.", hot: "Ruta prioritaria", available: "Disponible", discharge: "Puerto de descarga", guide: "Ver guía de ruta", destinations: { Italy: "Italia", Spain: "España", Indonesia: "Indonesia", Taiwan: "Taiwán" } },
-  id: { label: "Rute populer", heading: "Rute prioritas dari Vietnam", intro: "Dukungan terfokus bagi importir dan eksportir pada rute yang praktis.", hot: "Rute prioritas", available: "Tersedia", discharge: "Pelabuhan bongkar", guide: "Lihat panduan rute", destinations: { Italy: "Italia", Spain: "Spanyol", Indonesia: "Indonesia", Taiwan: "Taiwan" } },
+  en: { label: "Route guides", heading: "Ocean freight routes from Vietnam", intro: "Plan FCL and LCL shipments with port-specific information and request a current sailing or quote for the actual cargo-ready date.", hot: "Route guide", available: "Quote on request", discharge: "Port of discharge", guide: "View route guide", destinations: { Italy: "Italy", Spain: "Spain", France: "France", Indonesia: "Indonesia", Taiwan: "Taiwan" } },
+  vi: { label: "Hướng dẫn tuyến", heading: "Các tuyến vận tải biển từ Việt Nam", intro: "Lập phương án FCL/LCL theo từng cảng và yêu cầu lịch tàu hoặc báo giá hiện hành theo đúng ngày hàng sẵn sàng.", hot: "Hướng dẫn tuyến", available: "Báo giá theo yêu cầu", discharge: "Cảng dỡ hàng", guide: "Xem hướng dẫn tuyến", destinations: { Italy: "Ý", Spain: "Tây Ban Nha", France: "Pháp", Indonesia: "Indonesia", Taiwan: "Đài Loan" } },
+  it: { label: "Guide delle rotte", heading: "Rotte marittime dal Vietnam", intro: "Pianifica spedizioni FCL e LCL per porto e richiedi una partenza o un preventivo attuale per la data merce pronta.", hot: "Guida rotta", available: "Preventivo su richiesta", discharge: "Porto di sbarco", guide: "Consulta la guida", destinations: { Italy: "Italia", Spain: "Spagna", France: "Francia", Indonesia: "Indonesia", Taiwan: "Taiwan" } },
+  es: { label: "Guías de rutas", heading: "Rutas marítimas desde Vietnam", intro: "Planifique envíos FCL y LCL por puerto y solicite una salida o cotización actual para la fecha de carga.", hot: "Guía de ruta", available: "Cotización a solicitud", discharge: "Puerto de descarga", guide: "Ver guía de ruta", destinations: { Italy: "Italia", Spain: "España", France: "Francia", Indonesia: "Indonesia", Taiwan: "Taiwán" } },
+  id: { label: "Panduan rute", heading: "Rute ocean freight dari Vietnam", intro: "Rencanakan pengiriman FCL dan LCL per pelabuhan dan minta sailing atau penawaran terkini sesuai cargo-ready date.", hot: "Panduan rute", available: "Penawaran sesuai permintaan", discharge: "Pelabuhan bongkar", guide: "Lihat panduan rute", destinations: { Italy: "Italia", Spain: "Spanyol", France: "Prancis", Indonesia: "Indonesia", Taiwan: "Taiwan" } },
 };
 
 export default async function OceanRoutes() {
@@ -32,7 +33,7 @@ export default async function OceanRoutes() {
         </p>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
         {routes.map((route) => (
           <article
             key={route.destination}

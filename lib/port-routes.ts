@@ -4,6 +4,7 @@ export const PORT_ROUTES = [
   { slug: "ho-chi-minh-to-barcelona", origin: "Ho Chi Minh City, Vietnam", destination: "Barcelona, Spain", port: "Barcelona", country: "Spain" },
   { slug: "ho-chi-minh-to-valencia", origin: "Ho Chi Minh City, Vietnam", destination: "Valencia, Spain", port: "Valencia", country: "Spain" },
   { slug: "ho-chi-minh-to-algeciras", origin: "Ho Chi Minh City, Vietnam", destination: "Algeciras, Spain", port: "Algeciras", country: "Spain" },
+  { slug: "ho-chi-minh-to-fos-sur-mer", origin: "Ho Chi Minh City, Vietnam", destination: "Fos-sur-Mer, France", port: "Fos-sur-Mer", country: "France" },
   { slug: "ho-chi-minh-to-istanbul", origin: "Ho Chi Minh City, Vietnam", destination: "Istanbul, Türkiye", port: "Istanbul", country: "Türkiye" },
   { slug: "ho-chi-minh-to-izmit", origin: "Ho Chi Minh City, Vietnam", destination: "Izmit, Türkiye", port: "Izmit", country: "Türkiye" },
   { slug: "ho-chi-minh-to-mersin", origin: "Ho Chi Minh City, Vietnam", destination: "Mersin, Türkiye", port: "Mersin", country: "Türkiye" },
