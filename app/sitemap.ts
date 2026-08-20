@@ -96,6 +96,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
+  const routeHubPages: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
+    url: `${BASE_URL}/${locale}/routes`,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+    alternates: {
+      languages: {
+        ...Object.fromEntries(routing.locales.map((language) => [language, `${BASE_URL}/${language}/routes`])),
+        "x-default": `${BASE_URL}/en/routes`,
+      },
+    },
+  }));
+
   const portRoutePages: MetadataRoute.Sitemap = PORT_ROUTES.flatMap((route) =>
     routing.locales.map((locale) => ({
       url: `${BASE_URL}/${locale}/routes/${route.slug}`,
@@ -130,5 +142,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  return [...staticPages, ...servicePages, ...routePages, ...portRoutePages, ...articlePages];
+  return [...staticPages, ...servicePages, ...routeHubPages, ...routePages, ...portRoutePages, ...articlePages];
 }
