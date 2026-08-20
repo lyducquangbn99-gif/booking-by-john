@@ -126,6 +126,11 @@
       "weightPlaceholder": "Seleziona fascia di peso",
       "cargoLabel": "Tipo di Merce (opzionale)",
       "cargoPlaceholder": "Seleziona tipo di merce",
+      "volumeLabel": "Volume / container",
+      "volumePlaceholder": "Es. 12 CBM o 1 × 40HC",
+      "readyDateLabel": "Data merce pronta",
+      "incotermLabel": "Incoterm",
+      "incotermPlaceholder": "Seleziona / non confermato",
       "weightOptions": {
         "under5k": "Meno di 5.000 lbs",
         "from5kTo20k": "5.000–20.000 lbs",

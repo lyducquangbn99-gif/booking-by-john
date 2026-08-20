@@ -126,6 +126,11 @@
       "weightPlaceholder": "Chọn khoảng trọng lượng",
       "cargoLabel": "Loại Hàng Hóa (không bắt buộc)",
       "cargoPlaceholder": "Chọn loại hàng hóa",
+      "volumeLabel": "Thể tích / loại container",
+      "volumePlaceholder": "Vd. 12 CBM hoặc 1 × 40HC",
+      "readyDateLabel": "Ngày hàng sẵn sàng",
+      "incotermLabel": "Điều kiện Incoterm",
+      "incotermPlaceholder": "Chọn / chưa xác nhận",
       "weightOptions": {
         "under5k": "Dưới 5.000 lbs",
         "from5kTo20k": "5.000–20.000 lbs",

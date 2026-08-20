@@ -546,18 +546,18 @@ function Step2({
         </select>
       </div>
       <div>
-        <label htmlFor="cargoVolume" className={labelClass}>Volume / container</label>
-        <input id="cargoVolume" className={inputClass} placeholder="e.g. 12 CBM or 1 × 40HC" value={cargoVolume} onChange={(e) => onChange("cargoVolume", e.target.value)} />
+        <label htmlFor="cargoVolume" className={labelClass}>{t('step2.volumeLabel')}</label>
+        <input id="cargoVolume" className={inputClass} placeholder={t('step2.volumePlaceholder')} value={cargoVolume} onChange={(e) => onChange("cargoVolume", e.target.value)} />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="readyDate" className={labelClass}>Cargo-ready date</label>
+          <label htmlFor="readyDate" className={labelClass}>{t('step2.readyDateLabel')}</label>
           <input id="readyDate" type="date" className={inputClass} value={readyDate} onChange={(e) => onChange("readyDate", e.target.value)} />
         </div>
         <div>
-          <label htmlFor="incoterm" className={labelClass}>Incoterm</label>
+          <label htmlFor="incoterm" className={labelClass}>{t('step2.incotermLabel')}</label>
           <select id="incoterm" className={inputClass} value={incoterm} onChange={(e) => onChange("incoterm", e.target.value)}>
-            <option value="">Select / not confirmed</option>
+            <option value="">{t('step2.incotermPlaceholder')}</option>
             {['EXW','FCA','FOB','CFR','CIF','DAP','DPU','DDP','Other'].map((term) => <option key={term} value={term}>{term}</option>)}
           </select>
         </div>
