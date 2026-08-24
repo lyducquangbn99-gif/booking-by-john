@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-bg-primary: #f8fafc;
+  --color-bg-primary: #f2fbff;
   --color-bg-secondary: #ffffff;
   --color-bg-card: #ffffff;
 
-  --color-accent-green: #16a34a;
-  --color-accent-orange: #f97316;
+  --color-accent-green: #059669;
+  --color-accent-orange: #c2410c;
   --color-ocean-blue: #0077b6;
 
   --color-text-primary: #111827;
-  --color-text-secondary: #64748b;
-  --color-text-muted: #64748b;
+  --color-text-secondary: #40576b;
+  --color-text-muted: #5d7182;
 
   --color-border-subtle: #e2e8f0;
 
@@ -49,12 +51,99 @@ html {
 }
 
 body {
-  background-color: #f8fafc;
-  color: #111827;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
   font-family: var(--font-noto-sans), "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-bg-primary: #061827;
+  --color-bg-secondary: #0a2133;
+  --color-bg-card: #0d293d;
+  --color-text-primary: #e9f7ff;
+  --color-text-secondary: #b7cfdd;
+  --color-text-muted: #8fabbc;
+  --color-border-subtle: #21445a;
+  --color-ocean-blue: #38bdf8;
+  --color-accent-green: #34d399;
+  --color-accent-orange: #c2410c;
+}
+
+html.dark body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+html.dark .site-header,
+html.dark [class~="bg-white"],
+html.dark [class*="bg-white/"] {
+  background-color: rgba(10, 33, 51, 0.96) !important;
+}
+
+html.dark [class*="text-[#0B1F3A]"],
+html.dark [class*="text-[#111827]"],
+html.dark .brand-wordmark {
+  color: #e9f7ff !important;
+}
+
+html.dark [class*="bg-[#0B1F3A]"] {
+  background-color: #082c46 !important;
+}
+
+html.dark [class~="bg-amber-50"],
+html.dark [class~="bg-orange-50"],
+html.dark [class~="bg-orange-100"],
+html.dark [class~="bg-slate-50"] {
+  background-color: #173044 !important;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #071d2c;
+  color: #e9f7ff;
+  border-color: #2c536a;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #7f9daf;
+}
+
+html.dark .logo-mark {
+  background-color: #effaff !important;
+  border-color: #7dd3fc;
+}
+
+html.dark img:not(.logo-mark) {
+  filter: brightness(0.92) contrast(1.04);
+}
+
+html.dark .shadow-sm,
+html.dark .shadow-lg,
+html.dark .shadow-xl,
+html.dark .shadow-2xl {
+  --tw-shadow-color: rgba(0, 0, 0, 0.34);
+}
+
+button,
+a,
+input,
+select,
+textarea,
+[class*="bg-"],
+[class*="text-"],
+[class*="border-"] {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: 180ms;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -100,7 +100,14 @@ export default async function LocaleLayout({ children, params }: Props) {
     mainEntityOfPage: siteUrl,
   };
   return (
-    <html lang={locale} className={notoSans.variable}>
+    <html lang={locale} className={notoSans.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('byj-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d);document.documentElement.style.colorScheme=d?'dark':'light'}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body>
         <JsonLd data={[organizationSchema, websiteSchema]} />
         <NextIntlClientProvider messages={messages}>

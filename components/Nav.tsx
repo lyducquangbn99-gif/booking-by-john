@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { trackBookingEvent } from "@/lib/analytics";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const LOCALE_META: Record<string, { flag: string; label: string }> = {
   en: { flag: "US", label: "English" },
@@ -108,7 +109,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-subtle bg-white/95 backdrop-blur">
+    <header className="site-header sticky top-0 z-50 border-b border-border-subtle bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
           <Image
@@ -117,9 +118,9 @@ export default function Nav() {
             width={40}
             height={40}
             priority
-            className="h-10 w-10 object-contain"
+            className="logo-mark h-10 w-10 rounded-lg bg-[#EFFAFF] p-1 object-contain ring-1 ring-[#B9E6F7]"
           />
-          <span className="text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
+          <span className="brand-wordmark text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
             {t("logo")}
           </span>
         </Link>
@@ -141,6 +142,7 @@ export default function Nav() {
             {copy.quote}
           </Link>
           <LanguageSwitcher />
+          <ThemeToggle locale={locale} />
         </div>
 
         <button
@@ -177,7 +179,10 @@ export default function Nav() {
               {copy.quote}
             </Link>
             <div className="mt-2">
-              <LanguageSwitcher />
+              <div className="flex items-center gap-3">
+                <LanguageSwitcher />
+                <ThemeToggle locale={locale} />
+              </div>
             </div>
           </nav>
         </div>
