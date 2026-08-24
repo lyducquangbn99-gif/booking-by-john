@@ -110,7 +110,7 @@ export default function Nav() {
     <header className="sticky top-0 z-50 border-b border-border-subtle bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0B1F3A] text-sm font-black text-white">
+          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0B1F3A] text-[12.5px] font-black tracking-[-0.35px] text-white">
             BYJ
           </span>
           <span className="text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
