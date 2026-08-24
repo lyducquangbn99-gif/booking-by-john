@@ -111,7 +111,7 @@ export default function Nav() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
           <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0B1F3A] text-sm font-black text-white">
-            BJ
+            BYJ
           </span>
           <span className="text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
             {t("logo")}
