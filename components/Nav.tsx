@@ -112,14 +112,16 @@ export default function Nav() {
     <header className="site-header sticky top-0 z-50 border-b border-border-subtle bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
-          <Image
-            src="/byj-logo-mark.png"
-            alt=""
-            width={40}
-            height={40}
-            priority
-            className="logo-mark h-10 w-10 rounded-lg bg-[#EFFAFF] p-1 object-contain ring-1 ring-[#B9E6F7]"
-          />
+          <span className="logo-plate flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white p-1 shadow-sm ring-1 ring-[#B9E6F7]">
+            <Image
+              src="/byj-logo-mark.png"
+              alt=""
+              width={40}
+              height={40}
+              priority
+              className="logo-mark h-10 w-10 object-contain"
+            />
+          </span>
           <span className="brand-wordmark text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
             {t("logo")}
           </span>

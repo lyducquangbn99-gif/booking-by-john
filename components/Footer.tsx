@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { getLocale } from "next-intl/server";
 
@@ -16,7 +17,18 @@ export default async function Footer() {
     <footer id="contact" className="bg-[#0B1F3A] px-5 py-14 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h2 className="text-xl font-black">Booking by John Ly</h2>
+          <div className="flex items-center gap-4">
+            <span className="footer-logo-plate flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white p-1.5 shadow-lg ring-1 ring-sky-300/70">
+              <Image
+                src="/byj-logo-mark.png"
+                alt="Booking by John Ly"
+                width={56}
+                height={56}
+                className="footer-logo-mark h-14 w-14 object-contain"
+              />
+            </span>
+            <h2 className="text-xl font-black">Booking by John Ly</h2>
+          </div>
           <p className="mt-4 leading-7 text-slate-200">
             {copy.tagline}
           </p>

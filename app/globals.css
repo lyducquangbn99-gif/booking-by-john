@@ -118,12 +118,18 @@ html.dark textarea::placeholder {
   color: #7f9daf;
 }
 
-html.dark .logo-mark {
-  background-color: #effaff !important;
-  border-color: #7dd3fc;
+html.dark .logo-plate,
+html.dark .footer-logo-plate {
+  background: linear-gradient(145deg, #ffffff 0%, #e6f7ff 100%) !important;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.8), 0 8px 24px rgba(0, 119, 182, 0.28) !important;
 }
 
-html.dark img:not(.logo-mark) {
+html.dark .logo-mark,
+html.dark .footer-logo-mark {
+  filter: saturate(1.22) brightness(1.14) contrast(1.1) drop-shadow(0 1px 1px rgba(0, 68, 120, 0.16)) !important;
+}
+
+html.dark img:not(.logo-mark):not(.footer-logo-mark) {
   filter: brightness(0.92) contrast(1.04);
 }
 
