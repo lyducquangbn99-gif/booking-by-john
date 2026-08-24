@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
@@ -110,9 +111,14 @@ export default function Nav() {
     <header className="sticky top-0 z-50 border-b border-border-subtle bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/#home" className="flex items-center gap-3" aria-label="Booking by John Ly home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0B1F3A] text-[12.5px] font-black tracking-[-0.35px] text-white">
-            BYJ
-          </span>
+          <Image
+            src="/byj-logo-mark.png"
+            alt=""
+            width={40}
+            height={40}
+            priority
+            className="h-10 w-10 object-contain"
+          />
           <span className="text-base font-black tracking-tight text-[#0B1F3A] sm:text-lg">
             {t("logo")}
           </span>
