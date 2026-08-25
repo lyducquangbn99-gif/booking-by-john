@@ -123,7 +123,7 @@ export default function FreightChatbox() {
           className="mb-3 flex max-h-[min(680px,calc(100dvh-6rem))] w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-border-subtle bg-bg-card text-text-primary shadow-2xl sm:w-[390px]">
           <header className="flex shrink-0 items-center gap-3 bg-[#0B1F3A] px-4 py-3.5 text-white">
             {flow !== "menu" && <button type="button" onClick={() => launch("menu")} aria-label="Back to chat menu" className="rounded-full p-2 hover:bg-white/10 focus-visible:outline-2"><ChevronLeft size={19} /></button>}
-            <div className="min-w-0 flex-1"><h2 id="byj-chat-title" className="font-black">Chat with John</h2><p className="text-xs text-slate-200">Freight support from Vietnam · Human-reviewed</p></div>
+            <div className="min-w-0 flex-1"><h2 id="byj-chat-title" className="font-black">Chat with John</h2><p className="text-xs text-slate-200">Freight support from Vietnam</p></div>
             <button type="button" onClick={() => setOpen(false)} aria-label="Close chat" className="rounded-full p-2 hover:bg-white/10 focus-visible:outline-2"><X size={20} /></button>
           </header>
 
