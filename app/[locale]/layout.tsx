@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import Analytics from '@/components/Analytics';
 import JsonLd from '@/components/JsonLd';
+import FreightChatbox from '@/components/FreightChatbox';
 import "../globals.css";
 
 const notoSans = Noto_Sans({
@@ -112,6 +113,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <JsonLd data={[organizationSchema, websiteSchema]} />
         <NextIntlClientProvider messages={messages}>
           {children}
+          <FreightChatbox />
           <Analytics />
         </NextIntlClientProvider>
       </body>
