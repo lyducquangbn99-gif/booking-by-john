@@ -4,9 +4,11 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import Script from "next/script";
 import { usePathname } from "@/i18n/navigation";
 import {
+  ACQUISITION_CONTEXT_KEY,
   ACQUISITION_SOURCE_KEY,
   ANALYTICS_CONSENT_KEY,
   INTERNAL_VISITOR_KEY,
+  getAcquisitionEventParams,
   trackBookingEvent,
 } from "@/lib/analytics";
 
@@ -44,6 +46,15 @@ function localeFromPath(pathname: string) {
   return pathname.split("/").filter(Boolean)[0] || "en";
 }
 
+function cleanAttributionValue(value: string | null, maxLength = 120) {
+  if (!value) return "";
+  return value
+    .trim()
+    .replace(/[^a-zA-Z0-9._~+:/ -]/g, "")
+    .replace(/\s+/g, "-")
+    .slice(0, maxLength);
+}
+
 export default function Analytics() {
   const pathname = usePathname();
   const [gaReady, setGaReady] = useState(false);
@@ -76,12 +87,32 @@ export default function Analytics() {
   const copy = CONSENT_TEXT[locale] || CONSENT_TEXT.en;
 
   useEffect(() => {
-    const source = new URLSearchParams(window.location.search)
-      .get("source")
-      ?.slice(0, 120);
-    if (source && /^(linkedin|email|agent|whatsapp|directory|referral)-/i.test(source)) {
-      window.sessionStorage.setItem(ACQUISITION_SOURCE_KEY, source);
-    }
+    const params = new URLSearchParams(window.location.search);
+    const source = cleanAttributionValue(params.get("source"));
+    const utmSource = cleanAttributionValue(params.get("utm_source"));
+    const utmMedium = cleanAttributionValue(params.get("utm_medium"));
+    const utmCampaign = cleanAttributionValue(params.get("utm_campaign"));
+    const utmContent = cleanAttributionValue(params.get("utm_content"));
+
+    if (!source && !utmSource && !utmMedium && !utmCampaign && !utmContent) return;
+
+    const acquisitionSource = (
+      source ||
+      [utmSource, utmMedium, utmCampaign].filter(Boolean).join(":") ||
+      "tagged-visit"
+    ).slice(0, 120);
+
+    window.sessionStorage.setItem(ACQUISITION_SOURCE_KEY, acquisitionSource);
+    window.sessionStorage.setItem(
+      ACQUISITION_CONTEXT_KEY,
+      JSON.stringify({
+        acquisition_source: acquisitionSource,
+        ...(utmSource ? { utm_source: utmSource } : {}),
+        ...(utmMedium ? { utm_medium: utmMedium } : {}),
+        ...(utmCampaign ? { utm_campaign: utmCampaign } : {}),
+        ...(utmContent ? { utm_content: utmContent } : {}),
+      }),
+    );
   }, [pathname]);
 
   function setConsent(value: "granted" | "denied") {
@@ -105,6 +136,7 @@ export default function Analytics() {
     if (!enabled || consent !== "granted" || !gaReady || !window.gtag) return;
 
     window.gtag("event", "page_view", {
+      ...getAcquisitionEventParams(),
       page_title: document.title,
       page_location: window.location.href,
       page_path: pathname,
@@ -154,14 +186,16 @@ export default function Analytics() {
       if (href.includes("#request")) {
         const targetUrl = new URL(href, window.location.origin);
         const leadSource =
-          targetUrl.searchParams.get("source") || window.location.pathname;
+          targetUrl.searchParams.get("source") ||
+          window.sessionStorage.getItem(ACQUISITION_SOURCE_KEY) ||
+          window.location.pathname;
         const sourcePosition = leadSource.match(/-(hero|details|final)$/)?.[1];
 
         trackBookingEvent("quote_cta_click", {
           locale,
           cta_location:
             anchor.dataset.quoteCta || sourcePosition || "page",
-          lead_source: leadSource,
+          lead_source: leadSource.slice(0, 120),
         });
       } else if (href.startsWith("mailto:")) {
         trackBookingEvent("email_click", { locale });
