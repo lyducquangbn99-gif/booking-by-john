@@ -42,3 +42,9 @@ The immediate freight risk is accepting cargo or fixing a delivery promise befor
 For Vietnamese exporters, the useful control point is therefore before booking confirmation: send the technical sheet and retail-packaging artwork to the importer, obtain written confirmation of the tariff line and NOM route, and only then align cargo-ready date and transport plan.
 
 Confidence is high for the publication date, 1 July applicability date, three tariff lines and the stated scope of NOM-001, NOM-024 and the two rule exemptions. Shipment-level treatment remains dependent on the exact model, NICO, import regime and current instructions from the competent Mexican authorities. This article is operational guidance, not a customs ruling or legal opinion.
+
+## Planning a Vietnam-to-Mexico shipment?
+
+Once your Mexican importer or customs representative has confirmed the applicable NOM route, send the shipment basics — POL, POD, model or commodity description, carton count and weight, Incoterm, and cargo-ready date — to **Booking by John** for a current transport option.
+
+[Request a current quote](/en?mode=Ocean%20Freight&source=mexico-smartphone-nom-guide) or review our [Vietnam freight-forwarding support](/en/services/vietnam-freight-forwarder?source=mexico-smartphone-nom-guide). We can coordinate Vietnam-origin pickup, export handling and freight execution; product classification, NOM treatment and Mexican customs decisions remain with the importer and competent customs professionals.
