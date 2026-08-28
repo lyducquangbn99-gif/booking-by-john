@@ -163,6 +163,14 @@ export async function POST(req: Request) {
     const notes = text(data.notes, 2_000);
     const localeInput = text(data.locale, 5);
     const sourcePage = text(data.sourcePage, 120);
+    const acquisitionContext =
+      data.acquisitionContext && typeof data.acquisitionContext === "object"
+        ? (data.acquisitionContext as Record<string, unknown>)
+        : {};
+    const utmSource = text(acquisitionContext.utm_source, 120);
+    const utmMedium = text(acquisitionContext.utm_medium, 120);
+    const utmCampaign = text(acquisitionContext.utm_campaign, 120);
+    const utmContent = text(acquisitionContext.utm_content, 120);
     const locale = ALLOWED_LOCALES.has(localeInput) ? localeInput : "en";
 
     if (!name || (!email && !phone) || !ALLOWED_MODES.has(mode)) {
@@ -207,6 +215,10 @@ export async function POST(req: Request) {
         notes: notes || "—",
         locale,
         sourcePage: sourcePage || "direct",
+        utmSource: utmSource || "—",
+        utmMedium: utmMedium || "—",
+        utmCampaign: utmCampaign || "—",
+        utmContent: utmContent || "—",
       }).map(([key, value]) => [key, escapeHtml(value)]),
     );
 
@@ -234,6 +246,10 @@ export async function POST(req: Request) {
             <tr><td style="padding:8px 0;"><strong>Notes</strong></td><td>${safe.notes}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Locale</strong></td><td>${safe.locale}</td></tr>
             <tr><td style="padding:8px 0;"><strong>Lead Source</strong></td><td>${safe.sourcePage}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>UTM Source</strong></td><td>${safe.utmSource}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>UTM Medium</strong></td><td>${safe.utmMedium}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>UTM Campaign</strong></td><td>${safe.utmCampaign}</td></tr>
+            <tr><td style="padding:8px 0;"><strong>UTM Content</strong></td><td>${safe.utmContent}</td></tr>
           </table>
         </div>
       `,

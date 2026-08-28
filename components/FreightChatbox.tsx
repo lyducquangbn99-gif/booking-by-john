@@ -5,7 +5,7 @@ import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { CheckCircle2, ChevronLeft, Mail, MessageCircle, Send, X } from "lucide-react";
 import { PORT_ROUTES } from "@/lib/port-routes";
-import { trackBookingEvent } from "@/lib/analytics";
+import { getAcquisitionEventParams, trackBookingEvent } from "@/lib/analytics";
 
 const PHONE_NUMBER = "84352193969";
 const DISPLAY_PHONE = "+84 352 193 969";
@@ -87,6 +87,8 @@ export default function FreightChatbox() {
     setStatus("sending");
     const oceanMode = form.mode === "Air" ? "Air Freight" : "Ocean Freight";
     const partnerNotes = `Vietnam handling partner request. Scope: ${partnerScope || "Not specified"}. Overseas market/base: ${partnerMarket || "Not specified"}.`;
+    const acquisitionContext = getAcquisitionEventParams();
+    const leadSource = acquisitionContext.acquisition_source || `chatbox-${kind}:${pathname}`;
     try {
       const response = await fetch("/api/send-booking", {
         method: "POST",
@@ -102,7 +104,8 @@ export default function FreightChatbox() {
           weightRange: "", urgency: "Standard", name: form.name, email: form.email,
           phone: form.phone, company: form.company, notes: kind === "partner" ? partnerNotes : "Submitted via website chatbox.",
           website: "", locale, formStartedAt: startedAt.current || Date.now() - 2_000,
-          sourcePage: `chatbox-${kind}:${pathname}`.slice(0, 120),
+          sourcePage: leadSource.slice(0, 120),
+          acquisitionContext,
         }),
       });
       const result = await response.json();
