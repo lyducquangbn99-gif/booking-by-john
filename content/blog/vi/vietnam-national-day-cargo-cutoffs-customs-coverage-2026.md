@@ -47,3 +47,5 @@ Công điện ngày 19/8 của Chính phủ dự báo kỳ nghỉ 5 ngày làm t
 Tác động trực tiếp với hàng Việt Nam là khoảng trống phối hợp: Hải quan vẫn duy trì lực lượng thông quan, nhưng một số cut-off chứng từ của hãng rơi trước hoặc trong giai đoạn nghỉ rộng hơn. Một bộ hồ sơ vẫn có thể khai báo về mặt kỹ thuật nhưng lỡ hạn hãng hoặc chuyến nếu SI, VGM, thanh toán và trách nhiệm bàn giao chưa được chốt.
 
 Mức tin cậy cao đối với kỳ nghỉ 5 ngày, chỉ đạo trực Hải quan, ngày nghỉ văn phòng CMA CGM và các cut-off in trong thông báo có ngày. Mức tin cậy trung bình đối với từng lô hàng cho đến khi booking trực tiếp, việc tiếp nhận của cảng và giờ làm việc của nhà cung cấp được xác nhận lại. Bài viết không khẳng định cảng đóng cửa toàn bộ, Hải quan dừng hoạt động, chắc chắn ùn tắc, mức chậm chuẩn hay chi phí tăng cố định.
+
+Bạn cần kiểm tra một lô hàng Việt Nam quanh kỳ nghỉ? Xem [dịch vụ giao nhận vận tải tại Việt Nam](/vi/services/freight-forwarder-vietnam), sau đó [gửi yêu cầu kiểm tra cut-off và phương án tuyến theo lô hàng](/vi?mode=Ocean%20Freight&source=national-day-cutoff-guide#request) kèm cảng, tàu hoặc tuyến, ngày hàng sẵn sàng và thông tin booking.

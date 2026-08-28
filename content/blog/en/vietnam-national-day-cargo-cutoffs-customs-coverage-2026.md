@@ -47,3 +47,5 @@ The Government's 19 August traffic direction says the five-day break is expected
 The immediate Vietnam freight impact is a coordination gap: customs clearance coverage continues, but some carrier document cut-offs fall before or during the wider holiday period. A file that is technically declarable may still miss a carrier or voyage deadline if SI, VGM, payment or hand-off responsibilities are not closed in time.
 
 Confidence is high in the five-day holiday period, Customs coverage direction, CMA CGM office dates and the cut-offs printed in the dated carrier notice. Confidence is medium for any individual shipment until its live booking, terminal acceptance and service-provider hours are reconfirmed. No universal port closure, customs stoppage, guaranteed congestion, standard delay or fixed extra cost is claimed.
+
+Need to check a Vietnam shipment around the holiday? Review our [Vietnam freight-forwarder support](/en/services/freight-forwarder-vietnam), then [request a shipment-specific cut-off and routing check](/en?mode=Ocean%20Freight&source=national-day-cutoff-guide#request) with the port, vessel or route, cargo-ready date and booking details.
