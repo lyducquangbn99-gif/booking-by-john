@@ -38,7 +38,7 @@ function commercialTargetFor(slug: string): CommercialTarget {
   if (/turkey|turkiye|istanbul/i.test(slug)) return { label: "Ho Chi Minh City → Istanbul", href: `/routes/ho-chi-minh-to-istanbul?source=${encodedSource}`, quoteHref: `/?origin=Ho%20Chi%20Minh%20City%2C%20Vietnam&destination=Istanbul%2C%20T%C3%BCrkiye&mode=Ocean%20Freight&source=${encodedSource}#request` };
   if (/indonesia|jakarta/i.test(slug)) return { label: "Vietnam → Indonesia", href: `/routes/vietnam-to-indonesia?source=${encodedSource}`, quoteHref: `/?mode=Ocean%20Freight&source=${encodedSource}#request` };
   if (/taiwan|kaohsiung|keelung|taichung/i.test(slug)) return { label: "Vietnam → Taiwan", href: `/routes/vietnam-to-taiwan?source=${encodedSource}`, quoteHref: `/?mode=Ocean%20Freight&source=${encodedSource}#request` };
-  if (/haiphong|hai-phong/i.test(slug)) return { label: "Hai Phong origin freight", href: `/services/freight-forwarder-vietnam?source=${encodedSource}`, quoteHref: `/?origin=Hai%20Phong%2C%20Vietnam&mode=Ocean%20Freight&source=${encodedSource}#request` };
+  if (/haiphong|hai-phong|golden-week/i.test(slug)) return { label: "Hai Phong origin freight", href: `/services/freight-forwarder-vietnam?source=${encodedSource}`, quoteHref: `/?origin=Hai%20Phong%2C%20Vietnam&mode=Ocean%20Freight&source=${encodedSource}#request` };
   if (/mexico|mazatlan/i.test(slug)) return { label: "Vietnam → Mexico freight support", href: `/services/freight-forwarder-vietnam?source=${encodedSource}`, quoteHref: `/?source=${encodedSource}#request` };
   return { label: "Vietnam freight-forwarding support", href: `/services/freight-forwarder-vietnam?source=${encodedSource}`, quoteHref: `/?source=${encodedSource}#request` };
 }
