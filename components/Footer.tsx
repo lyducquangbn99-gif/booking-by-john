@@ -49,7 +49,8 @@ export default async function Footer() {
           <h3 className="font-black">{copy.contact}</h3>
           <ul className="mt-4 space-y-2 text-slate-200">
             <li><a href="mailto:BookingbyJohnly@gmail.com" className="hover:text-accent-orange">Email: BookingbyJohnly@gmail.com</a></li>
-            <li><a href="tel:+84352193969" className="hover:text-accent-orange">Phone / WhatsApp / Zalo: +84 352 193 969</a></li>
+            <li><a href="https://wa.me/84352193969?text=Hi%20John%2C%20I%27d%20like%20a%20freight%20quote%20from%20Vietnam." target="_blank" rel="noopener noreferrer" className="hover:text-accent-orange">WhatsApp: +84 352 193 969</a></li>
+            <li><a href="tel:+84352193969" className="hover:text-accent-orange">Phone / Zalo: +84 352 193 969</a></li>
             <li>Website: bookingbyjohnly.com</li>
           </ul>
         </div>
