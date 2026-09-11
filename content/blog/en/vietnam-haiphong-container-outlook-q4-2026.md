@@ -45,6 +45,8 @@ Upside case: strong intra-Asia technology trade and steady production demand kee
 - Track the WTO's October forecast and new official Vietnamese port data; reset the scenario when those indicators change.
 - Treat any rate, surcharge, omission or delay only as confirmed when it appears in the relevant live quotation or official carrier notice.
 
+For the immediate pre-holiday planning window, see our [late-September Vietnam shipping guide before Golden Week](/en/blog/vietnam-golden-week-shipping-window-2026), which turns the broader Q4 outlook into specific booking checks for the coming weeks.
+
 ## Vietnam freight and import-export impact
 
 The practical impact is a need for earlier, more granular booking control at the northern gateway—not a blanket conclusion that Hải Phòng is congested. Strong physical throughput can increase the cost of late decisions on busy weeks, but it does not prove a universal equipment shortage, rolled cargo, surcharge or delay.
