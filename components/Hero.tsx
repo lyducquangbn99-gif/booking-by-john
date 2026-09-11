@@ -4,6 +4,7 @@ import { getLocale } from "next-intl/server";
 const routes = [
   { destination: "Italy", port: "Genoa" },
   { destination: "Spain", port: "Barcelona / Valencia" },
+  { destination: "Türkiye", port: "Istanbul / Izmit / Mersin" },
   { destination: "Indonesia", port: "Jakarta / Surabaya" },
   { destination: "Taiwan", port: "Kaohsiung / Keelung" },
 ];
@@ -20,7 +21,7 @@ const COPY: Record<string, {
     trust: ["Clear charge scope", "Practical route options", "Direct support"],
     priority: "Priority routes", hot: "Priority", discharge: "Port of discharge",
     imageAlt: "Ocean freight containers and cargo ship at a modern port",
-    destinations: { Italy: "Italy", Spain: "Spain", Indonesia: "Indonesia", Taiwan: "Taiwan" },
+    destinations: { Italy: "Italy", Spain: "Spain", Türkiye: "Türkiye", Indonesia: "Indonesia", Taiwan: "Taiwan" },
   },
   vi: {
     eyebrow: "Logistics xuất khẩu từ Việt Nam theo tuyến trọng điểm",
@@ -30,7 +31,7 @@ const COPY: Record<string, {
     trust: ["Phạm vi phí rõ ràng", "Phương án tuyến thực tế", "Hỗ trợ trực tiếp"],
     priority: "Tuyến ưu tiên", hot: "Ưu tiên", discharge: "Cảng dỡ hàng",
     imageAlt: "Container và tàu hàng tại cảng biển hiện đại",
-    destinations: { Italy: "Ý", Spain: "Tây Ban Nha", Indonesia: "Indonesia", Taiwan: "Đài Loan" },
+    destinations: { Italy: "Ý", Spain: "Tây Ban Nha", Türkiye: "Thổ Nhĩ Kỳ", Indonesia: "Indonesia", Taiwan: "Đài Loan" },
   },
   it: {
     eyebrow: "Logistica export dal Vietnam sulle rotte prioritarie",
@@ -40,7 +41,7 @@ const COPY: Record<string, {
     trust: ["Costi inclusi chiari", "Rotte pratiche", "Supporto diretto"],
     priority: "Rotte prioritarie", hot: "Priorità", discharge: "Porto di sbarco",
     imageAlt: "Container e nave cargo in un porto moderno",
-    destinations: { Italy: "Italia", Spain: "Spagna", Indonesia: "Indonesia", Taiwan: "Taiwan" },
+    destinations: { Italy: "Italia", Spain: "Spagna", Türkiye: "Turchia", Indonesia: "Indonesia", Taiwan: "Taiwan" },
   },
   es: {
     eyebrow: "Logística de exportación desde Vietnam en rutas prioritarias",
@@ -50,7 +51,7 @@ const COPY: Record<string, {
     trust: ["Cargos claramente definidos", "Rutas prácticas", "Apoyo directo"],
     priority: "Rutas prioritarias", hot: "Prioridad", discharge: "Puerto de descarga",
     imageAlt: "Contenedores y buque de carga en un puerto moderno",
-    destinations: { Italy: "Italia", Spain: "España", Indonesia: "Indonesia", Taiwan: "Taiwán" },
+    destinations: { Italy: "Italia", Spain: "España", Türkiye: "Turquía", Indonesia: "Indonesia", Taiwan: "Taiwán" },
   },
   id: {
     eyebrow: "Logistik ekspor Vietnam untuk rute prioritas",
@@ -60,7 +61,7 @@ const COPY: Record<string, {
     trust: ["Cakupan biaya jelas", "Opsi rute praktis", "Dukungan langsung"],
     priority: "Rute prioritas", hot: "Prioritas", discharge: "Pelabuhan bongkar",
     imageAlt: "Kontainer dan kapal kargo di pelabuhan modern",
-    destinations: { Italy: "Italia", Spain: "Spanyol", Indonesia: "Indonesia", Taiwan: "Taiwan" },
+    destinations: { Italy: "Italia", Spain: "Spanyol", Türkiye: "Turki", Indonesia: "Indonesia", Taiwan: "Taiwan" },
   },
 };
 
