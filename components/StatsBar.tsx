@@ -1,4 +1,5 @@
 import { getLocale } from "next-intl/server";
+import TrackedContactLink from "@/components/TrackedContactLink";
 
 type Action = { value: string; label: string; href: string; external?: boolean };
 
@@ -42,24 +43,39 @@ export default async function StatsBar() {
   return (
     <section className="border-y border-border-subtle bg-bg-secondary" aria-label="Quick booking benefits">
       <div className="mx-auto grid max-w-6xl grid-cols-2 px-6 md:grid-cols-4">
-        {actions.map((action, index) => (
-          <a
-            key={action.label}
-            href={action.href}
-            target={action.external ? "_blank" : undefined}
-            rel={action.external ? "noreferrer" : undefined}
-            className={`group px-5 py-9 text-center transition-colors hover:bg-bg-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent-green ${
-              index < actions.length - 1 ? "border-r border-border-subtle" : ""
-            }`}
-          >
-            <div className="mb-2 font-display text-xl font-bold text-accent-green transition-transform group-hover:-translate-y-0.5 md:text-2xl">
-              {action.value}
-            </div>
-            <div className="text-xs uppercase leading-relaxed tracking-widest text-text-muted">
-              {action.label}
-            </div>
-          </a>
-        ))}
+        {actions.map((action, index) => {
+          const className = `group px-5 py-9 text-center transition-colors hover:bg-bg-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent-green ${
+            index < actions.length - 1 ? "border-r border-border-subtle" : ""
+          }`;
+          const content = (
+            <>
+              <div className="mb-2 font-display text-xl font-bold text-accent-green transition-transform group-hover:-translate-y-0.5 md:text-2xl">
+                {action.value}
+              </div>
+              <div className="text-xs uppercase leading-relaxed tracking-widest text-text-muted">
+                {action.label}
+              </div>
+            </>
+          );
+
+          return action.external ? (
+            <TrackedContactLink
+              key={action.label}
+              href={action.href}
+              channel="whatsapp"
+              placement="stats_bar"
+              target="_blank"
+              rel="noreferrer"
+              className={className}
+            >
+              {content}
+            </TrackedContactLink>
+          ) : (
+            <a key={action.label} href={action.href} className={className}>
+              {content}
+            </a>
+          );
+        })}
       </div>
     </section>
   );
