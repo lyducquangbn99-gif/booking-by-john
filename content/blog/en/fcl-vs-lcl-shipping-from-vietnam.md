@@ -13,6 +13,16 @@ FCL and LCL are two ways to move cargo by sea from Vietnam. FCL, or Full Contain
 
 For a shipment-specific comparison, start with our [Ocean Freight service](/en/services/freight-forwarder-vietnam) and provide the pickup point, destination, commodity, package dimensions, gross weight, total CBM, ready date and Incoterm.
 
+## 16 September 2026 checkpoint: one LCL Europe surcharge changes tomorrow
+
+Maersk Logistics & Services announced on 16 September that its LCL Peak Season Surcharge (PSS) for Far East Asia to North Europe and Mediterranean Europe (E1W/E2W) will stop applying from a Price Calculation Date of **17 September 2026**. Vietnam is explicitly included in the Far East Asia origin list.
+
+This is useful timing information for smaller Vietnam-to-Europe shipments, but it is **not** a universal market-rate reduction. It applies to the named Maersk LCL product and effective-date basis; another carrier, consolidator, routing, local charge or quote validity may differ. If you are comparing LCL with FCL for Europe, ask for a fresh all-in quotation rather than subtracting a PSS from an older quote yourself.
+
+Source: [Maersk — Stoppage of LCL Peak Season Surcharge from Far East Asia to North Europe and Mediterranean, 16 Sep 2026](https://www.maersk.com.cn/news/articles/2026/09/16/lcl-peak-season-surcharge-stoppage-far-east-europe).
+
+For Mediterranean cargo, you can also review [Vietnam–Italy shipping](/en/routes/vietnam-to-italy) and request a current shipment check with your cargo-ready date and destination.
+
 ## What changes when you choose FCL?
 
 With FCL, the container is assigned to one shipper. The cargo may be loaded at a factory or warehouse, or delivered to a container yard depending on the booking and service scope. Common equipment includes 20-foot and 40-foot dry containers, but equipment suitability must be checked for the actual cargo.
