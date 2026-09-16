@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">EU ICS2 No MRN, No Load</title>
+  <desc id="desc">Documentation checkpoint illustration for Vietnam exports moving to or through the European Union</desc>
+  <rect width="1200" height="630" fill="#f5f7fa"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#ffffff" stroke="#d7dde5" stroke-width="3"/>
+  <text x="120" y="165" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#25344a">VIETNAM → EUROPE</text>
+  <text x="120" y="245" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#132238">ICS2: NO MRN, NO LOAD</text>
+  <text x="120" y="305" font-family="Arial, sans-serif" font-size="30" fill="#46566d">Carrier checkpoint effective 30 September 2026</text>
+  <rect x="120" y="370" width="370" height="92" rx="16" fill="#eef2f7"/>
+  <text x="150" y="410" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#25344a">PRE-LOADING CHECK</text>
+  <text x="150" y="443" font-family="Arial, sans-serif" font-size="20" fill="#46566d">MRN • routing • filing responsibility</text>
+  <path d="M790 188h230v230H790z" fill="#eef2f7" stroke="#aeb9c7" stroke-width="3"/>
+  <path d="M825 245h160M825 290h160M825 335h105" stroke="#52647b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="1015" cy="430" r="58" fill="#25344a"/>
+  <path d="M985 430l20 20 40-46" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="520" font-family="Arial, sans-serif" font-size="20" fill="#6a7788">BYJ Logistics • operational alert • verify against the actual booking</text>
+</svg>
