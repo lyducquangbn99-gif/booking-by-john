@@ -3,21 +3,28 @@ title: "Vietnam's late-September shipping window before Golden Week"
 slug: "vietnam-golden-week-shipping-window-2026"
 date: "2026-09-11"
 category: "Trade Update"
-excerpt: "Carrier notices now identify specific blank sailings around China's October holiday and one Haiphong alternative. Here is what Vietnam exporters should verify before late-September cut-offs."
+excerpt: "Carrier notices now identify specific blank sailings around China's October holiday and one Haiphong alternative. A 16 September port checkpoint adds current Vung Tau yard pressure to the checks Vietnam exporters should make before late-September cut-offs."
 readTime: "5 min read"
 image: "/editorial/vietnam-golden-week-shipping-window-2026.png"
 imageAlt: "A Vietnam export team reviewing late-September container sailings during seasonal weather"
-source1: "State Council of China, official 2026 public-holiday notice, 4 November 2025|https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+source1: "State Council of China, official 2026 public-holiday notice, 4 November 2025|https://www.gov.cn/zhengce/content_7047090.htm"
 source2: "Maersk, Asia Pacific Market Update – September 2026, 9 September 2026|https://www.maersk.com/news/articles/2026/09/09/maersk-asia-pacific-market-update-september"
 source3: "Maersk, East Asia typhoon season: Update 1, 9 September 2026|https://www.maersk.com/news/articles/2026/09/09/east-asia-typhoon-season-shipping-updates"
 source4: "Maersk, Transpacific Schedule Adjustments for Golden Week, 28 August 2026|https://www.maersk.com/news/articles/2026/08/28/transpacific-schedule-adjustments-golden-week-2026"
 source5: "Maersk, Golden Week Network Changes: Far East Asia to Europe Services, 20 August 2026|https://www.maersk.com/news/articles/2026/08/20/golden-week-network-changes-far-east-asia-europe"
 source6: "Hapag-Lloyd, Far East to North America Golden Week service update, August 2026|https://www.hapag-lloyd.com/en/services-information/news/2026/08/shipping-from-far-east-to-north-america--here-s-an-update-on-our.headless.html"
+source7: "Kuehne+Nagel, Port operational updates 9–15 September 2026|https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-09-09-2026"
 ---
 
 The late-September planning window has become concrete for Vietnam exporters. China's official 2026 holiday calendar sets the National Day break from 1 to 7 October. Carrier notices now identify named blank sailings around that period, while a separate East Asia weather advisory says recurring weather is already contributing to congestion and weaker on-time vessel arrivals.
 
 This is not evidence of a shutdown at every Asian port or a shortage on every Vietnam route. It is a prompt to check the actual carrier, service, voyage and connection behind each booking before document and cargo cut-offs close.
+
+## 16 September operational checkpoint
+
+Kuehne+Nagel's 9–15 September port update reports that Vung Tau's seven-day average vessel waiting time is around one day. It says congestion at Gemalink has stabilised to roughly 0.5–1 day of vessel waiting, while yard density remains very high at 95–100% and continues to affect terminal efficiency.
+
+Treat this as a dated operational signal, not a forecast for a specific booking. South Vietnam exporters should reconfirm terminal receiving windows, equipment and vessel status against the live booking before dispatching cargo, especially when a late-September sailing leaves little recovery time before the Golden Week network changes.
 
 ## What the official notices say
 
@@ -57,6 +64,6 @@ Until departure, review carrier advisories and the booking status for vessel sub
 
 ## Vietnam freight and export impact
 
-The immediate effect is on sequencing: factories, truckers, customs brokers, forwarders and buyers need one shared booking version before late-September hand-offs. Northern exporters considering the named Haiphong sailing should verify acceptance and downstream routing rather than treating the additional Norfolk call as universal coverage.
+The immediate effect is on sequencing: factories, truckers, customs brokers, forwarders and buyers need one shared booking version before late-September hand-offs. Northern exporters considering the named Haiphong sailing should verify acceptance and downstream routing rather than treating the additional Norfolk call as universal coverage. Southern exporters should also account for the dated Vung Tau yard-pressure signal when deciding how much buffer to leave before terminal and vessel cut-offs.
 
-Confidence is high in the official holiday dates and the named carrier schedule changes. Confidence is medium for any individual shipment until its live booking and schedule are reconfirmed, because carrier plans and weather can change. No standard freight rate, capacity shortage, transit delay, cost saving or guaranteed alternative is claimed.
+Confidence is high in the official holiday dates and the named carrier schedule changes. Confidence is medium for any individual shipment until its live booking and schedule are reconfirmed, because carrier plans, terminal conditions and weather can change. No standard freight rate, capacity shortage, transit delay, cost saving or guaranteed alternative is claimed.
