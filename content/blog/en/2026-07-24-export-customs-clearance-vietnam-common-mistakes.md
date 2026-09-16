@@ -3,12 +3,13 @@ title: "7 Common Mistakes That Delay Export Customs Clearance in Vietnam"
 slug: "2026-07-24-export-customs-clearance-vietnam-common-mistakes"
 date: "2026-07-24"
 category: "Freight Guide"
-excerpt: "Avoid preventable export delays by checking HS codes, invoices, packing lists, VGM deadlines, and local coordination before cargo moves."
-readTime: "6 min read"
+excerpt: "Avoid preventable export delays by checking HS codes, invoices, packing lists, VGM deadlines, and local coordination before cargo moves. Updated with a September 2026 Certificate of Origin processing checkpoint."
+readTime: "7 min read"
 image: "/blog/2026-07-24-export-customs-clearance-vietnam-common-mistakes-editorial.jpg"
 imageAlt: "Logistics professional cross-checking export documents, container seals and cargo weight in Vietnam"
 source1: "Vietnam Government legal portal: Circular 38/2015/TT-BTC on customs procedures|https://vanban.chinhphu.vn/?docid=179540&pageid=27160"
 source2: "IMO: New ship safety rule to prevent loss of containers enters into force|https://www.imo.org/en/mediacentre/pressbriefings/pages/new-ship-safety-rule-to-prevent-loss-of-containers-enters-into-force.aspx"
+source3: "Maersk Asia Pacific Market Update – September 2026|https://www.maersk.com/news/articles/2026/09/09/maersk-asia-pacific-market-update-september"
 ---
 
 Export customs clearance is one of the most important stages of an international shipment from Vietnam. A small mismatch in the documents can lead to extra questions, declaration amendments, cargo inspections, storage charges, or a missed vessel.
@@ -16,6 +17,12 @@ Export customs clearance is one of the most important stages of an international
 For freight forwarders, overseas logistics agents, importers, and exporters, the best way to reduce risk is to prepare the shipment information early and make sure all parties are working with the same data.
 
 Below are seven common mistakes that can delay export customs clearance in Vietnam.
+
+## September 2026 checkpoint: allow extra time when a Certificate of Origin is required
+
+Maersk's Asia Pacific Market Update published on 9 September 2026 reports that Vietnam's ongoing transition of Certificate of Origin (COO) issuance responsibilities from the Ministry of Industry and Trade to local authorities is creating operational challenges, with processing delays observed while provincial authorities build capability and resources.
+
+For a shipment that requires a COO, treat this as a current planning signal rather than assuming the certificate can be obtained on the same timeline as a previous shipment. Confirm the applicable origin-document requirement, responsible issuing channel and realistic processing time before setting the document cut-off. Requirements and processing conditions can vary by shipment, destination and preferential trade arrangement, so verify the current case rather than relying on this market update alone.
 
 ## 1. Using an incorrect or insufficiently checked HS code
 
@@ -81,6 +88,7 @@ Before filing export customs, confirm the following:
 - Incoterm and declared value
 - Package quantity, dimensions, and weights
 - Required licenses, certificates, or inspection documents
+- If a Certificate of Origin is required: current issuing channel and processing lead time
 - Booking number, port, vessel, and cut-off times
 - Shipping instruction and VGM deadline
 - Trucking and container pickup plan
