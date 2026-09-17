@@ -40,9 +40,47 @@ Purpose: route-matched outbound research for BYJ Logistics. This is an internal 
 - BYJ fit: export-oriented company whose own RFQ form requests destination port/country and Incoterms.
 - Outreach angle: named-person outreach; ask for next export port and Incoterm, then respond with a route-matched BYJ resource/quote rather than a generic freight pitch.
 
+## Priority A — overseas forwarders / agents
+
+### Novocargo Transitarios S.A. — Spain
+- Locations: Barcelona and Valencia, Spain
+- Activity: international freight forwarding; sea, road and air transport; logistics/distribution and commercial advisory
+- Named public contacts: Gloria Campos — gcampos@novocargo.com (Barcelona); Alberto Garcia — agarcia@novocargo.com (Valencia)
+- General public contact: info@novocargo.com
+- Source: https://www.novocargo.com/contact/offices/
+- BYJ fit: named local contacts at both Spanish destination ports currently prioritized by BYJ.
+- Outreach angle: Vietnam-origin FCL/LCL cooperation for Barcelona/Valencia; lead with a specific HCMC-origin lane/resource and ask whether they handle Vietnam nominations or need origin support.
+
+### Dafarra & Seves — Italy
+- Location: Genoa, Italy
+- Activity: international freight forwarding
+- Named public sales contacts: Gerolamo Bianchetti — gerry@dafarra.com; Silvia Macchiavello — silvia@dafarra.com
+- General public contact: dafarra@dafarra.com
+- Source: https://dafarra.com/contact/
+- BYJ fit: Genoa-based forwarder with named marketing/sales contacts; directly route-matched to BYJ HCMC→Genoa focus.
+- Outreach angle: Vietnam-origin support into Genoa; use a concise operational/resource-led introduction and ask whether their Italy customers have Vietnam-origin FCL/LCL inquiries.
+
+### Cigisped Vietnam / Cigisped Group — Italy–Vietnam
+- Locations: Ho Chi Minh City, Vietnam; Italian group network including Genoa-linked operations
+- Activity: international transport/logistics
+- Public Vietnam contacts: besati.vietnam@cigisped.it; customer.vietnam@cigisped.it; +84 907 989 216
+- Source: https://www.cigisped.it/en/cigisped-group/
+- BYJ fit: explicit Vietnam office inside an Italian logistics group, useful for Italy–Vietnam cooperation qualification.
+- Outreach angle: qualify whether they use external origin/destination support on overflow or nominated shipments before presenting route pricing.
+
+### Global Cargo System — Spain–Vietnam
+- Locations: Valencia, Barcelona and Ho Chi Minh City
+- Activity: international logistics / freight forwarding
+- Named/public contacts: Joan — joan@gcsspain.com (Barcelona); Fernando — fernando@gcsfe.com (Ho Chi Minh City); info@gcsspain.com (Valencia)
+- Source: https://www.gcsfe.com/en/offices
+- BYJ fit: direct office footprint across HCMC, Valencia and Barcelona; strong geographic match but may already have internal Vietnam capability.
+- Outreach angle: do not assume agency need; qualify overflow, co-loading, rate-comparison or non-core origin support where BYJ can add value.
+
 ## Execution rules
 1. Verify the source again immediately before sending outreach.
-2. Do not state or imply current shipment demand, shipment frequency, incumbent forwarder, or destination unless the source supports it.
+2. Do not state or imply current shipment demand, shipment frequency, incumbent forwarder, destination, or agency need unless the source supports it.
 3. Use the most specific relevant BYJ resource first (ICS2 / customs / FCL-vs-LCL / port route), then commercial CTA.
 4. Tag outreach links by prospect/campaign when attribution tooling is available.
 5. Prioritize KLC Seafood and CoffeeBean Vietnam for the next direct-cargo-owner outreach batch; qualify VietOcean destination before a route-specific pitch.
+6. For overseas agents, prioritize Novocargo Barcelona/Valencia and Dafarra & Seves Genoa because named destination-side commercial contacts are public and route fit is direct.
+7. Treat forwarders with their own Vietnam office as partnership/overflow qualification targets, not as presumed agent prospects.
