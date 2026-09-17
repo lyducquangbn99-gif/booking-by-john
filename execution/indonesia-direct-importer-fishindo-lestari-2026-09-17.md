@@ -3,17 +3,18 @@
 Verified: 2026-09-17
 
 ## Status
-QUALIFIED FOR RESEARCH / OUTREACH ON PUBLIC COMPANY CHANNEL ONLY WHEN A PUBLIC COMPANY CONTACT IS VERIFIED.
+HOLD FOR CONTACT DISCOVERY — qualified Vietnam-origin importer evidence exists, but no sufficiently reliable public company email/WhatsApp/phone has been verified for BYJ outreach.
 
 ## Why this lead matters
-- Current trade-intelligence evidence updated in 2026 identifies PT Fishindo Lestari Bersama (Jakarta) as an Indonesia importer with 15 import shipments from suppliers across Vietnam and China, primarily seafood HS 0304/0303/0307.
-- Separate customs-data evidence lists Vietnamese suppliers including CHT Seafood and Topfish and shows latest trade data in 2025.
+- Current trade-intelligence evidence updated in 2026 identifies PT Fishindo Lestari Bersama (Jakarta) as an Indonesia importer with 15 import shipments from 10 suppliers across Vietnam and China, primarily seafood HS 0304/0303/0307. The same source names CHT Seafood Import Export Ltd among leading suppliers.
+- Indonesian Ministry of Marine Affairs and Fisheries reporting independently lists Fishindo Lestari Bersama among companies submitting changes to import-needs plans. This supports importer activity independently of commercial trade databases, but does not prove a current Vietnam RFQ.
 - Indonesian registry evidence confirms PT Fishindo Lestari Bersama is a registered company in Jakarta.
 - Public professional profiles identify senior people associated with the company, including Kartika Kumala Sari (CEO/Commissioner) and Muslim Muslim (Direktur Utama), but no person-specific email or phone is sufficiently public/verified for BYJ use.
 
 ## Qualification guardrails
 - Do not fabricate or infer personal email patterns.
 - Do not unlock/pay for contact databases without approval.
+- Do not use masked contact data from lead databases as a contact channel.
 - Do not claim a current shipment, current Vietnam volume, reefer requirement, dissatisfaction with an incumbent forwarder, or intent to change providers.
 - Treat third-party trade intelligence as a qualification signal, not as proof of a live RFQ.
 - Before first touch, re-verify a public company email/WhatsApp/phone from an official or otherwise trustworthy public source.
@@ -32,5 +33,10 @@ Suggested handoff:
 
 These names are research/qualification evidence only until a public company contact channel is verified.
 
+## Contact-discovery result — 2026-09-17
+- Fresh public search did not surface an official Fishindo website or an unmasked company email/WhatsApp/phone that can be attributed confidently to PT Fishindo Lestari Bersama.
+- A lead-database result exposes only masked personal contact data. BYJ must not unlock, infer, or use it.
+- Registry search results expose registered addresses but not a verified operational contact channel; registered address alone is not sufficient for digital first-touch.
+
 ## Next action
-Find an official/public company contact channel, re-check Vietnam-origin import evidence immediately before outreach, then prepare a concise route-matched message. If no reliable public company channel is found, keep HOLD rather than guessing contact data.
+Keep this lead HOLD until a reliable public company channel is found. Do not spend further execution time repeatedly searching the same masked databases. Continue prospecting for Indonesia importers with both (a) Vietnam-origin evidence and (b) immediately verifiable public company contact channels; return to Fishindo if a new official/public channel appears.
