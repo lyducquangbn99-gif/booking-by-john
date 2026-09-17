@@ -60,6 +60,23 @@ Purpose: route-matched outbound research for BYJ Logistics. This is an internal 
 - BYJ fit: Genoa-based forwarder with named marketing/sales contacts; directly route-matched to BYJ HCMC→Genoa focus.
 - Outreach angle: Vietnam-origin support into Genoa; use a concise operational/resource-led introduction and ask whether their Italy customers have Vietnam-origin FCL/LCL inquiries.
 
+### Base Spedizioni Internazionali S.p.A. — La Spezia, Italy
+- Location: La Spezia commercial office, Via Palmaria 8, 19126 La Spezia
+- Activity: international freight forwarding
+- Named public commercial contact: pcalifano@basespa.com; +39 0187 564123
+- Source: https://www.basespa.com/en/contacts/
+- BYJ fit: destination-side commercial office in La Spezia with a public person-specific mailbox; directly route-matched to BYJ HCMC→La Spezia.
+- Outreach angle: Vietnam-origin FCL/LCL support into La Spezia; ask whether their commercial desk handles Vietnam-origin nominations or needs origin-side quote/routing support. Do not assume current Vietnam volume.
+
+### Seaway S.r.l. — La Spezia, Italy
+- Location: La Spezia port office, Viale S. Bartolomeo 20 T, La Spezia
+- Activity: international forwarding, customs clearance, transportation, supervision and bonded warehousing
+- Public La Spezia contact: laspezia@seawaysrl.it; +39 0187 1853310
+- Public commercial contact: commerciale@seawaysrl.it; +39 02 70309091
+- Source: https://seawaysrl.eu/contatti/
+- BYJ fit: actual La Spezia port office plus a separate public commercial desk, suitable for destination-side partnership qualification.
+- Outreach angle: route-specific HCMC→La Spezia introduction, referencing Vietnam-origin execution support; qualify whether La Spezia office or central commercial desk owns overseas-agent cooperation before sending rates.
+
 ### Cigisped Vietnam / Cigisped Group — Italy–Vietnam
 - Locations: Ho Chi Minh City, Vietnam; Italian group network including Genoa-linked operations
 - Activity: international transport/logistics
@@ -82,5 +99,6 @@ Purpose: route-matched outbound research for BYJ Logistics. This is an internal 
 3. Use the most specific relevant BYJ resource first (ICS2 / customs / FCL-vs-LCL / port route), then commercial CTA.
 4. Tag outreach links by prospect/campaign when attribution tooling is available.
 5. Prioritize KLC Seafood and CoffeeBean Vietnam for the next direct-cargo-owner outreach batch; qualify VietOcean destination before a route-specific pitch.
-6. For overseas agents, prioritize Novocargo Barcelona/Valencia and Dafarra & Seves Genoa because named destination-side commercial contacts are public and route fit is direct.
+6. For overseas agents, prioritize Novocargo Barcelona/Valencia, Dafarra & Seves Genoa, and Base Spedizioni La Spezia because destination-side commercial contacts are public and route fit is direct.
 7. Treat forwarders with their own Vietnam office as partnership/overflow qualification targets, not as presumed agent prospects.
+8. For La Spezia, start with Base Spedizioni's person-specific commercial mailbox; keep Seaway as the second verified destination-side option.
