@@ -93,6 +93,33 @@ Purpose: route-matched outbound research for BYJ Logistics. This is an internal 
 - BYJ fit: direct office footprint across HCMC, Valencia and Barcelona; strong geographic match but may already have internal Vietnam capability.
 - Outreach angle: do not assume agency need; qualify overflow, co-loading, rate-comparison or non-core origin support where BYJ can add value.
 
+### Indo Samudera Asia — Jakarta, Indonesia
+- Location: Jakarta, Indonesia
+- Activity: international freight forwarding / import services
+- Vietnam evidence: company publishes a dedicated Vietnam-to-Jakarta service page and states it handles Vietnam–Indonesia imports with an agent network in Vietnam, Singapore and Jakarta
+- Public contact: cs@indosamuderaasia.co.id; WhatsApp 0817867788
+- Source: https://indosamuderaasia.co.id/jasa-pengiriman-barang-dari-vietnam-ke-jakarta/
+- BYJ fit: explicit Vietnam→Jakarta commercial lane evidence; suitable for destination-side cooperation qualification against BYJ's Vietnam→Indonesia and Hai Phong→Jakarta routes.
+- Outreach angle: ask whether they accept Vietnam-origin co-loading/nominated FCL-LCL support or need origin-side execution from Hai Phong/HCMC. Do not pitch generic Indonesia freight.
+
+### Keenam International — Jakarta, Indonesia
+- Location: Jakarta, Indonesia
+- Activity: international freight forwarding / export-import services
+- Vietnam evidence: company publishes dedicated Jakarta/Vietnam air-freight and Indonesia-to-Vietnam service pages; states it handles sea and air freight including FCL/LCL
+- Public contact: KeenamInternational@gmail.com; +62 852 8276 7649
+- Source: https://keenam.co.id/ekspor-ke-vietnam
+- BYJ fit: public two-way Vietnam trade-lane evidence and Jakarta base; useful for reciprocal destination-side qualification.
+- Outreach angle: qualify whether their Vietnam traffic includes ocean FCL/LCL and whether they need independent origin support; then map to the Indonesia document guide or Hai Phong→Jakarta route.
+
+### PT. Tata Harmoni Saranatama — Jakarta, Indonesia
+- Location: Jakarta, Indonesia
+- Activity: international freight forwarding and customs brokerage
+- Vietnam evidence: company states affiliations in Vietnam alongside Taiwan, China, Hong Kong, Shanghai and Shenzhen
+- Public contact: tatahasa@dnet.net.id; +62 21 5678 289
+- Source: https://tataharmoni.com/
+- BYJ fit: established Jakarta forwarder with stated Vietnam affiliation, relevant as a secondary partnership/overflow qualification target.
+- Outreach angle: ask whether their Vietnam affiliation fully covers Hai Phong/HCMC origin execution or whether they use additional origin partners for overflow/specific lanes. Do not presume agency need.
+
 ## Execution rules
 1. Verify the source again immediately before sending outreach.
 2. Do not state or imply current shipment demand, shipment frequency, incumbent forwarder, destination, or agency need unless the source supports it.
@@ -102,3 +129,4 @@ Purpose: route-matched outbound research for BYJ Logistics. This is an internal 
 6. For overseas agents, prioritize Novocargo Barcelona/Valencia, Dafarra & Seves Genoa, and Base Spedizioni La Spezia because destination-side commercial contacts are public and route fit is direct.
 7. Treat forwarders with their own Vietnam office as partnership/overflow qualification targets, not as presumed agent prospects.
 8. For La Spezia, start with Base Spedizioni's person-specific commercial mailbox; keep Seaway as the second verified destination-side option.
+9. For Indonesia, start with Indo Samudera Asia because its public page explicitly targets Vietnam→Jakarta; use the new PI–LS–PIB document guide as a trust-first resource, then the matching Vietnam→Indonesia or Hai Phong→Jakarta commercial route.
