@@ -15,7 +15,7 @@ const COPY: Record<string, {
 }> = {
   en: {
     eyebrow: "Vietnam export logistics for focused trade lanes",
-    title: "International freight from Vietnam, planned around your real cargo.",
+    title: "International shipping from Vietnam to destinations worldwide, tailored to your needs.",
     body: "Ocean freight, air freight, customs coordination, trucking and door-to-door support from Vietnam.",
     quote: "Get a Freight Quote", contact: "Contact John",
     trust: ["Clear charge scope", "Practical route options", "Direct support"],
@@ -25,7 +25,7 @@ const COPY: Record<string, {
   },
   vi: {
     eyebrow: "Logistics xuất khẩu từ Việt Nam theo tuyến trọng điểm",
-    title: "Vận chuyển quốc tế từ Việt Nam theo đúng nhu cầu thực tế của lô hàng.",
+    title: "Vận chuyển quốc tế từ Việt Nam đi toàn thế giới theo mong muốn của quý khách",
     body: "Vận tải biển, hàng không, điều phối hải quan, trucking và door-to-door từ Việt Nam.",
     quote: "Nhận báo giá vận chuyển", contact: "Liên hệ John",
     trust: ["Phạm vi phí rõ ràng", "Phương án tuyến thực tế", "Hỗ trợ trực tiếp"],
@@ -35,7 +35,7 @@ const COPY: Record<string, {
   },
   it: {
     eyebrow: "Logistica export dal Vietnam sulle rotte prioritarie",
-    title: "Trasporto internazionale dal Vietnam pianificato sulla merce reale.",
+    title: "Spedizioni internazionali dal Vietnam verso destinazioni in tutto il mondo, in base alle esigenze del cliente.",
     body: "Trasporto marittimo e aereo, coordinamento doganale, trucking e door-to-door dal Vietnam.",
     quote: "Richiedi un preventivo", contact: "Contatta John",
     trust: ["Costi inclusi chiari", "Rotte pratiche", "Supporto diretto"],
@@ -45,7 +45,7 @@ const COPY: Record<string, {
   },
   es: {
     eyebrow: "Logística de exportación desde Vietnam en rutas prioritarias",
-    title: "Transporte internacional desde Vietnam adaptado a la carga real.",
+    title: "Envíos internacionales desde Vietnam a destinos de todo el mundo, adaptados a las necesidades del cliente.",
     body: "Transporte marítimo y aéreo, coordinación aduanera, trucking y puerta a puerta desde Vietnam.",
     quote: "Solicitar cotización", contact: "Contactar con John",
     trust: ["Cargos claramente definidos", "Rutas prácticas", "Apoyo directo"],
@@ -55,7 +55,7 @@ const COPY: Record<string, {
   },
   id: {
     eyebrow: "Logistik ekspor Vietnam untuk rute prioritas",
-    title: "Pengiriman internasional dari Vietnam berdasarkan kargo sebenarnya.",
+    title: "Pengiriman internasional dari Vietnam ke berbagai tujuan di seluruh dunia, sesuai kebutuhan dan preferensi pelanggan.",
     body: "Angkutan laut dan udara, koordinasi bea cukai, trucking, dan door-to-door dari Vietnam.",
     quote: "Minta penawaran", contact: "Hubungi John",
     trust: ["Cakupan biaya jelas", "Opsi rute praktis", "Dukungan langsung"],
