@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Booking by John — Môi Giới Vận Tải & Vận Chuyển Biển từ Việt Nam",
+    "title": "Booking by John — Vận Chuyển Quốc Tế từ Việt Nam",
     "description": "Hỗ trợ yêu cầu vận tải từ Việt Nam bằng đường biển, đường hàng không, chuyển phát, thông quan, vận chuyển nội địa và door-to-door.",
-    "ogTitle": "Booking by John — Môi Giới Vận Tải & Vận Chuyển Biển từ Việt Nam",
-    "ogDescription": "Không vòng vo, không báo giá chung chung. Đơn vị vận tải được kiểm chứng, theo dõi thời gian thực và một môi giới luôn bắt máy."
+    "ogTitle": "Booking by John — Vận Chuyển Quốc Tế từ Việt Nam",
+    "ogDescription": "Gửi tuyến đường, thông tin hàng và ngày hàng sẵn sàng để John xem xét phương án vận chuyển phù hợp cho từng lô hàng."
   },
   "nav": {
     "logo": "Booking by John",
@@ -13,10 +13,10 @@
     "cta": "Bắt đầu ngay"
   },
   "hero": {
-    "tagline": "Môi giới vận tải — uy tín và chuyên nghiệp",
+    "tagline": "Hỗ trợ vận chuyển quốc tế từ Việt Nam",
     "heading": "Hàng hóa của bạn là doanh thu.",
     "headingAccent": "Chúng tôi coi trọng điều đó.",
-    "subheading": "Không vòng vo, không báo giá chung chung. Đơn vị vận tải được kiểm chứng, theo dõi thời gian thực và một môi giới luôn bắt máy.",
+    "subheading": "Gửi tuyến đường, thông tin hàng và ngày hàng sẵn sàng để John xem xét phương án vận chuyển phù hợp cho từng lô hàng.",
     "ctaPrimary": "Vận chuyển hàng của bạn →",
     "ctaSecondary": "Xem số liệu"
   },
@@ -29,188 +29,35 @@
   "services": {
     "tagline": "Chúng tôi vận chuyển gì",
     "heading": "Bảy phương thức vận chuyển",
-    "ftl": {
-      "title": "Vận Tải Biển",
-      "description": "Tải trọng dành riêng cho hàng từ 10.000 lbs trở lên. Giao thẳng, không dừng, vận chuyển nhanh."
-    },
-    "ltl": {
-      "title": "Vận Tải Hàng Không",
-      "description": "Tiết kiệm chi phí cho hàng pallet dưới 10.000 lbs với lịch lấy hàng linh hoạt."
-    },
-    "drayage": {
-      "title": "Vận Chuyển Nội Địa Cảng",
-      "description": "Vận chuyển container từ cảng đến kho. Bao gồm quản lý chassis."
-    },
-    "intermodal": {
-      "title": "Đa Phương Thức",
-      "description": "Kết hợp tàu hỏa + xe tải để tiết kiệm chi phí đường dài mà không giảm độ tin cậy."
-    },
-    "expedited": {
-      "title": "Hàng Khẩn",
-      "description": "Giao hàng hỏa tốc, lái xe theo ca, vận tải hàng không. Khi hàng không thể chờ đợi."
-    },
-    "courier": {
-      "title": "Courier — VN đi Thế Giới",
-      "description": "Đại lý ủy quyền của UPS, DHL và FedEx tại Việt Nam. Giao hàng nhanh, tận nơi trên toàn thế giới."
-    },
-    "ocean": {
-      "title": "Vận Tải Biển",
-      "description": "Từ/đến Việt Nam đi toàn thế giới. Cước cạnh tranh với lịch trình phù hợp cho lô hàng của bạn."
-    }
+    "ftl": {"title": "Vận Tải Biển", "description": "Tải trọng dành riêng cho hàng từ 10.000 lbs trở lên. Giao thẳng, không dừng, vận chuyển nhanh."},
+    "ltl": {"title": "Vận Tải Hàng Không", "description": "Tiết kiệm chi phí cho hàng pallet dưới 10.000 lbs với lịch lấy hàng linh hoạt."},
+    "drayage": {"title": "Vận Chuyển Nội Địa Cảng", "description": "Vận chuyển container từ cảng đến kho. Bao gồm quản lý chassis."},
+    "intermodal": {"title": "Đa Phương Thức", "description": "Kết hợp tàu hỏa + xe tải để tiết kiệm chi phí đường dài mà không giảm độ tin cậy."},
+    "expedited": {"title": "Hàng Khẩn", "description": "Giao hàng hỏa tốc, lái xe theo ca, vận tải hàng không. Khi hàng không thể chờ đợi."},
+    "courier": {"title": "Courier — VN đi Thế Giới", "description": "Hỗ trợ kiểm tra phương án chuyển phát nhanh từ Việt Nam đi quốc tế theo từng yêu cầu cụ thể."},
+    "ocean": {"title": "Vận Tải Biển", "description": "Từ/đến Việt Nam đi toàn thế giới. Cước cạnh tranh với lịch trình phù hợp cho lô hàng của bạn."}
   },
   "trust": {
-    "tagline": "Tại sao chọn chúng tôi",
-    "heading": "Xây dựng trên bằng chứng, không phải lời hứa",
-    "carrierVetting": {
-      "title": "Kiểm Duyệt Đơn Vị Vận Tải",
-      "detail": "Thông tin đơn vị vận tải và dịch vụ được kiểm tra theo từng lô hàng trước khi xác nhận."
-    },
-    "liveTracking": {
-      "title": "Theo Dõi Trực Tiếp",
-      "detail": "Phương thức theo dõi và cập nhật khả dụng được xác nhận theo từng lô hàng."
-    },
-    "quoteSla": {
-      "title": "Rà Soát Báo Giá",
-      "detail": "Thời gian phụ thuộc vào thông tin hàng đầy đủ, tuyến và phản hồi hiện tại của nhà cung cấp."
-    },
-    "claims": {
-      "title": "Theo Dõi Vấn Đề",
-      "detail": "Phạm vi và quy trình hỗ trợ được xác nhận cho dịch vụ đã chọn."
-    },
-    "oneContact": {
-      "title": "Một Đầu Mối Liên Hệ",
-      "detail": "Đại diện chuyên trách với đường dây trực tiếp, nắm rõ tuyến và yêu cầu của bạn."
-    },
-    "specialized": {
-      "title": "Hàng Hóa Đặc Biệt",
-      "detail": "Yêu cầu xử lý đặc biệt được xem xét trước khi xác nhận dịch vụ."
-    }
+    "tagline": "Tại sao chọn chúng tôi", "heading": "Xây dựng trên bằng chứng, không phải lời hứa",
+    "carrierVetting": {"title": "Kiểm Duyệt Đơn Vị Vận Tải", "detail": "Thông tin đơn vị vận tải và dịch vụ được kiểm tra theo từng lô hàng trước khi xác nhận."},
+    "liveTracking": {"title": "Theo Dõi Trực Tiếp", "detail": "Phương thức theo dõi và cập nhật khả dụng được xác nhận theo từng lô hàng."},
+    "quoteSla": {"title": "Rà Soát Báo Giá", "detail": "Thời gian phụ thuộc vào thông tin hàng đầy đủ, tuyến và phản hồi hiện tại của nhà cung cấp."},
+    "claims": {"title": "Theo Dõi Vấn Đề", "detail": "Phạm vi và quy trình hỗ trợ được xác nhận cho dịch vụ đã chọn."},
+    "oneContact": {"title": "Một Đầu Mối Liên Hệ", "detail": "Đại diện chuyên trách với đường dây trực tiếp, nắm rõ tuyến và yêu cầu của bạn."},
+    "specialized": {"title": "Hàng Hóa Đặc Biệt", "detail": "Yêu cầu xử lý đặc biệt được xem xét trước khi xác nhận dịch vụ."}
   },
-  "routes": {
-    "tagline": "Vận tải biển",
-    "heading": "Việt Nam đến châu Âu & Nam Mỹ",
-    "originLabel": "Cảng xuất phát"
-  },
+  "routes": {"tagline": "Vận tải biển", "heading": "Việt Nam đến châu Âu & Nam Mỹ", "originLabel": "Cảng xuất phát"},
   "stepper": {
-    "tagline": "Yêu cầu báo giá",
-    "heading": "Gửi thông tin cho tôi — tôi sẽ lo phần còn lại.",
-    "progressLabel": "Bước {step} / 4",
-    "backButton": "← Quay lại",
-    "nextButton": "Tiếp theo →",
-    "submitButton": "Vận chuyển hàng của bạn →",
-    "submitting": "Đang gửi...",
-    "step1": {
-      "heading": "Loại hình vận chuyển?",
-      "subheading": "Chọn phương thức phù hợp nhất. Chưa chắc? Chọn \"Khác\" và chúng tôi sẽ tư vấn thêm.",
-      "ariaGroupLabel": "Phương thức vận chuyển",
-      "modes": {
-        "ocean": "Vận tải biển",
-        "air": "Vận tải hàng không",
-        "courier": "Chuyển phát nhanh",
-        "customs": "Hải quan",
-        "trucking": "Vận tải đường bộ",
-        "warehousing": "Kho bãi",
-        "multimodal": "Đa phương thức",
-        "door": "Door-to-Door",
-        "other": "Khác"
-      }
-    },
-    "step2": {
-      "heading": "Hàng đi đâu?",
-      "subheading": "Tên thành phố hoặc mã bưu chính là đủ — chúng tôi sẽ xác nhận chi tiết qua điện thoại.",
-      "originLabel": "Điểm xuất phát",
-      "originPlaceholder": "Vd. Thành phố Hồ Chí Minh",
-      "destinationLabel": "Điểm đến",
-      "destinationPlaceholder": "Vd. Rotterdam",
-      "weightLabel": "Khoảng Trọng Lượng",
-      "weightPlaceholder": "Chọn khoảng trọng lượng",
-      "cargoLabel": "Loại Hàng Hóa (không bắt buộc)",
-      "cargoPlaceholder": "Chọn loại hàng hóa",
-      "volumeLabel": "Thể tích / loại container",
-      "volumePlaceholder": "Vd. 12 CBM hoặc 1 × 40HC",
-      "readyDateLabel": "Ngày hàng sẵn sàng",
-      "incotermLabel": "Điều kiện Incoterm",
-      "incotermPlaceholder": "Chọn / chưa xác nhận",
-      "weightOptions": {
-        "under5k": "Dưới 5.000 lbs",
-        "from5kTo20k": "5.000–20.000 lbs",
-        "from20kTo40k": "20.000–40.000 lbs",
-        "over40k": "40.000+ lbs",
-        "notSure": "Chưa biết"
-      },
-      "cargoOptions": {
-        "dryGoods": "Hàng Khô",
-        "refrigerated": "Hàng Lạnh/Kiểm Soát Nhiệt Độ",
-        "oversized": "Hàng Quá Khổ/Siêu Nặng",
-        "hazmat": "Hàng Nguy Hiểm",
-        "highValue": "Hàng Giá Trị Cao",
-        "other": "Khác"
-      },
-      "errorOriginDestination": "Vui lòng nhập ít nhất điểm xuất phát hoặc điểm đến."
-    },
-    "step3": {
-      "heading": "Hàng cần vận chuyển sớm như thế nào?",
-      "subheading": "Điều này giúp tôi ưu tiên và tìm mức giá tốt nhất.",
-      "ariaGroupLabel": "Mức độ khẩn cấp",
-      "urgencyOptions": {
-        "flexible": { "label": "Linh hoạt", "sub": "Từ 5 ngày trở lên" },
-        "standard": { "label": "Tiêu chuẩn", "sub": "2–4 ngày" },
-        "hot": { "label": "Khẩn cấp", "sub": "Cần ngay lập tức" }
-      }
-    },
-    "step4": {
-      "heading": "Tôi liên hệ bạn như thế nào?",
-      "subheading": "John sẽ trực tiếp xem thông tin lô hàng của bạn.",
-      "nameLabel": "Họ tên",
-      "companyLabel": "Công ty",
-      "companyPlaceholder": "Công ty (không bắt buộc)",
-      "emailLabel": "Email",
-      "emailPlaceholder": "ban@congty.com",
-      "phoneLabel": "Điện thoại",
-      "phonePlaceholder": "+84 (0) 000-000-000",
-      "contactHint": "Chỉ cần nhập email hoặc số điện thoại.",
-      "notesLabel": "Ghi Chú / Yêu Cầu Đặc Biệt",
-      "notesPlaceholder": "Còn điều gì khác chúng tôi cần biết?",
-      "errorContactRequired": "Vui lòng nhập tên và ít nhất một phương thức liên hệ.",
-      "errorEmailInvalid": "Vui lòng nhập địa chỉ email hợp lệ."
-    },
-    "success": {
-      "title": "Yêu cầu đã nhận — John đang xử lý.",
-      "body": "John sẽ xem yêu cầu và liên hệ trong giờ làm việc. Với yêu cầu khẩn cấp, gọi trực tiếp: {phone}",
-      "dismiss": "Đã hiểu"
-    },
-    "error": {
-      "generic": "Đã xảy ra lỗi. Vui lòng gọi trực tiếp cho Mr. John tại {phone}"
-    }
+    "tagline": "Yêu cầu báo giá", "heading": "Gửi thông tin cho tôi — tôi sẽ lo phần còn lại.", "progressLabel": "Bước {step} / 4", "backButton": "← Quay lại", "nextButton": "Tiếp theo →", "submitButton": "Vận chuyển hàng của bạn →", "submitting": "Đang gửi...",
+    "step1": {"heading": "Loại hình vận chuyển?", "subheading": "Chọn phương thức phù hợp nhất. Chưa chắc? Chọn \"Khác\" và chúng tôi sẽ tư vấn thêm.", "ariaGroupLabel": "Phương thức vận chuyển", "modes": {"ocean":"Vận tải biển","air":"Vận tải hàng không","courier":"Chuyển phát nhanh","customs":"Hải quan","trucking":"Vận tải đường bộ","warehousing":"Kho bãi","multimodal":"Đa phương thức","door":"Door-to-Door","other":"Khác"}},
+    "step2": {"heading":"Hàng đi đâu?","subheading":"Tên thành phố hoặc mã bưu chính là đủ — chúng tôi sẽ xác nhận chi tiết qua điện thoại.","originLabel":"Điểm xuất phát","originPlaceholder":"Vd. Thành phố Hồ Chí Minh","destinationLabel":"Điểm đến","destinationPlaceholder":"Vd. Rotterdam","weightLabel":"Khoảng Trọng Lượng","weightPlaceholder":"Chọn khoảng trọng lượng","cargoLabel":"Loại Hàng Hóa (không bắt buộc)","cargoPlaceholder":"Chọn loại hàng hóa","volumeLabel":"Thể tích / loại container","volumePlaceholder":"Vd. 12 CBM hoặc 1 × 40HC","readyDateLabel":"Ngày hàng sẵn sàng","incotermLabel":"Điều kiện Incoterm","incotermPlaceholder":"Chọn / chưa xác nhận","weightOptions":{"under5k":"Dưới 5.000 lbs","from5kTo20k":"5.000–20.000 lbs","from20kTo40k":"20.000–40.000 lbs","over40k":"40.000+ lbs","notSure":"Chưa biết"},"cargoOptions":{"dryGoods":"Hàng Khô","refrigerated":"Hàng Lạnh/Kiểm Soát Nhiệt Độ","oversized":"Hàng Quá Khổ/Siêu Nặng","hazmat":"Hàng Nguy Hiểm","highValue":"Hàng Giá Trị Cao","other":"Khác"},"errorOriginDestination":"Vui lòng nhập ít nhất điểm xuất phát hoặc điểm đến."},
+    "step3":{"heading":"Hàng cần vận chuyển sớm như thế nào?","subheading":"Điều này giúp tôi ưu tiên và tìm mức giá tốt nhất.","ariaGroupLabel":"Mức độ khẩn cấp","urgencyOptions":{"flexible":{"label":"Linh hoạt","sub":"Từ 5 ngày trở lên"},"standard":{"label":"Tiêu chuẩn","sub":"2–4 ngày"},"hot":{"label":"Khẩn cấp","sub":"Cần ngay lập tức"}}},
+    "step4":{"heading":"Tôi liên hệ bạn như thế nào?","subheading":"John sẽ trực tiếp xem thông tin lô hàng của bạn.","nameLabel":"Họ tên","companyLabel":"Công ty","companyPlaceholder":"Công ty (không bắt buộc)","emailLabel":"Email","emailPlaceholder":"ban@congty.com","phoneLabel":"Điện thoại","phonePlaceholder":"+84 (0) 000-000-000","contactHint":"Chỉ cần nhập email hoặc số điện thoại.","notesLabel":"Ghi Chú / Yêu Cầu Đặc Biệt","notesPlaceholder":"Còn điều gì khác chúng tôi cần biết?","errorContactRequired":"Vui lòng nhập tên và ít nhất một phương thức liên hệ.","errorEmailInvalid":"Vui lòng nhập địa chỉ email hợp lệ."},
+    "success":{"title":"Yêu cầu đã nhận — John đang xử lý.","body":"John sẽ xem yêu cầu và liên hệ trong giờ làm việc. Với yêu cầu khẩn cấp, gọi trực tiếp: {phone}","dismiss":"Đã hiểu"},
+    "error":{"generic":"Đã xảy ra lỗi. Vui lòng gọi trực tiếp cho Mr. John tại {phone}"}
   },
-  "trickyShipment": {
-    "heading": "Có lô hàng khó xử?",
-    "body": "Hãy gửi tuyến đường, thông tin hàng, ngày sẵn sàng và yêu cầu xử lý. John sẽ xem thông tin và trao đổi bước tiếp theo phù hợp.",
-    "cta": "Kể cho tôi nghe →"
-  },
-  "footer": {
-    "logo": "Booking by John",
-    "tagline": "Môi giới vận tải & vận tải biển từ Việt Nam.",
-    "registrationNote": "MC# TBD · USDOT# TBD",
-    "contactLabel": "Liên hệ",
-    "copyright": "© {year} Booking by John. Bảo lưu mọi quyền."
-  },
-  "blog": {
-    "label": "Tin tức & phân tích",
-    "homeTitle": "Thông tin thương mại và logistics Việt Nam",
-    "viewAll": "Xem tất cả bài viết",
-    "readArticle": "Đọc bài viết",
-    "indexTitle": "Tin tức, quy định và phân tích thị trường cho xuất nhập khẩu Việt Nam",
-    "indexDescription": "Cập nhật đã kiểm chứng về sự kiện thế giới, quy định Việt Nam, xu hướng logistics và lưu ý thực tế theo thị trường.",
-    "noPostsTitle": "Chưa có bài viết bằng ngôn ngữ này",
-    "noPostsBody": "Bài viết đã kiểm chứng tiếp theo đang được chuẩn bị để phê duyệt.",
-    "backToBlog": "Quay lại blog",
-    "sources": "Nguồn chính thức và báo chí",
-    "ctaTitle": "Cần báo giá vận chuyển mới nhất?",
-    "ctaBody": "Gửi cho John thông tin hàng hóa và tuyến đường mong muốn để kiểm tra phương án phù hợp.",
-    "ctaButton": "Yêu cầu báo giá"
-  },
-  "langSwitcher": {
-    "ariaLabel": "Chuyển sang {locale}"
-  }
+  "trickyShipment":{"heading":"Có lô hàng khó xử?","body":"Hãy gửi tuyến đường, thông tin hàng, ngày sẵn sàng và yêu cầu xử lý. John sẽ xem thông tin và trao đổi bước tiếp theo phù hợp.","cta":"Kể cho tôi nghe →"},
+  "footer":{"logo":"Booking by John","tagline":"Hỗ trợ vận chuyển quốc tế từ Việt Nam.","registrationNote":"Thông tin dịch vụ được xác nhận theo từng lô hàng.","contactLabel":"Liên hệ","copyright":"© {year} Booking by John. Bảo lưu mọi quyền."},
+  "blog":{"label":"Tin tức & phân tích","homeTitle":"Thông tin thương mại và logistics Việt Nam","viewAll":"Xem tất cả bài viết","readArticle":"Đọc bài viết","indexTitle":"Tin tức, quy định và phân tích thị trường cho xuất nhập khẩu Việt Nam","indexDescription":"Cập nhật đã kiểm chứng về sự kiện thế giới, quy định Việt Nam, xu hướng logistics và lưu ý thực tế theo thị trường.","noPostsTitle":"Chưa có bài viết bằng ngôn ngữ này","noPostsBody":"Bài viết đã kiểm chứng tiếp theo đang được chuẩn bị để phê duyệt.","backToBlog":"Quay lại blog","sources":"Nguồn chính thức và báo chí","ctaTitle":"Cần báo giá vận chuyển mới nhất?","ctaBody":"Gửi cho John thông tin hàng hóa và tuyến đường mong muốn để kiểm tra phương án phù hợp.","ctaButton":"Yêu cầu báo giá"},
+  "langSwitcher":{"ariaLabel":"Chuyển sang {locale}"}
 }
