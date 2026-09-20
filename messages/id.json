@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Booking by John — Broker Kargo & Pengiriman Laut dari Vietnam",
+    "title": "Booking by John — Pengiriman Internasional dari Vietnam",
     "description": "Dukungan dari Vietnam untuk permintaan angkutan laut, udara, kurir, bea cukai, trucking, dan door-to-door.",
-    "ogTitle": "Booking by John — Broker Kargo & Pengiriman Laut dari Vietnam",
-    "ogDescription": "Tanpa basa-basi, tanpa penawaran generik. Mitra terpercaya, visibilitas real-time, dan broker yang selalu mengangkat telepon."
+    "ogTitle": "Booking by John — Pengiriman Internasional dari Vietnam",
+    "ogDescription": "Kirim rute, detail kargo, dan tanggal siap. John akan meninjau opsi yang sesuai untuk pengiriman Anda."
   },
   "nav": {
     "logo": "Booking by John",
@@ -13,10 +13,10 @@
     "cta": "Mulai Sekarang"
   },
   "hero": {
-    "tagline": "Broker kargo — dilakukan dengan benar",
+    "tagline": "Pengiriman internasional dari Vietnam",
     "heading": "Kargo Anda adalah pendapatan.",
     "headingAccent": "Kami memperlakukannya demikian.",
-    "subheading": "Tanpa basa-basi, tanpa penawaran generik. Mitra terpercaya, visibilitas real-time, dan broker yang selalu mengangkat telepon.",
+    "subheading": "Kirim rute, detail kargo, dan tanggal siap. John akan meninjau opsi yang sesuai untuk pengiriman Anda.",
     "ctaPrimary": "Kirim kargo Anda →",
     "ctaSecondary": "Lihat angkanya"
   },
@@ -51,7 +51,7 @@
     },
     "courier": {
       "title": "Kurir — VN ke Dunia",
-      "description": "Agen resmi UPS, DHL, dan FedEx di Vietnam. Pengiriman cepat dari pintu ke pintu ke seluruh dunia."
+      "description": "Opsi kurir internasional dari Vietnam ditinjau berdasarkan tujuan, ukuran, berat, dan kebutuhan waktu pengiriman."
     },
     "ocean": {
       "title": "Pengiriman Laut",
@@ -190,8 +190,8 @@
   },
   "footer": {
     "logo": "Booking by John",
-    "tagline": "Broker kargo & pengiriman laut dari Vietnam.",
-    "registrationNote": "MC# TBD · USDOT# TBD",
+    "tagline": "Pengiriman internasional dari Vietnam.",
+    "registrationNote": "Detail layanan dikonfirmasi untuk setiap pengiriman.",
     "contactLabel": "Kontak",
     "copyright": "© {year} Booking by John. Semua hak dilindungi."
   },
