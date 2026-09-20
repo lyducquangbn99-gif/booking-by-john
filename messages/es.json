@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Booking by John — Agente de Carga y Flete Marítimo desde Vietnam",
+    "title": "Booking by John — Transporte Internacional desde Vietnam",
     "description": "Apoyo desde Vietnam para consultas de transporte marítimo, aéreo, mensajería, aduanas, transporte interior y puerta a puerta.",
-    "ogTitle": "Booking by John — Agente de Carga y Flete Marítimo desde Vietnam",
-    "ogDescription": "Sin rodeos, sin cotizaciones genéricas. Transportistas verificados, visibilidad en tiempo real y un agente que contesta el teléfono."
+    "ogTitle": "Booking by John — Transporte Internacional desde Vietnam",
+    "ogDescription": "Comparte la ruta, los datos de la carga y la fecha disponible para revisar una opción adecuada para tu envío."
   },
   "nav": {
     "logo": "Booking by John",
@@ -13,10 +13,10 @@
     "cta": "Empezar"
   },
   "hero": {
-    "tagline": "Agencia de carga — hecha bien",
+    "tagline": "Transporte internacional desde Vietnam",
     "heading": "Tu carga es tu ingreso.",
     "headingAccent": "La tratamos así.",
-    "subheading": "Sin rodeos, sin cotizaciones genéricas. Transportistas verificados, visibilidad en tiempo real y un agente que contesta el teléfono.",
+    "subheading": "Comparte la ruta, los datos de la carga y la fecha disponible. Revisaremos las opciones para tu envío específico.",
     "ctaPrimary": "Movamos tu carga →",
     "ctaSecondary": "Ver los números"
   },
@@ -51,7 +51,7 @@
     },
     "courier": {
       "title": "Courier — VN al Mundo",
-      "description": "Agente autorizado de UPS, DHL y FedEx en Vietnam. Entrega rápida puerta a puerta a todo el mundo."
+      "description": "Opciones de courier puerta a puerta desde Vietnam al extranjero, sujetas a ruta, carga y disponibilidad del proveedor."
     },
     "ocean": {
       "title": "Flete Marítimo",
@@ -62,11 +62,11 @@
     "tagline": "Por qué nosotros",
     "heading": "Construido en evidencias, no en promesas",
     "carrierVetting": {
-      "title": "Verificación de Transportistas",
+      "title": "Revisión del Servicio",
       "detail": "El transportista y el servicio se revisan para cada envío antes de confirmarlos."
     },
     "liveTracking": {
-      "title": "Seguimiento en Vivo",
+      "title": "Actualizaciones del Envío",
       "detail": "Las opciones disponibles de seguimiento y actualización se confirman para cada envío."
     },
     "quoteSla": {
@@ -190,8 +190,8 @@
   },
   "footer": {
     "logo": "Booking by John",
-    "tagline": "Agencia de carga y flete marítimo desde Vietnam.",
-    "registrationNote": "MC# TBD · USDOT# TBD",
+    "tagline": "Transporte internacional desde Vietnam.",
+    "registrationNote": "Apoyo de transporte desde Vietnam · Sujeto a ruta y disponibilidad",
     "contactLabel": "Contacto",
     "copyright": "© {year} Booking by John. Todos los derechos reservados."
   },
