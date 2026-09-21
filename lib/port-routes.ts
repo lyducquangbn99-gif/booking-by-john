@@ -21,6 +21,8 @@ export const PORT_ROUTES = [
   { slug: "ho-chi-minh-to-southampton", origin: "Ho Chi Minh City, Vietnam", destination: "Southampton, United Kingdom", port: "Southampton", country: "United Kingdom" },
   { slug: "ho-chi-minh-to-felixstowe", origin: "Ho Chi Minh City, Vietnam", destination: "Felixstowe, United Kingdom", port: "Felixstowe", country: "United Kingdom" },
   { slug: "ho-chi-minh-to-london-gateway", origin: "Ho Chi Minh City, Vietnam", destination: "London Gateway, United Kingdom", port: "London Gateway", country: "United Kingdom" },
+  { slug: "hai-phong-to-barcelona", origin: "Hai Phong, Vietnam", destination: "Barcelona, Spain", port: "Barcelona", country: "Spain" },
+  { slug: "hai-phong-to-yokohama", origin: "Hai Phong, Vietnam", destination: "Yokohama, Japan", port: "Yokohama", country: "Japan" },
 ] as const;
 
 export type PortRoute = (typeof PORT_ROUTES)[number];
