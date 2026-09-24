@@ -1,29 +1,46 @@
-# Viet Iron — Hai Phong → Japan cargo-owner prospect
+# VIET IRON — Hai Phong → Japan direct cargo-owner prospect
 
 Status: CONTACT-READY
-Prospect type: Direct cargo owner / manufacturer
-Route signal: Hai Phong, Vietnam → Japan
+Type: Direct cargo owner / manufacturer
+Priority: High
+Verified: 2026-09-24
 
-## Verified public evidence
-- Company: VIET IRON / Gang Viet Casting Co., Ltd.
-- Factory: My Dong, Hai Phong, Vietnam.
-- Business: iron, aluminium and brass casting / machining.
-- Official website states its export brand serves South Korea, USA, Australia and Japan.
-- Public phone: (+84) 335-422-113.
-- Public email is listed on the official site contact section; verify the rendered address immediately before outreach because search indexing masks the mailbox text.
-- Source: https://gangviet.com/en-home (checked 2026-09-23).
+## Why this prospect fits BYJ
 
-## BYJ fit
-A useful direct cargo-owner target because the manufacturer is in Hai Phong and publicly identifies Japan as an export market. Do not claim that Viet Iron currently has a Japan shipment, uses a particular carrier, or needs a new forwarder.
+VIET IRON (Gang Viet Casting Co., Ltd.) is a Hai Phong foundry/manufacturer. Its official English website states that its export brand serves four key export markets: South Korea, the USA, Australia and Japan. This gives BYJ a verified Hai Phong-origin manufacturer with an explicitly stated Japan export market rather than merely a Japan-linked company.
 
-## First-touch angle
-Offer a shipment-specific second freight benchmark from Hai Phong rather than a generic logistics pitch. Ask whether they have one upcoming Japan/export shipment where BYJ can compare the current logistics option.
+## Verified public contact
 
-Before quoting, obtain: destination port/door, FCL/LCL/air, commodity and HS code, package/pallet details, gross weight/CBM, container requirement if any, cargo-ready date, Incoterm, pickup point and the operational pain point they want benchmarked.
+- Company: Gang Viet Casting Co., Ltd. / VIET IRON
+- Factory: To 3 My Dong, Le Ich Moc Ward, Hai Phong City, Vietnam
+- Phone: (+84) 335-422-113
+- Public email: shown on the official website contact section but masked in search rendering; re-verify visibly before email outreach rather than guessing it
+- Official website: https://gangviet.com/en-home
 
-## Execution sequence
-1. Use the official public phone/contact channel or re-check the official site for the currently rendered sales email.
-2. Ask for one live shipment only; do not send speculative rates.
-3. If a shipment is shared, verify current carrier/agent availability, equipment, transit and validity before quoting.
-4. Send the most relevant BYJ route/service page with the shipment-specific response and preserve source attribution.
-5. If no reply, one concise follow-up; then keep in nurture rather than repeated generic chasing.
+## Verified commercial signals
+
+- Manufacturer of grey iron, ductile iron, malleable iron and cast aluminium.
+- Official site says products are exported to South Korea, USA, Australia and Japan.
+- Hai Phong manufacturing origin is explicit.
+- No claim is made here about current shipment frequency, current forwarder, container volume, rates, transit time or active Japan bookings.
+
+## BYJ first-touch angle
+
+Do not lead with a generic logistics introduction. Ask for one live or upcoming export shipment where BYJ can provide a second routing/rate benchmark. Japan is a natural lane to reference because it is a verified export market, but do not state that a Japan shipment is currently active.
+
+Suggested positioning: "I saw that VIET IRON exports from Hai Phong to markets including Japan. If you have one upcoming export shipment, BYJ Logistics can provide a second freight/routing benchmark so your team has another option before booking."
+
+## Qualify before quoting
+
+Collect destination port/city, FCL/LCL/air, commodity/HS code, package count, gross weight/CBM, container/equipment requirement, cargo ready date, Incoterm, loading address and any special handling/weight constraints. For cast-metal cargo, confirm actual per-package weight and loading requirements before proposing equipment.
+
+## Guardrails
+
+- Never claim VIET IRON has a current Japan shipment unless the prospect confirms it.
+- Never invent savings, carrier space, sailing, transit time, volume or incumbent-forwarder problems.
+- Re-verify any email address on the live official site before email outreach because the search result masks it.
+- Use public business contact details only.
+
+## Source
+
+Official VIET IRON English website, checked 2026-09-24: https://gangviet.com/en-home
