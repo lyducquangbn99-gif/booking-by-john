@@ -8,6 +8,10 @@ export type QuoteRecoveryShipment = {
   readyDate?: string;
   incoterm?: string;
   urgency?: string;
+  name?: string;
+  company?: string;
+  email?: string;
+  phone?: string;
 };
 
 const WHATSAPP_NUMBER = "84352193969";
@@ -18,7 +22,7 @@ function clean(value?: string) {
 }
 
 export function buildQuoteRecoverySummary(shipment: QuoteRecoveryShipment) {
-  const rows: Array<[string, string]> = [
+  const shipmentRows: Array<[string, string]> = [
     ["Mode", clean(shipment.mode)],
     ["Origin", clean(shipment.origin)],
     ["Destination", clean(shipment.destination)],
@@ -30,14 +34,26 @@ export function buildQuoteRecoverySummary(shipment: QuoteRecoveryShipment) {
     ["Urgency", clean(shipment.urgency)],
   ];
 
-  const details = rows
-    .filter(([, value]) => value)
-    .map(([label, value]) => `${label}: ${value}`)
-    .join("\n");
+  const contactRows: Array<[string, string]> = [
+    ["Name", clean(shipment.name)],
+    ["Company", clean(shipment.company)],
+    ["Email", clean(shipment.email)],
+    ["Phone", clean(shipment.phone)],
+  ];
+
+  const formatRows = (rows: Array<[string, string]>) =>
+    rows
+      .filter(([, value]) => value)
+      .map(([label, value]) => `${label}: ${value}`)
+      .join("\n");
+
+  const details = formatRows(shipmentRows);
+  const contact = formatRows(contactRows);
 
   return [
     "Hi BYJ Logistics, I tried to submit a quote request on the website but it did not go through.",
     details ? `\nShipment details:\n${details}` : "",
+    contact ? `\nContact details:\n${contact}` : "",
     "\nPlease help me continue this quote request.",
   ]
     .filter(Boolean)
