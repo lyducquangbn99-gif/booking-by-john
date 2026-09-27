@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import QuoteRecoveryActions from "@/components/QuoteRecoveryActions";
+import { trackBookingEvent } from "@/lib/analytics";
 import type { QuoteRecoveryShipment } from "@/lib/quoteRecovery";
 
 type Props = {
@@ -21,6 +23,23 @@ export default function RequestStepperQuoteRecovery({
   locale,
   sourcePage,
 }: Props) {
+  const trackedFailureRef = useRef(false);
+
+  useEffect(() => {
+    if (!failed) {
+      trackedFailureRef.current = false;
+      return;
+    }
+    if (trackedFailureRef.current) return;
+
+    trackedFailureRef.current = true;
+    trackBookingEvent("quote_recovery_impression", {
+      locale,
+      mode: shipment.mode || "unspecified",
+      source_page: sourcePage || "direct",
+    });
+  }, [failed, locale, shipment.mode, sourcePage]);
+
   if (!failed) return null;
 
   return (
