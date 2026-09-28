@@ -12,6 +12,7 @@ export type QuoteRecoveryShipment = {
   company?: string;
   email?: string;
   phone?: string;
+  notes?: string;
 };
 
 const WHATSAPP_NUMBER = "84352193969";
@@ -32,6 +33,7 @@ export function buildQuoteRecoverySummary(shipment: QuoteRecoveryShipment) {
     ["Ready date", clean(shipment.readyDate)],
     ["Incoterm", clean(shipment.incoterm)],
     ["Urgency", clean(shipment.urgency)],
+    ["Notes", clean(shipment.notes)],
   ];
 
   const contactRows: Array<[string, string]> = [
