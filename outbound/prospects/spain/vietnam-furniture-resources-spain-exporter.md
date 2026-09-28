@@ -1,9 +1,9 @@
 # Vietnam Furniture Resources — Spain / Europe cargo-owner prospect
 
-Status: CONTACT-READY
+Status: CONTACT-READY / OUTREACH-READY
 Prospect type: Direct cargo owner / furniture manufacturer-exporter
 Route fit: Vietnam → Spain / Europe
-Verified: 2026-09-25
+Verified: 2026-09-28
 
 ## Why this prospect fits
 - Vietnam Furniture Resources (VFR) is a Vietnam furniture/OEM manufacturer with international distribution that explicitly includes Spain.
@@ -23,6 +23,34 @@ Suggested positioning:
 - compare carrier/routing/equipment once POL/POD and cargo-ready date are known;
 - support Vietnam trucking/customs if relevant;
 - no claim of savings, guaranteed space or transit time before a live shipment is checked.
+
+## First-touch email asset
+Subject: Vietnam → Spain ocean freight backup for VFR
+
+Hello VFR Shipping Team,
+
+I’m John from BYJ Logistics in Vietnam. I saw that VFR distributes furniture to Spain and that this address is your shipping-support contact.
+
+If you have an upcoming Spain or other Europe shipment, I’d be glad to provide a second ocean-freight/routing benchmark as a backup option. I only need the Vietnam POL/pickup point, destination port, container size or CBM, gross weight, cargo-ready date and Incoterm to check a live option.
+
+No need to change your current forwarder — the idea is simply to give your shipping team another benchmark when a shipment is available.
+
+Best regards,
+John
+BYJ Logistics / BookingbyJohn
+WhatsApp: +84 352 193 969
+Email: BookingbyJohnly@gmail.com
+Website: https://bookingbyjohnly.com
+
+## Follow-up if no reply
+Hello VFR Shipping Team,
+
+Following up on my note about Vietnam → Spain/Europe shipments. If there is no shipment to benchmark now, I’m happy to remain a backup contact for the next one.
+
+When useful, just send POL/POD, equipment or CBM, weight and cargo-ready date and I can check the current routing/freight option.
+
+Best regards,
+John — BYJ Logistics
 
 ## Qualification fields
 1. POL in Vietnam and Spain/Europe POD
