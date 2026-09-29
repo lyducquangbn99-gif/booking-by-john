@@ -22,7 +22,7 @@ function clean(value?: string) {
   return value?.trim().replace(/\s+/g, " ").slice(0, 160) || "";
 }
 
-export function buildQuoteRecoverySummary(shipment: QuoteRecoveryShipment) {
+export function buildQuoteRecoverySummary(shipment: QuoteRecoveryShipment, sourcePage?: string) {
   const shipmentRows: Array<[string, string]> = [
     ["Mode", clean(shipment.mode)],
     ["Origin", clean(shipment.origin)],
@@ -51,19 +51,21 @@ export function buildQuoteRecoverySummary(shipment: QuoteRecoveryShipment) {
 
   const details = formatRows(shipmentRows);
   const contact = formatRows(contactRows);
+  const source = clean(sourcePage);
 
   return [
     "Hi BYJ Logistics, I tried to submit a quote request on the website but it did not go through.",
     details ? `\nShipment details:\n${details}` : "",
     contact ? `\nContact details:\n${contact}` : "",
+    source ? `\nWebsite source: ${source}` : "",
     "\nPlease help me continue this quote request.",
   ]
     .filter(Boolean)
     .join("\n");
 }
 
-export function getQuoteRecoveryLinks(shipment: QuoteRecoveryShipment) {
-  const message = buildQuoteRecoverySummary(shipment);
+export function getQuoteRecoveryLinks(shipment: QuoteRecoveryShipment, sourcePage?: string) {
+  const message = buildQuoteRecoverySummary(shipment, sourcePage);
   const subject = "BYJ Logistics - quote request recovery";
 
   return {
