@@ -3,7 +3,7 @@
 Status: CONTACT-READY
 Prospect type: Direct cargo owner / seafood exporter
 Priority lane: Vietnam → Spain / EU
-Source checked: 2026-09-25
+Source checked: 2026-10-01
 
 ## Verified fit
 
@@ -13,9 +13,12 @@ This is a route-match signal only. It does not prove a current Spain shipment, s
 
 ## Public contact route
 
-Official website: https://www.kimmyhungsfvl.com/
+- Official website: https://www.kimmyhungsfvl.com/
+- Email: contact@kimmyhungsfvl.com
+- Phone / WhatsApp: +84 908 221 334
+- Public location: Nhon Phu, Vinh Long, Vietnam
 
-Use only contact details published on the company's official site/contact channels at outreach time. Do not infer personal emails or fabricate decision-maker details.
+These contact details were re-verified on the company's official site on 2026-10-01. Do not infer personal emails or fabricate decision-maker details.
 
 ## BYJ qualification angle
 
@@ -52,4 +55,4 @@ Website: https://bookingbyjohnly.com
 
 ## Verification notes
 
-Official-site evidence used: the company website lists Spain as an export market and describes IQF/cold-chain handling. Re-verify public contact details and current shipment requirements immediately before outreach because company contact information and commercial conditions can change.
+Official-site evidence used: the company website lists Spain as an export market, describes IQF/cold-chain handling, and publishes the contact details above. Re-verify current shipment requirements immediately before outreach because commercial conditions can change.
