@@ -39,7 +39,7 @@ const COPY: Record<string, { intro: string; whatsapp: string; email: string }> =
 
 export default function QuoteRecoveryActions({ shipment, locale, sourcePage }: Props) {
   const copy = COPY[locale] || COPY.en;
-  const links = getQuoteRecoveryLinks(shipment);
+  const links = getQuoteRecoveryLinks(shipment, sourcePage);
 
   function track(channel: "whatsapp" | "email") {
     trackBookingEvent("quote_recovery_click", {
