@@ -1,3 +1,4 @@
+import CargoGallery from "@/components/CargoGallery";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <Trust />
       <OceanRoutes />
+      <CargoGallery />
       <RequestStepper />
       <TrickyShipmentCTA />
       <BlogCards />
