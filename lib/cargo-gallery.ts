@@ -104,7 +104,10 @@ export const galleryCopy = {
       "Large wooden crate positioned in a truck bed",
       "Bubble-wrapped machinery inside a timber frame",
       "Wrapped machinery secured within a wooden frame; background labels and vehicle plates concealed"
-    ]
+    ],
+    "videoTitle": "Packing video",
+    "videoDescription": "A close-up of wrapped machinery secured in a timber frame. Cropped and published without original audio to protect privacy. Illustrative footage, not a verified BYJ shipment case study.",
+    "videoLink": "Open video"
   },
   "vi": {
     "eyebrow": "Đóng gói & xử lý hàng hóa",
@@ -143,7 +146,10 @@ export const galleryCopy = {
       "Kiện gỗ lớn được đặt trong thùng xe tải",
       "Máy móc bọc xốp hơi bên trong khung gỗ bảo vệ",
       "Máy móc được bọc và cố định trong khung gỗ; nhãn và biển số ở hậu cảnh đã che"
-    ]
+    ],
+    "videoTitle": "Video đóng gói và vận chuyển",
+    "videoDescription": "Cận cảnh máy móc được bọc và giữ trong khung gỗ. Video đã cắt khung hình và bỏ âm thanh gốc để bảo vệ riêng tư. Tư liệu minh họa, không phải case study lô hàng BYJ đã xác minh.",
+    "videoLink": "Mở video"
   },
   "it": {
     "eyebrow": "Imballaggio e movimentazione",
@@ -182,7 +188,10 @@ export const galleryCopy = {
       "Grande cassa di legno sul pianale di un camion",
       "Macchinario avvolto nel pluriball dentro un telaio di legno",
       "Macchinario avvolto e fissato in un telaio di legno; etichette e targhe sullo sfondo oscurate"
-    ]
+    ],
+    "videoTitle": "Video di imballaggio",
+    "videoDescription": "Dettaglio di macchinari avvolti e fissati in un telaio di legno. Video ritagliato e senza audio originale per tutelare la privacy. Filmato illustrativo, non un caso verificato di spedizione BYJ.",
+    "videoLink": "Apri il video"
   },
   "es": {
     "eyebrow": "Embalaje y manipulación",
@@ -221,7 +230,10 @@ export const galleryCopy = {
       "Caja de madera grande sobre la plataforma de un camión",
       "Maquinaria envuelta en plástico de burbujas dentro de una estructura de madera",
       "Maquinaria envuelta y fijada en una estructura de madera; etiquetas y matrículas del fondo ocultas"
-    ]
+    ],
+    "videoTitle": "Vídeo de embalaje",
+    "videoDescription": "Detalle de maquinaria envuelta y sujeta en una estructura de madera. Vídeo recortado y sin audio original para proteger la privacidad. Material ilustrativo, no un caso verificado de envío BYJ.",
+    "videoLink": "Abrir vídeo"
   },
   "id": {
     "eyebrow": "Pengemasan & penanganan kargo",
@@ -260,6 +272,9 @@ export const galleryCopy = {
       "Peti kayu besar di bak truk",
       "Mesin dibungkus plastik gelembung di dalam rangka kayu",
       "Mesin terbungkus dan diikat dalam rangka kayu; label dan pelat kendaraan di latar belakang ditutup"
-    ]
+    ],
+    "videoTitle": "Video pengemasan",
+    "videoDescription": "Tampilan dekat mesin terbungkus yang diikat dalam rangka kayu. Video dipotong dan audio asli dihapus untuk melindungi privasi. Rekaman ilustrasi, bukan studi kasus pengiriman BYJ yang telah diverifikasi.",
+    "videoLink": "Buka video"
   }
 };

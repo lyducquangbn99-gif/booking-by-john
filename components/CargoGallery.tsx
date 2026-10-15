@@ -19,6 +19,14 @@ export default async function CargoGallery() {
           <figcaption className="p-5"><h3 className="font-bold">{c.captions[item.index]}</h3><p className="mt-2 text-sm text-text-secondary">{c.photoLabel}</p></figcaption>
         </figure>)}
       </div>
+      <figure id="cargo-video" className="mt-10 scroll-mt-24 rounded-2xl border border-border-subtle bg-bg-card p-5 sm:p-8">
+        <h3 id="cargo-video-title" className="text-2xl font-bold">{c.videoTitle}</h3>
+        <video controls playsInline preload="none" poster="/cargo-gallery/packing-video-poster.webp" width={480} height={400} aria-labelledby="cargo-video-title" aria-describedby="cargo-video-description" className="mx-auto mt-5 w-full max-w-xl rounded-xl bg-black">
+          <source src="/cargo-gallery/packing-video.mp4" type="video/mp4" />
+          <a href="/cargo-gallery/packing-video.mp4">{c.videoLink}</a>
+        </video>
+        <figcaption id="cargo-video-description" className="mt-4 max-w-3xl text-sm leading-6 text-text-secondary">{c.videoDescription}</figcaption>
+      </figure>
       <p className="mt-6 max-w-4xl text-sm leading-6 text-text-secondary">{c.notice}</p>
       <div className="mt-8 flex flex-col gap-5 rounded-2xl border border-border-subtle p-6 sm:flex-row sm:items-center sm:justify-between"><div><p className="font-bold">{c.ctaTitle}</p><p className="mt-2 max-w-xl text-sm text-text-secondary">{c.ctaBody}</p></div><Link href="/#request" className="shrink-0 rounded-lg bg-accent-orange px-6 py-3 text-center font-bold text-white focus-visible:outline-4 focus-visible:outline-ocean-blue">{c.cta} →</Link></div>
       <p className="mt-6 text-sm text-text-secondary">BYJ Logistics — BookingbyJohn, your direct logistics contact in Vietnam. Operations supported by Ocean Trans Vietnam.</p>
