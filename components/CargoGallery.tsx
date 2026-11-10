@@ -11,10 +11,10 @@ export default async function CargoGallery() {
       <div className="mt-3 max-w-3xl"><h2 id="cargo-gallery-title" className="text-3xl font-bold sm:text-4xl">{c.title}</h2><p className="mt-4 leading-7 text-text-secondary">{c.intro}</p></div>
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {galleryImages.map((item) => <figure key={item.id} className="overflow-hidden rounded-2xl border border-border-subtle bg-bg-card">
-          <a href={`/cargo-gallery/${item.id}-1200.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${c.view}: ${c.captions[item.index]}`} className="block focus-visible:outline-4 focus-visible:outline-ocean-blue">
+          <a href={item.id === "palletized-cartons" ? "/cargo-gallery/palletized-cartons.avif" : `/cargo-gallery/${item.id}-1200.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${c.view}: ${c.captions[item.index]}`} className="block focus-visible:outline-4 focus-visible:outline-ocean-blue">
             {/* Only irreversible, metadata-free publication derivatives are served. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`/cargo-gallery/${item.id}-640.webp`} srcSet={`/cargo-gallery/${item.id}-640.webp 640w, /cargo-gallery/${item.id}-1200.webp 1200w`} sizes="(min-width: 1024px) 360px, (min-width: 640px) 46vw, 92vw" width={item.width} height={item.height} loading="lazy" decoding="async" alt={c.alts[item.index]} className="aspect-[4/3] w-full bg-bg-primary object-contain" />
+            <img src={item.id === "palletized-cartons" ? "/cargo-gallery/palletized-cartons.avif" : `/cargo-gallery/${item.id}-640.webp`} srcSet={item.id === "palletized-cartons" ? undefined : `/cargo-gallery/${item.id}-640.webp 640w, /cargo-gallery/${item.id}-1200.webp 1200w`} sizes="(min-width: 1024px) 360px, (min-width: 640px) 46vw, 92vw" width={item.width} height={item.height} loading="lazy" decoding="async" alt={c.alts[item.index]} className="aspect-[4/3] w-full bg-bg-primary object-contain" />
           </a>
           <figcaption className="p-5"><h3 className="font-bold">{c.captions[item.index]}</h3><p className="mt-2 text-sm text-text-secondary">{c.photoLabel}</p></figcaption>
         </figure>)}

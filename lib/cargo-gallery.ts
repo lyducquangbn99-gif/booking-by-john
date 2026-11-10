@@ -12,6 +12,12 @@ export const galleryImages = [
     "index": 1
   },
   {
+    "id": "palletized-cartons",
+    "width": 480,
+    "height": 360,
+    "index": 6
+  },
+  {
     "id": "wooden-crates",
     "width": 1280,
     "height": 960,
