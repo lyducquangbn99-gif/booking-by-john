@@ -1,3 +1,4 @@
+import { canadaCopy } from "@/lib/canada-copy";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -47,6 +48,7 @@ export default async function RoutesPage({ params }: Props) {
         </div>
       </section>
       <section className="mx-auto grid max-w-6xl gap-5 px-5 py-16 sm:grid-cols-2 lg:grid-cols-3">
+        <article className="rounded-lg border border-border-subtle bg-white p-6 shadow-sm"><h2 className="text-xl font-black text-[#0B1F3A]">{(canadaCopy[locale] || canadaCopy.en).title}</h2><Link href="/routes/vietnam-to-canada" className="mt-5 inline-flex font-black text-ocean-blue underline">{copy.guide}</Link></article>
         {PORT_ROUTES.map(route => (
           <article key={route.slug} className="rounded-lg border border-border-subtle bg-white p-6 shadow-sm">
             <p className="text-sm font-bold uppercase tracking-wide text-ocean-blue">{route.country}</p>

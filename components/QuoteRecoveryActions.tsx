@@ -57,7 +57,7 @@ export default function QuoteRecoveryActions({ shipment, locale, sourcePage }: P
     <div className="rounded-xl border border-accent-orange/30 bg-bg-card p-4" role="group" aria-label="Quote recovery options">
       <p className="mb-3 text-xs leading-relaxed text-text-secondary">{copy.intro}</p>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-        <a href={links.whatsapp} target="_blank" rel="noopener noreferrer" className={buttonClass} onClick={() => track("whatsapp")}>
+        <a data-contact-placement="quote-recovery" href={links.whatsapp} target="_blank" rel="noopener noreferrer" className={buttonClass} onClick={() => track("whatsapp")}>
           {copy.whatsapp}
         </a>
         <a href={links.email} className={buttonClass} onClick={() => track("email")}>

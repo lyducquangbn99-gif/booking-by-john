@@ -32,6 +32,7 @@ export default function TrackedContactLink({
   return (
     <a
       href={href}
+      data-contact-placement={placement}
       className={className}
       target={target}
       rel={rel}

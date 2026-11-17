@@ -1,4 +1,5 @@
 "use client";
+import { safeTag } from "./attribution";
 
 export const INTERNAL_VISITOR_KEY = "booking_by_john_internal_visitor";
 export const ANALYTICS_CONSENT_KEY = "booking_by_john_analytics_consent";
@@ -23,12 +24,12 @@ type AcquisitionContext = {
 
 export function isInternalVisitor() {
   if (typeof window === "undefined") return true;
-  return window.localStorage.getItem(INTERNAL_VISITOR_KEY) === "1";
+  try { return window.localStorage.getItem(INTERNAL_VISITOR_KEY) === "1"; } catch { return true; }
 }
 
 export function hasAnalyticsConsent() {
   if (typeof window === "undefined") return false;
-  return window.localStorage.getItem(ANALYTICS_CONSENT_KEY) === "granted";
+  try { return window.localStorage.getItem(ANALYTICS_CONSENT_KEY) === "granted"; } catch { return false; }
 }
 
 export function getAcquisitionEventParams(): AcquisitionContext {
@@ -46,7 +47,7 @@ export function getAcquisitionEventParams(): AcquisitionContext {
       "utm_content",
     ] as const) {
       const value = parsed[key];
-      if (typeof value === "string" && value) result[key] = value.slice(0, 120);
+      if (typeof value === "string" && value) result[key] = safeTag(value, key);
     }
     return result;
   } catch {
@@ -56,9 +57,15 @@ export function getAcquisitionEventParams(): AcquisitionContext {
 
 export function trackBookingEvent(name: string, data: Record<string, EventValue> = {}) {
   if (isInternalVisitor() || !hasAnalyticsConsent() || !window.gtag) return;
+  // Legacy form source fields can contain user-provided query values. Never transmit them.
+  const { source_page: _source, lead_source: _lead, ...safeData } = data;
   window.gtag("event", name, {
     ...getAcquisitionEventParams(),
-    ...data,
-    page_location: window.location.href,
+    ...safeData,
+    page_location: window.location.origin + window.location.pathname,
+    page_path: window.location.pathname,
+    page_referrer: "",
+    locale: window.location.pathname.split("/")[1] || "en",
+    transport_type: "beacon",
   });
 }

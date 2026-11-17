@@ -1,3 +1,4 @@
+import { canadaCopy } from "@/lib/canada-copy";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { getLocale } from "next-intl/server";
@@ -14,8 +15,14 @@ const COPY: Record<string, { tagline: string; services: string; routes: string; 
 export default async function Footer() {
   const locale = await getLocale();
   const copy = COPY[locale] || COPY.en;
+  const growth = canadaCopy[locale] || canadaCopy.en;
+  const quoteLabels: Record<string, string> = {en: "Request a quote", vi: "Yêu cầu báo giá", it: "Richiedi un preventivo", es: "Solicitar cotización", id: "Minta penawaran"};
   return (
     <footer id="contact" className="bg-[#0B1F3A] px-5 py-14 text-white lg:px-8">
+      <div className="mx-auto mb-10 flex max-w-7xl flex-wrap gap-4 border-b border-white/20 pb-8">
+        <Link href="/#request" data-quote-cta="footer-banner" className="rounded-md bg-accent-orange px-5 py-3 font-bold">{quoteLabels[locale] || quoteLabels.en}</Link>
+        <TrackedContactLink href="https://wa.me/84352193969" channel="whatsapp" placement="footer-banner" target="_blank" rel="noopener noreferrer" className="rounded-md border border-white/50 px-5 py-3 font-bold">{growth.whatsapp}</TrackedContactLink>
+      </div>
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-4">
@@ -42,6 +49,7 @@ export default async function Footer() {
         <div>
           <h3 className="font-black">{copy.routes}</h3>
           <ul className="mt-4 space-y-2 text-slate-200">
+            <li><Link href="/routes/vietnam-to-canada" className="hover:text-accent-orange">{growth.title}</Link></li>
             <li><Link href="/routes/vietnam-to-italy" className="hover:text-accent-orange">Vietnam → {copy.destinations[0]}</Link></li>
             <li><Link href="/routes/vietnam-to-spain" className="hover:text-accent-orange">Vietnam → {copy.destinations[1]}</Link></li>
             <li><Link href="/routes/vietnam-to-indonesia" className="hover:text-accent-orange">Vietnam → {copy.destinations[2]}</Link></li>

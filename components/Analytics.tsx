@@ -2,7 +2,8 @@
 
 import { useEffect, useState, useSyncExternalStore } from "react";
 import Script from "next/script";
-import { usePathname } from "@/i18n/navigation";
+import { usePathname } from "next/navigation";
+import { safeTag, referrerSource } from "@/lib/attribution";
 import {
   ACQUISITION_CONTEXT_KEY,
   ACQUISITION_SOURCE_KEY,
@@ -46,14 +47,6 @@ function localeFromPath(pathname: string) {
   return pathname.split("/").filter(Boolean)[0] || "en";
 }
 
-function cleanAttributionValue(value: string | null, maxLength = 120) {
-  if (!value) return "";
-  return value
-    .trim()
-    .replace(/[^a-zA-Z0-9._~+:/ -]/g, "")
-    .replace(/\s+/g, "-")
-    .slice(0, maxLength);
-}
 
 export default function Analytics() {
   const pathname = usePathname();
@@ -67,7 +60,7 @@ export default function Analytics() {
         window.removeEventListener("booking-analytics-preference", onChange);
       };
     },
-    () => window.localStorage.getItem(INTERNAL_VISITOR_KEY) !== "1",
+    () => { try { return window.localStorage.getItem(INTERNAL_VISITOR_KEY) !== "1"; } catch { return false; } },
     () => false,
   );
   const consent = useSyncExternalStore(
@@ -79,7 +72,7 @@ export default function Analytics() {
         window.removeEventListener("booking-analytics-consent", onChange);
       };
     },
-    () => window.localStorage.getItem(ANALYTICS_CONSENT_KEY),
+    () => { try { return window.localStorage.getItem(ANALYTICS_CONSENT_KEY); } catch { return "denied"; } },
     () => null,
   );
 
@@ -87,19 +80,20 @@ export default function Analytics() {
   const copy = CONSENT_TEXT[locale] || CONSENT_TEXT.en;
 
   useEffect(() => {
+    if (!enabled || consent !== "granted") return;
+    try {
     const params = new URLSearchParams(window.location.search);
-    const source = cleanAttributionValue(params.get("source"));
-    const utmSource = cleanAttributionValue(params.get("utm_source"));
-    const utmMedium = cleanAttributionValue(params.get("utm_medium"));
-    const utmCampaign = cleanAttributionValue(params.get("utm_campaign"));
-    const utmContent = cleanAttributionValue(params.get("utm_content"));
+    const source = safeTag(params.get("source"), "source");
+    const utmSource = safeTag(params.get("utm_source"), "utm_source");
+    const utmMedium = safeTag(params.get("utm_medium"), "utm_medium");
+    const utmCampaign = safeTag(params.get("utm_campaign"), "utm_campaign");
+    const utmContent = safeTag(params.get("utm_content"), "utm_content");
 
-    if (!source && !utmSource && !utmMedium && !utmCampaign && !utmContent) return;
+    if (window.sessionStorage.getItem(ACQUISITION_CONTEXT_KEY)) return;
 
     const acquisitionSource = (
       source ||
-      [utmSource, utmMedium, utmCampaign].filter(Boolean).join(":") ||
-      "tagged-visit"
+      utmSource || referrerSource(document.referrer, window.location.origin) || "direct"
     ).slice(0, 120);
 
     window.sessionStorage.setItem(ACQUISITION_SOURCE_KEY, acquisitionSource);
@@ -113,7 +107,8 @@ export default function Analytics() {
         ...(utmContent ? { utm_content: utmContent } : {}),
       }),
     );
-  }, [pathname]);
+    } catch { /* Storage unavailable: contact links still work. */ }
+  }, [pathname, consent, enabled]);
 
   function setConsent(value: "granted" | "denied") {
     window.localStorage.setItem(ANALYTICS_CONSENT_KEY, value);
@@ -122,10 +117,20 @@ export default function Analytics() {
 
   function initializeGa() {
     window.dataLayer = window.dataLayer || [];
-    window.gtag = (...args: unknown[]) => window.dataLayer.push(args);
+    window.gtag = function (..._args: unknown[]) { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
+    const acquisition = getAcquisitionEventParams();
     window.gtag("config", MEASUREMENT_ID, {
+      campaign_source: acquisition.utm_source || acquisition.acquisition_source || "direct",
+      campaign_medium: acquisition.utm_medium || "none",
+      campaign_name: acquisition.utm_campaign || "none",
+      campaign_content: acquisition.utm_content || "none",
+      campaign_term: "",
+      campaign_id: "",
       send_page_view: false,
+      page_location: window.location.origin + window.location.pathname,
+      page_referrer: "",
+      ignore_referrer: true,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
     });
@@ -138,7 +143,8 @@ export default function Analytics() {
     window.gtag("event", "page_view", {
       ...getAcquisitionEventParams(),
       page_title: document.title,
-      page_location: window.location.href,
+      page_location: window.location.origin + window.location.pathname,
+      page_referrer: "",
       page_path: pathname,
       language: locale,
     });
@@ -195,21 +201,21 @@ export default function Analytics() {
           locale,
           cta_location:
             anchor.dataset.quoteCta || sourcePosition || "page",
-          lead_source: leadSource.slice(0, 120),
+          lead_source: "website",
         });
       } else if (href.startsWith("mailto:")) {
         trackBookingEvent("email_click", { locale });
       } else if (href.startsWith("tel:")) {
         trackBookingEvent("phone_click", { locale });
-      } else if (/wa\.me|whatsapp/i.test(href)) {
-        trackBookingEvent("whatsapp_click", { locale });
+      } else if (/^https:\/\/(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)(\/|$)/i.test(href)) {
+        trackBookingEvent("whatsapp_click", { locale, contact_channel: "whatsapp", cta_location: anchor.dataset.contactPlacement || "page", click_type: "outbound" });
       } else if (href.includes("/blog/")) {
         trackBookingEvent("blog_open", { locale });
       }
     }
 
-    document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
+    document.addEventListener("click", handleClick, true);
+    return () => document.removeEventListener("click", handleClick, true);
   }, [consent, enabled, gaReady]);
 
   if (!enabled) return null;

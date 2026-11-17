@@ -1,6 +1,7 @@
 // components/RequestStepper.tsx
 "use client";
 
+import DiscoveryQuestion from "@/components/DiscoveryQuestion";
 import { useEffect, useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
@@ -271,6 +272,7 @@ export default function RequestStepper({
             <p className="text-text-secondary leading-relaxed mb-8">
               {t('success.body', { phone: PHONE })}
             </p>
+            <DiscoveryQuestion />
             <button
               onClick={dismiss}
               className="font-display font-bold text-sm text-bg-primary bg-accent-green px-8 py-3 rounded-md hover:-translate-y-px transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent-green"

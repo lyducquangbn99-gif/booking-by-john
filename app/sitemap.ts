@@ -76,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const routeSlugs = ["vietnam-to-italy", "vietnam-to-spain", "vietnam-to-indonesia", "vietnam-to-taiwan", "hai-phong-to-jakarta"];
+  const routeSlugs = ["vietnam-to-canada", "vietnam-to-italy", "vietnam-to-spain", "vietnam-to-indonesia", "vietnam-to-taiwan", "hai-phong-to-jakarta"];
   const routePages: MetadataRoute.Sitemap = routeSlugs.flatMap((slug) =>
     routing.locales.map((locale) => ({
       url: `${BASE_URL}/${locale}/routes/${slug}`,
