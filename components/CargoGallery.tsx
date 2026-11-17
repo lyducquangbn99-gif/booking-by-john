@@ -19,7 +19,6 @@ export default async function CargoGallery() {
           <figcaption className="p-5"><h3 className="font-bold">{c.captions[item.index]}</h3><p className="mt-2 text-sm text-text-secondary">{c.photoLabel}</p></figcaption>
         </figure>)}
       </div>
-      <p className="mt-6 max-w-4xl text-sm leading-6 text-text-secondary">{c.notice}</p>
       <div className="mt-8 flex flex-col gap-5 rounded-2xl border border-border-subtle p-6 sm:flex-row sm:items-center sm:justify-between"><div><p className="font-bold">{c.ctaTitle}</p><p className="mt-2 max-w-xl text-sm text-text-secondary">{c.ctaBody}</p></div><Link href="/#request" className="shrink-0 rounded-lg bg-accent-orange px-6 py-3 text-center font-bold text-white focus-visible:outline-4 focus-visible:outline-ocean-blue">{c.cta} →</Link></div>
       <p className="mt-6 text-sm text-text-secondary">BYJ Logistics — BookingbyJohn, your direct logistics contact in Vietnam. Operations supported by Ocean Trans Vietnam.</p>
     </div>
